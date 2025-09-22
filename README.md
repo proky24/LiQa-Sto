@@ -12,15 +12,15 @@ Obchod s alkoholem !🥃
 ## Aktuální práce
 1. základní konstrukce hry
    
-1.1. ovladání
+      1.1. ovladání
 
-1.2. kamera
+      1.2. kamera
 
-1.3. scéna
+      1.3. scéna
 
 2. jednoduchá interakce se zákazníkem
    
-2.1. dialog
+      2.1. dialog
 
 ## Autor
 

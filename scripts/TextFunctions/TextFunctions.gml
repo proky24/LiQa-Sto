@@ -49,7 +49,7 @@ function scr_text(_text) {
 function scr_game_text(_text_id) {
 	switch (_text_id){
 		case "npc1":
-		scr_text("Vyliz pero", "npc")
+		scr_text("Mate tady elixir tri per?", "npc")
 			scr_option("Ne", "npc1 - yes")
 			scr_option("Ukazte obcanku", "npc1 - obcanka")
 			scr_option("Prodat", "sell")

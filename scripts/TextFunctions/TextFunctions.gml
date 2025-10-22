@@ -1,9 +1,11 @@
 function scr_set_default_for_text(){
-	line_break_pos[0, page_number] = 999
+	/*line_break_pos[0, page_number] = 999
 	line_break_num[page_number] = 0
-	line_break_offset[page_number] = 0
+	line_break_offset[page_number] = 0*/
 	
-	text_box_spr[page_number] = 0
+	// defaultni hodnoty pro tyto promene
+	
+	text_box_spr[page_number] = 0 
 	speaker_spr[page_number] = noone
 	speaker_side[page_number] = 1	
 	//voice_sound[page_number] = voicehigh

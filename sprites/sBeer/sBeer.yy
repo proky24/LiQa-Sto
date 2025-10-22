@@ -1,9 +1,9 @@
 {
   "$GMSprite":"",
   "%Name":"sBeer",
-  "bboxMode":0,
-  "bbox_bottom":22,
-  "bbox_left":1,
+  "bboxMode":2,
+  "bbox_bottom":15,
+  "bbox_left":4,
   "bbox_right":14,
   "bbox_top":9,
   "collisionKind":1,

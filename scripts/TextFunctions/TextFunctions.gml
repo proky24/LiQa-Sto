@@ -18,13 +18,16 @@ function scr_text(_text) {
 	
 	scr_set_default_for_text()
 	
+	//tady se realne vypise text do text boxu
 	text[page_number] = _text
 	
 	
 	//character info
 	if argument_count > 1 {
 		switch(argument[1]) {
-			case "npc":
+			
+			//nastavime portrety a textbox
+			case "npc": 
 				speaker_spr[page_number] = sPortraitNpc
 				text_box_spr[page_number] = sNpcTextBox
 				//voice_sound[page_number] = Sound2
@@ -40,6 +43,7 @@ function scr_text(_text) {
 	}
 	
 	if argument_count > 2 {
+		//pokud mluvi hrac prehodime ho na druhou stranu
 		speaker_side[page_number] = -1
 
 	}
@@ -48,11 +52,11 @@ function scr_text(_text) {
 }
 
 /// @param text_id
-function scr_game_text(_text_id) {
+function scr_game_text(_text_id) { // ulozime text do text[page_number]          
 	switch (_text_id){
 		case "npc1":
-		scr_text("Mate tady elixir tri per?", "npc")
-			scr_option("Ne", "npc1 - yes")
+		scr_text("Mate tady elixir tri per?", "npc") // prvni parametr = text, durhy parametr = kdo to rika
+			scr_option("Ne", "npc1 - yes") // prvni parametr = text, druhy parametr = link k dalsimu dialogu
 			scr_option("Ukazte obcanku", "npc1 - obcanka")
 			scr_option("Prodat", "sell")
 			
@@ -83,14 +87,14 @@ function scr_game_text(_text_id) {
 
 /// @param option
 /// @param link_id
-function scr_option(_option, _link_id) {
+function scr_option(_option, _link_id) { // ukladani moznosti
 	option[option_number] = _option
 	option_link_id[option_number] = _link_id
 	
 	option_number++
 }
 
-function create_textbox(_text_id) {
+function create_textbox(_text_id) { // vytvoreni dialogu s textem
 	with (instance_create_depth(0, 0, -9999, oDialog)) {
 		scr_game_text(_text_id)
 	}

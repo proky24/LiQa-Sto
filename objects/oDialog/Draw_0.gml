@@ -124,7 +124,7 @@ if (draw_char == text_length[page] && page == page_number - 1) { // pokud jsme d
 			draw_sprite_ext(sOptionSelectedBox, text_box_img, op_x_offset, textbox_y + (op *space_btw_op), o_width/text_box_spr_w, (op_space-1)/text_box_spr_h, 0, c_white, 1)
 		}
 		
-		draw_text(op_x_offset + op_border ,textbox_y + (op *space_btw_op) + 1, option[op]) // vypiseme text do text boxu pro moznost
+		draw_text(op_x_offset + op_border,textbox_y + (op *space_btw_op) + 2, option[op]) // vypiseme text do text boxu pro moznost
 	}
 }
 /*for (var c = 0; c < draw_char; c++) {

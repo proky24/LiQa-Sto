@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sNpc",
   "bboxMode":0,
   "bbox_bottom":28,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"96a48d1d-98f9-4430-8e6d-fdae23356bb7","name":"96a48d1d-98f9-4430-8e6d-fdae23356bb7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"96a48d1d-98f9-4430-8e6d-fdae23356bb7","name":"96a48d1d-98f9-4430-8e6d-fdae23356bb7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -23,7 +23,7 @@
   ],
   "name":"sNpc",
   "nineSlice":null,
-  "origin":0,
+  "origin":9,
   "parent":{
     "name":"Humanoid",
     "path":"folders/Sprites/Humanoid.yy",
@@ -77,8 +77,8 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":16,
+    "yorigin":29,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

@@ -9,4 +9,9 @@ if (instance_exists(oPlayer) && distance_to_object(oPlayer) < 8) {
 	can_talk = false
 }
 
+if (target_x == x && target_y == y) {
+	image_index = 0
+	walked = true
+}
 
+depth = -bbox_bottom

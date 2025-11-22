@@ -1,25 +1,10 @@
-if (walked){
-	
-	target_x = oWaypointKasa.x
-	target_y = oWaypointKasa.y
-	
-	loop()
-	
+//fade-in animace
+image_alpha = lerp(image_alpha, 1, 0.03);
+
+if (image_alpha > 0.99) {
+    image_alpha = 1;
+	image_speed = 1
+	exit
 } else {
-	
-	target_x = oWaypoint.x
-	target_y = oWaypoint.y
-
-	loop()
-}
-
-
-function loop() {
-	path_delete(path)
-	path = path_add()
-	
-	mp_grid_path(grid, path, x, y, target_x, target_y, 1)
-	path_start(path, move_speed, path_action_stop, 1)
-
-	alarm[0] = 10
+	alarm[0] = 1
 }

@@ -66,7 +66,7 @@ if (inputKey) {
 		else { // dialog skoncil takze vypiseme moznosti
 			
 			if(option_number > 0) { // pokud vubec nejake moznosti jsou
-				create_textbox(option_link_id[option_pos])// vytvorime je
+				create_textbox(option_link_id[option_pos], npc_id)// vytvorime je
 			}
 			 /*else if (show_after){
 				scr_nevim()

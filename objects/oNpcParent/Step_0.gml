@@ -1,17 +1,24 @@
-if(instance_exists(oDialog)) exit
-
-if (instance_exists(oPlayer) && distance_to_object(oPlayer) < 8) {
-	can_talk = true
-	if (keyboard_check_pressed(input_key)) {
-			create_textbox(dialog)
-	}
-} else {
-	can_talk = false
+//pokud existuje objekt oDialog a je směrován na NPC
+if(instance_exists(oDialog) && oDialog.npc_id == id) {
+	stop()
+	exit
 }
 
-if (target_x == x && target_y == y) {
-	image_index = 0
-	walked = true
+//volání dialogů pokud je hráč blízko a zmáčkne input_key
+if (distance_to_object(oPlayer) < 16 && keyboard_check_pressed(input_key)) {
+	if (can_buy) {
+		create_textbox(dialog, id)
+	}
+}
+
+if (is_waiting) {
+	stop()
+	exit
+}
+
+//pokud NPC došlo k target_x a target_y aktualizuje si cestu 
+if (point_distance(x, y, target_x, target_y) < 2) {
+	loop()
 }
 
 depth = -bbox_bottom

@@ -9,6 +9,7 @@ text_box_img = 0
 text_box_img_speed = 6/60
 show_after = false
 
+npc_id = 0
 
 page = 0 //urcuje cislo dialogu
 page_number = 0 //urcuje page

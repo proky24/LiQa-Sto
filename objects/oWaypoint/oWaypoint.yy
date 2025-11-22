@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"oWaypoint",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"oWaypoint",
   "overriddenProperties":[],
   "parent":{
-    "name":"InvisibleWorkers",
-    "path":"folders/Objects/InvisibleWorkers.yy",
+    "name":"Waypoints",
+    "path":"folders/Objects/InvisibleWorkers/Waypoints.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sWaypointExit",
+    "path":"sprites/sWaypointExit/sWaypointExit.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

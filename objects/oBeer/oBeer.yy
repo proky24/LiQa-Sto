@@ -4,14 +4,16 @@
   "eventList":[],
   "managed":true,
   "name":"oBeer",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oProductParent","path":"objects/oProductParent/oProductParent.yy",},"propertyId":{"name":"price","path":"objects/oProductParent/oProductParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
+  ],
   "parent":{
     "name":"Furniture",
     "path":"folders/Objects/Furniture.yy",
   },
   "parentObjectId":{
-    "name":"oCollision",
-    "path":"objects/oCollision/oCollision.yy",
+    "name":"oProductParent",
+    "path":"objects/oProductParent/oProductParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

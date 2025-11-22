@@ -7,6 +7,9 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oNpcParent",
@@ -31,6 +34,24 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"dialog","filters":[],"listItems":[],"multiselect":false,"name":"dialog","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"none","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"wp_cashier","filters":[
+        "GMObject",
+      ],"listItems":[],"multiselect":false,"name":"wp_cashier","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"oPultRight","path":"objects/oPultRight/oPultRight.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"oPultRight","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"wp_exit","filters":[
+        "GMObject",
+      ],"listItems":[],"multiselect":false,"name":"wp_exit","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"oWaypointExit","path":"objects/oWaypointExit/oWaypointExit.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"oWaypointExit","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"sprite_down","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"sprite_down","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"sprite_up","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"sprite_up","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"sprite_left","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"sprite_left","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"sprite_right","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"sprite_right","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

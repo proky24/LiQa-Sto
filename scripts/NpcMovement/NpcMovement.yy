@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"NpcMovement",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"NpcMovement",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -30,7 +30,6 @@ function scr_text(_text) {
 			case "npc": 
 				speaker_spr[page_number] = sPortraitNpc
 				text_box_spr[page_number] = sNpcTextBox
-				//voice_sound[page_number] = Sound2
 				
 			break;
 			
@@ -38,7 +37,6 @@ function scr_text(_text) {
 				speaker_spr[page_number] = sPortraitPlayer
 				text_box_spr[page_number] = sPlayerTextBox
 				speaker_side[page_number] = -1
-				//voice_sound[page_number] = Sound2
 		}
 	}
 	
@@ -52,14 +50,13 @@ function scr_text(_text) {
 }
 
 /// @param text_id
-function scr_game_text(_text_id) { // ulozime text do text[page_number]          
+/// @param npc_id
+function scr_game_text(_text_id, _npc_id) { // ulozime text do text[page_number]          
 	switch (_text_id){
 		case "npc1":
 		scr_text("Mate tady elixir tri per?", "npc") // prvni parametr = text, durhy parametr = kdo to rika
 		
 			scr_option("Ne", "npc1 - yes") // prvni parametr = text, druhy parametr = link k dalsimu dialogu
-			/*scr_option("Ukazte obcanku", "npc1 - obcanka")
-			scr_option("Prodat", "sell")*/
 			scr_automate_options()
 			
 			break;
@@ -68,8 +65,6 @@ function scr_game_text(_text_id) { // ulozime text do text[page_number]
 					scr_text("Achjoo", "npc")
 					
 					scr_option("Ale mam pero", "npc1 - yes - pero")
-					/*scr_option("Ukazte obcanku", "npc1 - obcanka")
-					scr_option("Prodat", "sell")*/
 					scr_automate_options()
 				break;
 			
@@ -83,11 +78,16 @@ function scr_game_text(_text_id) { // ulozime text do text[page_number]
 			case "npc1 - obcanka":
 				scr_text("Poprosim vas ukazat obcansy prukaz", "player")
 				scr_text("tady ho mate", "npc")
-				//show_after = true
 				break;
 			
 		case "sell":
 			instance_destroy(oDialog)
+			
+			npc_id.can_buy = false
+			npc_id.is_waiting = false
+			oStatus.money += npc_id.totalSpend
+			
+			oPultRight.alarm[1] = 30
 	}
 }
 
@@ -101,21 +101,13 @@ function scr_option(_option, _link_id) { // ukladani moznosti
 }
 
 function scr_automate_options() {
-	/*switch (_text_id){
-		case "npc1":
-				scr_option("Ne", "npc1 - yes")
-		break;
-		
-		case "npc1 - yes":
-			scr_option("Ale mam pero co se pocita za tri", "npc1 - yes - pero")
-	}*/
-	
 	scr_option("Ukazte obcanku", "npc1 - obcanka")
 	scr_option("Prodat", "sell")
 }
 
-function create_textbox(_text_id) { // vytvoreni dialogu s textem
+function create_textbox(_text_id, _npc_id) { // vytvoreni dialogu s textem
 	with (instance_create_depth(0, 0, -9999, oDialog)) {
-		scr_game_text(_text_id)
+		oDialog.npc_id = _npc_id
+		scr_game_text(_text_id, _npc_id)
 	}
 }

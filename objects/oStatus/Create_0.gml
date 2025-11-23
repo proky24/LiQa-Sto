@@ -12,3 +12,4 @@ rnd = 0
 
 npcs = [oNpc, oNpc2]
 spawned = 0
+randomise()

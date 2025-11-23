@@ -17,6 +17,9 @@ if (place_meeting(x, y + yspd, [oCollision, oNpcParent])) {
 	yspd = 0
 }
 
+if (distance_to_object(oPultRight) < 1 && keyboard_check_pressed(ord("S"))) {
+	face = DOWN
+}
 
 if (yspd == 0){
 	if (xspd > 0) face = RIGHT

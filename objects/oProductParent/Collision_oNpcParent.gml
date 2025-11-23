@@ -6,7 +6,7 @@ other.is_waiting = true
 
 //pokud došli produkty
 if (image_index == 0) {
-	if(other.totalSpend == 0) { //pokud NPC nemá u sebe jiný produkt odejde
+	if(other.totalSpend == 0 || array_length(other.waypoints) < 4) { //pokud NPC nemá u sebe jiný produkt nebo nemá vybraný jiný odejde
 		other.walked = array_length(other.waypoints) - 1
 	} else {
 		other.walked ++

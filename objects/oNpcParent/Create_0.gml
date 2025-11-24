@@ -4,7 +4,7 @@ can_talk = false
 
 image_alpha = 0
 
-totalSpend = 0
+total_spend = 0
 
 products = [oShelf, oBeer, oBeer_1]
 waypoints = [0, 0, wp_cashier, wp_exit]

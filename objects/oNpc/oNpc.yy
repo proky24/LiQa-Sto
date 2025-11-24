@@ -9,7 +9,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_up","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcUp","path":"sprites/sNpcUp/sNpcUp.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcUp",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_left","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcLeft","path":"sprites/sNpcLeft/sNpcLeft.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcLeft",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_right","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcRight","path":"sprites/sNpcRight/sNpcRight.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcRight",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"dialog","path":"objects/oNpcParent/oNpcParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"npc1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"buy_dialog","path":"objects/oNpcParent/oNpcParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"npc1",},
   ],
   "parent":{
     "name":"Humanoid",

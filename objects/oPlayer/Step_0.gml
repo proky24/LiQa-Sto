@@ -1,19 +1,19 @@
 if instance_exists(oDialog) {image_index = 0 exit}
 
-var right = keyboard_check(vk_right) || keyboard_check(ord("D"));
-var left = keyboard_check(vk_left) || keyboard_check(ord("A"));
-var up = keyboard_check(vk_up) || keyboard_check(ord("W"));
-var down = keyboard_check(vk_down) || keyboard_check(ord("S"));
+var right = keyboard_check(ord("D"));
+var left = keyboard_check(ord("A"));
+var up = keyboard_check(ord("W"));
+var down = keyboard_check(ord("S"));
 
 xspd = (right - left) * moveSpd;
 yspd = (down - up) * moveSpd;
 
 
-if (place_meeting(x + xspd, y, [oCollision, oNpcParent])) {
+if (place_meeting(x + xspd, y, oCollision)) {
 		xspd = 0
 }
 
-if (place_meeting(x, y + yspd, [oCollision, oNpcParent])) {
+if (place_meeting(x, y + yspd, oCollision)) {
 	yspd = 0
 }
 

@@ -33,7 +33,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"dialog","filters":[],"listItems":[],"multiselect":false,"name":"dialog","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"none","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"buy_dialog","filters":[],"listItems":[],"multiselect":false,"name":"buy_dialog","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"none","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"wp_cashier","filters":[
         "GMObject",
       ],"listItems":[],"multiselect":false,"name":"wp_cashier","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"oPultRight","path":"objects/oPultRight/oPultRight.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"oPultRight","varType":5,},
@@ -52,6 +52,7 @@
     {"$GMObjectProperty":"v2","%Name":"sprite_right","filters":[
         "GMSprite",
       ],"listItems":[],"multiselect":false,"name":"sprite_right","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"dialog","filters":[],"listItems":[],"multiselect":false,"name":"dialog","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"test","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

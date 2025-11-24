@@ -6,7 +6,7 @@ other.is_waiting = true
 
 //pokud došli produkty
 if (image_index == 0) {
-	if(other.totalSpend == 0 || array_length(other.waypoints) < 4) { //pokud NPC nemá u sebe jiný produkt nebo nemá vybraný jiný odejde
+	if(other.total_spend == 0 || array_length(other.waypoints) < 4) { //pokud NPC nemá u sebe jiný produkt nebo nemá vybraný jiný odejde
 		other.walked = array_length(other.waypoints) - 1
 	} else {
 		other.walked ++
@@ -18,14 +18,14 @@ if (image_index == 0) {
 	 if (other.waypoints[0] == other.waypoints[1]) { //pokud má NPC stejný produkt dvakrát
 		other.walked += 2	
 		 if (image_index < 2) {
-			other.totalSpend += price //přičteme cenu pouze jednoho produktu pokud je jich méně než dva	 
+			other.total_spend += price //přičteme cenu pouze jednoho produktu pokud je jich méně než dva	 
 		} else {
-			other.totalSpend += (price * 2)
+			other.total_spend += (price * 2)
 		}
 		yes = true
 	 } else { //posuneme walked na další waypoint a přičteme cenu produktu
 		other.walked ++
-		other.totalSpend += price
+		other.total_spend += price
 	 }
 	
 	alarm[0] = 90 

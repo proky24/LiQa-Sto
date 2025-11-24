@@ -5,11 +5,11 @@
   "managed":true,
   "name":"oNpc2",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_down","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpc","path":"sprites/sNpc/sNpc.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpc",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_up","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcUp","path":"sprites/sNpcUp/sNpcUp.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcUp",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_left","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcLeft","path":"sprites/sNpcLeft/sNpcLeft.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcLeft",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_right","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcRight","path":"sprites/sNpcRight/sNpcRight.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcRight",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"dialog","path":"objects/oNpcParent/oNpcParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"npc1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_down","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpc_1","path":"sprites/sNpc_1/sNpc_1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpc_1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_up","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcUp_1","path":"sprites/sNpcUp_1/sNpcUp_1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcUp_1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_left","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcLeft_1","path":"sprites/sNpcLeft_1/sNpcLeft_1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcLeft_1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_right","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcRight_1","path":"sprites/sNpcRight_1/sNpcRight_1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcRight_1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"buy_dialog","path":"objects/oNpcParent/oNpcParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"npc1",},
   ],
   "parent":{
     "name":"Humanoid",
@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sNpc",
-    "path":"sprites/sNpc/sNpc.yy",
+    "name":"sNpc_1",
+    "path":"sprites/sNpc_1/sNpc_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

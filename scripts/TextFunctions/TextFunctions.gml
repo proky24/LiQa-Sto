@@ -54,24 +54,24 @@ function scr_text(_text) {
 function scr_game_text(_text_id, _npc_id) { // ulozime text do text[page_number]          
 	switch (_text_id){
 		case "npc1":
-		scr_text("Mate tady elixir tri per?", "npc") // prvni parametr = text, durhy parametr = kdo to rika
+		scr_text("Dobry den", "npc") // prvni parametr = text, durhy parametr = kdo to rika
 		
-			scr_option("Ne", "npc1 - yes") // prvni parametr = text, druhy parametr = link k dalsimu dialogu
+			scr_option("V lihu", "npc1 - 1") // prvni parametr = text, druhy parametr = link k dalsimu dialogu
 			scr_automate_options()
 			
 			break;
-				case "npc1 - yes":	
-					scr_text("Nemame, bohuzel.", "player")
-					scr_text("Achjoo", "npc")
+				case "npc1 - 1":	
+					scr_text("Dneska budete v lihu jo?", "player")
+					scr_text("Prokoukl jste me", "npc")
 					
-					scr_option("Ale mam pero", "npc1 - yes - pero")
+					scr_option("Tak vas poprosim " + string(_npc_id.total_spend), "npc1 - 1 - sell")
 					scr_automate_options()
 				break;
 			
-			case "npc1 - yes - pero":
-				scr_text("Ale... mam pero co se pocita za tri", "player")
-				scr_text("to me... bere... sundejte kalhoty", "npc")
-			
+			case "npc1 - 1 - sell":
+				scr_text("Tak vas poprosim o... " + string(_npc_id.total_spend) , "player")
+				scr_text("Hotove", "npc")
+				scr_option("Prodat", "sell")
 
 				break; 
 			
@@ -80,12 +80,30 @@ function scr_game_text(_text_id, _npc_id) { // ulozime text do text[page_number]
 				scr_text("tady ho mate", "npc")
 				break;
 			
+		case "test":
+			scr_text("dobry der schanim " + string(_npc_id.waypoints[0].name), "npc")
+			
+			scr_option("Jdi do prdele", "test - prdel")
+			break;
+			
+				case "test - prdel":
+			scr_text("Jdi do prdele ty hromado promrdanyho masa", "player")
+			scr_text("Noo tak to si ji nastav nooo", "npc")
+			scr_option("Konec", "end")
+			break;
+			
+			case "end":
+				instance_destroy(oDialog)
+				_npc_id.alarm[2] = 1
+				break;
+		
+		
 		case "sell":
 			instance_destroy(oDialog)
 			
 			npc_id.can_buy = false
 			npc_id.is_waiting = false
-			oStatus.money += npc_id.totalSpend
+			oStatus.money += _npc_id.total_spend
 			
 			oPultRight.alarm[1] = 30
 	}

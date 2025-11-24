@@ -10,6 +10,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_left","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcLeft","path":"sprites/sNpcLeft/sNpcLeft.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcLeft",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_right","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcRight","path":"sprites/sNpcRight/sNpcRight.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcRight",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"buy_dialog","path":"objects/oNpcParent/oNpcParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"npc1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"portrait","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sPortraitNpc","path":"sprites/sPortraitNpc/sPortraitNpc.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sPortraitNpc",},
   ],
   "parent":{
     "name":"Humanoid",

@@ -9,8 +9,8 @@
   "name":"oFontSetter",
   "overriddenProperties":[],
   "parent":{
-    "name":"InvisibleWorkers",
-    "path":"folders/Objects/InvisibleWorkers.yy",
+    "name":"UI",
+    "path":"folders/Objects/UI.yy",
   },
   "parentObjectId":null,
   "persistent":false,

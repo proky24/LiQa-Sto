@@ -13,8 +13,8 @@ function scr_set_default_for_text(){
 
 /// @param text
 /// @param speaker
-/// @param
-function scr_text(_text) {
+/// @param npc_id
+function scr_text(_text, speaker, _npc_id) {
 	
 	scr_set_default_for_text()
 	
@@ -28,7 +28,7 @@ function scr_text(_text) {
 			
 			//nastavime portrety a textbox
 			case "npc": 
-				speaker_spr[page_number] = sPortraitNpc
+				speaker_spr[page_number] = _npc_id.portrait
 				text_box_spr[page_number] = sNpcTextBox
 				
 			break;
@@ -40,7 +40,7 @@ function scr_text(_text) {
 		}
 	}
 	
-	if argument_count > 2 {
+	if argument_count > 3 {
 		//pokud mluvi hrac prehodime ho na druhou stranu
 		speaker_side[page_number] = -1
 
@@ -54,7 +54,7 @@ function scr_text(_text) {
 function scr_game_text(_text_id, _npc_id) { // ulozime text do text[page_number]          
 	switch (_text_id){
 		case "npc1":
-		scr_text("Dobry den", "npc") // prvni parametr = text, durhy parametr = kdo to rika
+		scr_text("Dobry den", "npc", _npc_id) // prvni parametr = text, durhy parametr = kdo to rika
 		
 			scr_option("V lihu", "npc1 - 1") // prvni parametr = text, druhy parametr = link k dalsimu dialogu
 			scr_automate_options()
@@ -62,35 +62,81 @@ function scr_game_text(_text_id, _npc_id) { // ulozime text do text[page_number]
 			break;
 				case "npc1 - 1":	
 					scr_text("Dneska budete v lihu jo?", "player")
-					scr_text("Prokoukl jste me", "npc")
+					scr_text("Prokoukl jste me", "npc", _npc_id)
 					
 					scr_option("Tak vas poprosim " + string(_npc_id.total_spend), "npc1 - 1 - sell")
 					scr_automate_options()
 				break;
 			
-			case "npc1 - 1 - sell":
-				scr_text("Tak vas poprosim o... " + string(_npc_id.total_spend) , "player")
-				scr_text("Hotove", "npc")
-				scr_option("Prodat", "sell")
+					case "npc1 - 1 - sell":
+						scr_text("Tak vas poprosim o... " + string(_npc_id.total_spend) , "player")
+						scr_text("Hotove", "npc", _npc_id)
+						scr_option("Prodat", "sell")
 
-				break; 
+						break; 
 			
-			case "npc1 - obcanka":
-				scr_text("Poprosim vas ukazat obcansy prukaz", "player")
-				scr_text("tady ho mate", "npc")
+						case "npc1 - obcanka":
+							scr_text("Poprosim vas ukazat obcansy prukaz", "player")
+							scr_text("tady ho mate", "npc", _npc_id)
+							break;
+				
+		case "npc2":
+			scr_text("Dobrej, dneska na sekeru nebo mate penize?", "player")
+			scr_text("Dneska prisel duchod pane vrchni", "npc", _npc_id)
+			
+			scr_option("No vidite", "npc2 - 1")
+			scr_automate_options()
+			break;
+			
+				case "npc2 - 1":
+				scr_text("No vidite, tak snad i zaplatite to co dluzite", "player")
+				scr_text(".........", "npc", _npc_id)
+			
+				scr_option("Achjo", "npc2 - 1 - sell")
+				scr_automate_options()
 				break;
 			
+					case "npc2 - 1 - sell":
+					scr_text("Achjoo.. Tak to zkusime priste ted mi dejte aspon tech " + string(_npc_id.total_spend), "player")
+					scr_text("Kartou poprosim", "npc", _npc_id)
+					scr_option("Prodat", "sell")
+					break;
+		
+		case "npc3":
+			scr_text("*zira jakoby tyden nespal, pachne po chlastu*", "npc", _npc_id)
+			scr_text("Pane?.. jste v pohode", "player")
+			scr_text("*predlozi kartu*", "npc", _npc_id)
+			
+			scr_option("Prodat", "sell")
+			break;
+			
+		case "npc4":
+			scr_text("Zajimavy vyber.", "player")
+			scr_text("No ze by jste toho mel na vyber hodne se rici neda", "npc", _npc_id)
+			
+			scr_option("Tak nakupujte", "npc4 - 1")
+			scr_automate_options()
+			break;
+			
+				case "npc4 - 1":
+				scr_text("Kdyz sem budete chodit casteji, treba toho budu moct nakoupit vetsi vyber", "player")
+				scr_text("Vy jste nejak chytrej", "npc", _npc_id)
+				
+				scr_automate_options()
+				break;
+				
 		case "test":
-			scr_text("dobry der schanim " + string(_npc_id.waypoints[0].name), "npc")
+			scr_text("Nesahejte mi pod sukni uchyle  *dala ti facku*", "npc", _npc_id)
 			
-			scr_option("Jdi do prdele", "test - prdel")
+			scr_option("(Konec)", "end")
+			//scr_option("Jdi do prdele", "test - prdel")
 			break;
 			
-				case "test - prdel":
+			/*/	case "test - prdel":
 			scr_text("Jdi do prdele ty hromado promrdanyho masa", "player")
-			scr_text("Noo tak to si ji nastav nooo", "npc")
-			scr_option("Konec", "end")
-			break;
+			scr_text("Noo tak to si ji nastav nooo", "npc", _npc_id)
+			scr_option("(Konec)", "end")
+			break;*/
 			
 			case "end":
 				instance_destroy(oDialog)

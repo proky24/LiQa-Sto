@@ -5,7 +5,7 @@ if(instance_exists(oDialog) && oDialog.npc_id == id) {
 }
 
 //volání dialogů pokud je hráč blízko a zmáčkne input_key
-if (distance_to_object(oPlayer) < 16 && keyboard_check_pressed(input_key)) {
+if (distance_to_object(oPlayer) < 16 && keyboard_check_pressed(input_key) && !instance_exists(oDialog)) {
 	if (can_buy) {
 		create_textbox(buy_dialog, id)
 	} else {

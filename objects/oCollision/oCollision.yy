@@ -8,8 +8,8 @@
   "name":"oCollision",
   "overriddenProperties":[],
   "parent":{
-    "name":"InvisibleWorkers",
-    "path":"folders/Objects/InvisibleWorkers.yy",
+    "name":"Collisions",
+    "path":"folders/Objects/InvisibleWorkers/Collisions.yy",
   },
   "parentObjectId":null,
   "persistent":false,

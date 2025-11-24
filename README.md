@@ -13,8 +13,10 @@ Obchod s alkoholem !🥃
 1.cesty zákazníků
 
 2.ekonomika
+    
     2.1
       prodej produktů
+    
     2.2
       nákup zásob
 

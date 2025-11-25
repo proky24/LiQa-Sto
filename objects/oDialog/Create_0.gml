@@ -1,4 +1,4 @@
-text_boxw = 420 //sirka textboxu
+text_boxw = 550 //sirka textboxu
 text_boxh = 64 // vyska textboxu
 
 border = 8 // vzdalenost zdi od textu
@@ -6,10 +6,11 @@ line_sep = 12 //
 line_width = text_boxw - border * 2
 text_box_spr[0] = 0
 text_box_img = 0
-text_box_img_speed = 6/60
-show_after = false
+//text_box_img_speed = 6/60
 
 npc_id = 0
+options = false
+small_talk = false
 
 page = 0 //urcuje cislo dialogu
 page_number = 0 //urcuje page

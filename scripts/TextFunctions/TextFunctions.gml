@@ -125,24 +125,14 @@ function scr_game_text(_text_id, _npc_id) { // ulozime text do text[page_number]
 				scr_automate_options()
 				break;
 				
-		case "test":
+		case "facka":
 			scr_text("Nesahejte mi pod sukni uchyle  *dala ti facku*", "npc", _npc_id)
-			
-			scr_option("(Konec)", "end")
-			//scr_option("Jdi do prdele", "test - prdel")
+			break;
+		
+		case "cumis":
+			scr_text("Na co cumis", "npc", _npc_id)
 			break;
 			
-			/*/	case "test - prdel":
-			scr_text("Jdi do prdele ty hromado promrdanyho masa", "player")
-			scr_text("Noo tak to si ji nastav nooo", "npc", _npc_id)
-			scr_option("(Konec)", "end")
-			break;*/
-			
-			case "end":
-				instance_destroy(oDialog)
-				_npc_id.alarm[2] = 1
-				break;
-		
 		
 		case "sell":
 			instance_destroy(oDialog)
@@ -169,9 +159,12 @@ function scr_automate_options() {
 	scr_option("Prodat", "sell")
 }
 
-function create_textbox(_text_id, _npc_id) { // vytvoreni dialogu s textem
+function create_textbox(_text_id, _npc_id, _small_talk) { // vytvoreni dialogu s textem
 	with (instance_create_depth(0, 0, -9999, oDialog)) {
 		oDialog.npc_id = _npc_id
+		if(_small_talk) {
+			oDialog.small_talk = true
+		}
 		scr_game_text(_text_id, _npc_id)
 	}
 }

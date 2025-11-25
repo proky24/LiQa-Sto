@@ -33,15 +33,10 @@ function stop() {
 		case 3:
 			sprite_index = sprite_up
 			break;	
-	}
+		}
 	}
 	
 	
 
 	image_index = 0	
-}
-
-/// @param p_sprite
-function set_opposite_sprite(p_sprite) {
-	
 }

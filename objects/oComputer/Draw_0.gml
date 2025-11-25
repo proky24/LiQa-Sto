@@ -1,0 +1,1 @@
+draw_sprite_stretched(sComputer, 0, 96, 32, 440, 255)

@@ -9,9 +9,9 @@ if (distance_to_object(oPlayer) < 16 && keyboard_check_pressed(input_key) && !in
 	if (can_buy) {
 		create_textbox(buy_dialog, id)
 	} else {
-		create_textbox(dialog, id)
-		set_opposite_sprite(oPlayer.face)
+		create_textbox(dialog, id, true)
 		path_delete(path)
+		alarm[3] = 180
 	}
 }
 

@@ -11,10 +11,11 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_right","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcRight_1","path":"sprites/sNpcRight_1/sNpcRight_1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcRight_1",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"buy_dialog","path":"objects/oNpcParent/oNpcParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"npc4",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"portrait","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sPortraitNpc_1","path":"sprites/sPortraitNpc_1/sPortraitNpc_1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sPortraitNpc_1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"dialog","path":"objects/oNpcParent/oNpcParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"cumis",},
   ],
   "parent":{
-    "name":"Humanoid",
-    "path":"folders/Objects/Humanoid.yy",
+    "name":"Npcs",
+    "path":"folders/Objects/Humanoid/Npcs.yy",
   },
   "parentObjectId":{
     "name":"oNpcParent",

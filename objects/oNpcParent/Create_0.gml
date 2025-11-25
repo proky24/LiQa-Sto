@@ -10,9 +10,9 @@ products = [oShelf, oBeer, oBeer_1]
 waypoints = [0, 0, wp_cashier, wp_exit]
 target_x = 0
 target_y = 0
+move_speed = 1
 
 is_waiting = false
-move_speed = 1
 
 walked = 0
 

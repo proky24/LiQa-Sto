@@ -1,4 +1,4 @@
-if room == target_room {
-	show_debug_message("going to destroy ms")
+if (room == target_room && image_index < 1) {
+
 	instance_destroy()
 }

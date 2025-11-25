@@ -1,4 +1,5 @@
- inputKey = keyboard_check_pressed(vk_space)
+
+inputKey = keyboard_check_pressed(vk_space)
 
 textbox_x = camera_get_view_x(view_camera[0]) // x pozice text boxu
 textbox_y = camera_get_view_y(view_camera[0]) + 290 //y pozice text boxu
@@ -16,7 +17,12 @@ if (setup == false) {
 		//kdyz mluvi npc
 		text_box_x_offset[p] = 80 // vzdalenost text boxu od leve zdi
 		potrait_x_offset[p] = 10 // vzdalenost text boxu pro portret od leve zdi
-		text_boxw[p] = 420 // sirka text boxu 
+		if (option_number > 0) {
+			text_boxw[p] = 420
+			options = true
+		} else {
+			text_boxw[p] = 550		
+		}
 		
 		//kdyz mluvi hrac
 		if (speaker_side[p] == -1) {
@@ -53,9 +59,10 @@ if (text_pause_timer <= 0) {
 	
 } else {
 		text_pause_timer-- // odebirame casomiru aby se zase vypisoval text
-	}
+}
 
-if (inputKey) {
+
+if (inputKey && !small_talk) {
 	
 	if (draw_char == text_length[page]){// pokud jsme na konci vety
 		if(page  < page_number - 1) {// pokud dialog neni dokoncen
@@ -65,15 +72,10 @@ if (inputKey) {
 		
 		else { // dialog skoncil takze vypiseme moznosti
 			
-			if(option_number > 0) { // pokud vubec nejake moznosti jsou
+			if(options) { // pokud vubec nejake moznosti jsou
 				create_textbox(option_link_id[option_pos], npc_id)// vytvorime je
 			}
-			 /*else if (show_after){
-				scr_nevim()
-				
-			 }*/
 			instance_destroy() // pokud dialog skoncil znicime oDialog
-			
 		}
 	} else {
 		draw_char = text_length[page] // pokud nejsme na konci vety preskocime a na konec vety

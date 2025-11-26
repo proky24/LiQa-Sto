@@ -8,5 +8,3 @@ sprites[LEFT] = sPlayerLeft
 sprites[UP] = sPlayerDown
 
 face = DOWN
-
-tileMap = layer_tilemap_get_id("shop")

@@ -75,11 +75,7 @@ function scr_game_text(_text_id, _npc_id) { // ulozime text do text[page_number]
 
 						break; 
 			
-						case "npc1 - obcanka":
-							scr_text("Poprosim vas ukazat obcansy prukaz", "player")
-							scr_text("tady ho mate", "npc", _npc_id)
-							break;
-				
+						
 		case "npc2":
 			scr_text("Dobrej, dneska na sekeru nebo mate penize?", "player")
 			scr_text("Dneska prisel duchod pane vrchni", "npc", _npc_id)
@@ -133,6 +129,12 @@ function scr_game_text(_text_id, _npc_id) { // ulozime text do text[page_number]
 			scr_text("Na co cumis", "npc", _npc_id)
 			break;
 			
+		case "obcanka":
+			scr_text("Poprosim vas ukazat obcansy prukaz", "player")
+			scr_text("tady ho mate", "npc", _npc_id)
+			oDialog.alarm[1] = 30
+			break;
+					
 		
 		case "sell":
 			instance_destroy(oDialog)
@@ -155,7 +157,7 @@ function scr_option(_option, _link_id) { // ukladani moznosti
 }
 
 function scr_automate_options() {
-	scr_option("Ukazte obcanku", "npc1 - obcanka")
+	scr_option("Ukazte obcanku", "obcanka")
 	scr_option("Prodat", "sell")
 }
 

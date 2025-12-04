@@ -1,8 +1,7 @@
 
 inputKey = keyboard_check_pressed(vk_space)
 
-textbox_x = camera_get_view_x(view_camera[0]) // x pozice text boxu
-textbox_y = camera_get_view_y(view_camera[0]) + 290 //y pozice text boxu
+
 
 
 if (setup == false) {

@@ -12,6 +12,8 @@ target_x = 0
 target_y = 0
 move_speed = 1
 
+page = 0
+
 is_waiting = false
 
 walked = 0

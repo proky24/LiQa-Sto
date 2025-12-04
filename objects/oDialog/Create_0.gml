@@ -1,6 +1,10 @@
 text_boxw = 550 //sirka textboxu
 text_boxh = 64 // vyska textboxu
 
+textbox_x = camera_get_view_x(view_camera[0]) // x pozice text boxu
+textbox_y = camera_get_view_y(view_camera[0]) + 290 //y pozice text boxu
+text_box_x_offset[0] = 0
+
 border = 8 // vzdalenost zdi od textu
 line_sep = 12 //
 line_width = text_boxw - border * 2

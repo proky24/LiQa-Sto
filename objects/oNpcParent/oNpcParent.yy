@@ -11,6 +11,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":3,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oNpcParent",
@@ -57,6 +58,9 @@
     {"$GMObjectProperty":"v2","%Name":"portrait","filters":[
         "GMSprite",
       ],"listItems":[],"multiselect":false,"name":"portrait","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"card_id","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"card_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"Sprite38","path":"sprites/Sprite38/Sprite38.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Sprite38","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

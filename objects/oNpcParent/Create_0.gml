@@ -12,6 +12,10 @@ target_x = 0
 target_y = 0
 move_speed = 1
 
+_x[0] = 0
+_y = 0
+offsetX = 0
+
 page = 0
 
 is_waiting = false

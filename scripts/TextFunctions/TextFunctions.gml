@@ -133,6 +133,7 @@ function scr_game_text(_text_id, _npc_id) { // ulozime text do text[page_number]
 			scr_text("Poprosim vas ukazat obcansy prukaz", "player")
 			scr_text("tady ho mate", "npc", _npc_id)
 			oDialog.alarm[1] = 30
+			scr_option("Deda", "deda")
 			break;
 					
 		

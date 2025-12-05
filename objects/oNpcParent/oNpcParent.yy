@@ -60,7 +60,7 @@
       ],"listItems":[],"multiselect":false,"name":"portrait","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"card_id","filters":[
         "GMSprite",
-      ],"listItems":[],"multiselect":false,"name":"card_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"Sprite38","path":"sprites/Sprite38/Sprite38.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Sprite38","varType":5,},
+      ],"listItems":[],"multiselect":false,"name":"card_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"sNpcId","path":"sprites/sNpcId/sNpcId.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sNpcId","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

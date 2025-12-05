@@ -6,7 +6,7 @@ function loop() {
 
 		if(oPultRight.collided == true && walked == array_length(waypoints) - 2) { //pokud má NPC namířeno ke kase a kasa je obsazená
 			target_x = oWaypoint.x
-			target_y = oWaypoint.y 	+ 8
+			target_y = oWaypoint.y + 8
 		} else {
 			target_x = waypoints[walked].x
 			target_y = waypoints[walked].y + 8

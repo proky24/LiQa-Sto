@@ -1,9 +1,6 @@
 
 inputKey = keyboard_check_pressed(vk_space)
 
-
-
-
 if (setup == false) {
 	setup = true
 	draw_set_font(global.font_main)

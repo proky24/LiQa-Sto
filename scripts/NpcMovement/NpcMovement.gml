@@ -16,6 +16,17 @@ function loop() {
 		path_start(path, move_speed, path_action_stop, true);
 }
 
+function return_products() {
+		if (path_exists(path)) path_delete(path);
+		path = path_add();
+		
+		target_x = waypoints[walked].x
+		target_y = waypoints[walked].y + 8
+		
+		mp_grid_path(grid, path, x, y, target_x, target_y, 0);
+		path_start(path, move_speed, path_action_stop, true);
+}
+
 function stop() {
 	if(can_buy || is_waiting) {
 		sprite_index = sprite_up

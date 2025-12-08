@@ -85,6 +85,7 @@
     {"id":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},},
     {"id":{"name":"NpcMovement","path":"scripts/NpcMovement/NpcMovement.yy",},},
+    {"id":{"name":"ProductDuplicate","path":"scripts/ProductDuplicate/ProductDuplicate.yy",},},
     {"id":{"name":"ShopManaging","path":"scripts/ShopManaging/ShopManaging.yy",},},
     {"id":{"name":"TextFunctions","path":"scripts/TextFunctions/TextFunctions.yy",},},
     {"id":{"name":"sAlert","path":"sprites/sAlert/sAlert.yy",},},

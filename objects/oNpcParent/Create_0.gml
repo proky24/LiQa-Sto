@@ -12,9 +12,8 @@ target_x = 0
 target_y = 0
 move_speed = 1
 
-_x[0] = 0
-_y = 0
-offsetX = 0
+two_products = false
+returning = false
 
 page = 0
 
@@ -37,7 +36,10 @@ var rnd = irandom(1)
 if (rnd < 1) {
 	array_delete(waypoints, 1, 1)
 	//pokud bude rnd 0 vymažeme product z pole waypoints
-}//
+}// 
+else {
+	two_products = true
+}
 
 
 path = path_add()

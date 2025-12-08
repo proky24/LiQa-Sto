@@ -167,6 +167,26 @@ function scr_game_text(_text_id, _npc_id) {
 			break;
 		
 		case "bribe - !":
+			scr_text("Zapomen, chces aby mi to tu zavreli?", "player")
+			scr_text("Ne, ja, eeh, to ne-", "npc", _npc_id)
+			scr_text("Prestan koktat a okamzite bez vratit ten chlast a jdi pryc!", "player")
+			scr_text("*smutne kouka*", "npc", _npc_id)
+			
+			scr_option("NE!", "bribe - !!")
+			scr_option("No tak jo", "bribe - ! - 1")
+			break;
+			
+		case "bribe - !!":
+			scr_text("NE! Rekl jsem ne, okamzite vrat ty veci a vypadni", "player")
+			/*npc_id.total_spend = 0
+			npc_id.waypoints[0].alarm[10] = 180
+			if (npc_id.two_products){
+				npc_id.waypoints[1].alarm[10] = 180
+			}
+			npc_id.can_buy = false
+			npc_id.is_waiting = false*/ //reseni ze se sami produktu doplni 
+			
+			npc_id.alarm[5] = 1
 			
 			break;
 		

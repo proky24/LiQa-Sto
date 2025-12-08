@@ -6,7 +6,7 @@ var id_width = sprite_get_width(card_id)
 _x = (_x + offsetX)
 _y = _y - (id_height) - 2
 
-var id_card = instance_create_depth(_x, _y, -99999, oNpcId)
+var id_card = instance_create_depth(_x, _y, -bbox_bottom, oNpcId)
 id_card.sprite_index = card_id 
 
 

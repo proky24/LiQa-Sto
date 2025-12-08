@@ -129,13 +129,32 @@ function scr_game_text(_text_id, _npc_id) { // ulozime text do text[page_number]
 			scr_text("Na co cumis", "npc", _npc_id)
 			break;
 			
-		case "obcanka":
+		case "id":
 			scr_text("Poprosim vas ukazat obcansy prukaz", "player")
 			scr_text("tady ho mate", "npc", _npc_id)
 			oDialog.alarm[1] = 30
-			scr_option("Deda", "deda")
+			scr_option("V poradku", "id - 1")
+			scr_option("V neporadku", "id - 0")
 			break;
 					
+		case "id - 1":
+		instance_destroy(oNpcId)
+			scr_text("Vse se zda byti v poradku", "player")
+			scr_text("Jsem cestny obcan", "npc", _npc_id)
+			
+			scr_option("blablabla", "blablabla")
+			scr_option("Prodat", "sell")	
+			break;
+			
+		case "id - 0":
+			instance_destroy(oNpcId)
+			scr_text("Tady mi neco nehraje", "player")
+			scr_text("Tak snad se nejak domluvime", "npc", _npc_id)
+			
+			scr_option("500", "bribe - 1")
+			scr_option("Zapomen", "bribe - 0")
+			break;
+			
 		
 		case "sell":
 			instance_destroy(oDialog)
@@ -158,7 +177,7 @@ function scr_option(_option, _link_id) { // ukladani moznosti
 }
 
 function scr_automate_options() {
-	scr_option("Ukazte obcanku", "obcanka")
+	scr_option("Ukazte obcanku", "id")
 	scr_option("Prodat", "sell")
 }
 

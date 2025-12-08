@@ -68,7 +68,8 @@ if (inputKey && !small_talk) {
 		
 		else { // dialog skoncil takze vypiseme moznosti
 			
-			if(options) { // pokud vubec nejake moznosti jsou
+			if(options) {// pokud vubec nejake moznosti jsou
+
 				create_textbox(option_link_id[option_pos], npc_id)// vytvorime je
 			}
 			instance_destroy() // pokud dialog skoncil znicime oDialog

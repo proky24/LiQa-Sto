@@ -3,7 +3,6 @@ if (page < page_number - 1) {
 	npc_id._x = textbox_x
 	npc_id.offsetX = text_box_x_offset[page]
 	npc_id._y = textbox_y
-	npc_id.can_buy = false
 	npc_id.alarm[4] = 120
 	
 	exit

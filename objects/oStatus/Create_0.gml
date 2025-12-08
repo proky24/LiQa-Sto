@@ -1,4 +1,4 @@
-positionx = 90
+positionx = 510
 positiony = 60
 
 hours = 8

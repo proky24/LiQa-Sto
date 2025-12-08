@@ -1,0 +1,1 @@
+scr_game_text("sell", npc_id)

@@ -14,7 +14,7 @@ function scr_set_default_for_text(){
 /// @param text
 /// @param speaker
 /// @param npc_id
-function scr_text(_text, speaker, _npc_id) {
+function scr_text(_text, speaker, _npc_id) {// ulozime text do text[page_number]   
 	
 	scr_set_default_for_text()
 	
@@ -37,6 +37,7 @@ function scr_text(_text, speaker, _npc_id) {
 				speaker_spr[page_number] = sPortraitPlayer
 				text_box_spr[page_number] = sPlayerTextBox
 				speaker_side[page_number] = -1
+				break;
 		}
 	}
 	
@@ -51,7 +52,7 @@ function scr_text(_text, speaker, _npc_id) {
 
 /// @param text_id
 /// @param npc_id
-function scr_game_text(_text_id, _npc_id) { // ulozime text do text[page_number]          
+function scr_game_text(_text_id, _npc_id) {        
 	switch (_text_id){
 		case "npc1":
 		scr_text("Dobry den", "npc", _npc_id) // prvni parametr = text, durhy parametr = kdo to rika
@@ -133,6 +134,7 @@ function scr_game_text(_text_id, _npc_id) { // ulozime text do text[page_number]
 			scr_text("Poprosim vas ukazat obcansy prukaz", "player")
 			scr_text("tady ho mate", "npc", _npc_id)
 			oDialog.alarm[1] = 30
+			
 			scr_option("V poradku", "id - 1")
 			scr_option("V neporadku", "id - 0")
 			break;
@@ -151,10 +153,22 @@ function scr_game_text(_text_id, _npc_id) { // ulozime text do text[page_number]
 			scr_text("Tady mi neco nehraje", "player")
 			scr_text("Tak snad se nejak domluvime", "npc", _npc_id)
 			
-			scr_option("500", "bribe - 1")
-			scr_option("Zapomen", "bribe - 0")
+			scr_option("Uplatek", "bribe - 1")
+			scr_option("Zapomen", "bribe - !")
+			scr_option("Prodat", "id - 2")
 			break;
 			
+		case "id - 2":
+			scr_text("Dneska mam dobrou naladu.. mas to mit", "player")
+			scr_text("Dekuju! dekuju moc!", "npc", _npc_id)
+			
+			scr_option("Prodat", "sell")
+			//oDialog.alarm[2] = 300
+			break;
+		
+		case "bribe - !":
+			
+			break;
 		
 		case "sell":
 			instance_destroy(oDialog)

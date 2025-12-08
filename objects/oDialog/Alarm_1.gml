@@ -1,14 +1,14 @@
-if (page < page_number - 1) {
-	npc_id.page = page 
-	npc_id._x = textbox_x
-	npc_id.offsetX = text_box_x_offset[page]
-	npc_id._y = textbox_y
-	npc_id.alarm[4] = 120
+if (page == page_number - 1) {
 	
+	var id_height = sprite_get_height(npc_id.card_id)
+	var id_width = sprite_get_width(npc_id.card_id)
+
+	_x = textbox_x + potrait_x_offset[page]
+	_y = textbox_y - (id_height) - 2
+
+	var id_card = instance_create_depth(_x, _y, -bbox_bottom, oNpcId)
+	id_card.sprite_index = npc_id.card_id 
 	exit
-	/*draw_sprite_ext(sWall, 1, 50, 60, 2, 3, 0, 0, 1)
-	show_debug_message("obcanka")
-	exit*/
 }
 
-alarm[1] = 1
+alarm[1] = 120

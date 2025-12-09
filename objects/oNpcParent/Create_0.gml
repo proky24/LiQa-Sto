@@ -1,5 +1,5 @@
 input_key = vk_space
-can_buy = false
+can_buy = false 
 can_talk = false
 
 image_alpha = 0

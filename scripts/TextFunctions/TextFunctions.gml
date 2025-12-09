@@ -184,17 +184,17 @@ function scr_game_text(_text_id, _npc_id) {
 				npc_id.waypoints[1].alarm[10] = 180
 			}
 			npc_id.can_buy = false
-			npc_id.is_waiting = false*/ //reseni ze se sami produktu doplni 
+			npc_id.is_waiting = false *///reseni ze se sami produktu doplni 
 			
-			npc_id.alarm[5] = 1
+			_npc_id.alarm[5] = 1
 			
 			break;
 		
 		case "sell":
 			instance_destroy(oDialog)
 			
-			npc_id.can_buy = false
-			npc_id.is_waiting = false
+			_npc_id.can_buy = false
+			_npc_id.is_waiting = false
 			oStatus.money += _npc_id.total_spend
 			
 			oPultRight.alarm[1] = 30
@@ -215,12 +215,12 @@ function scr_automate_options() {
 	scr_option("Prodat", "sell")
 }
 
-function create_textbox(_text_id, _npc_id, _small_talk) { // vytvoreni dialogu s textem
+function create_textbox(_text_id, _npc_id) { // vytvoreni dialogu s textem
 	with (instance_create_depth(0, 0, -9999, oDialog)) {
 		oDialog.npc_id = _npc_id
-		if(_small_talk) {
+		/*if(_small_talk) {
 			oDialog.small_talk = true
-		}
+		}*/
 		scr_game_text(_text_id, _npc_id)
 	}
 }

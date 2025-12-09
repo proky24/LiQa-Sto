@@ -10,3 +10,4 @@ if (floor(y) < floor(yprevious)) {
 if (floor(y) > floor(yprevious)) {
 	sprite_index = sprite_down
 }
+

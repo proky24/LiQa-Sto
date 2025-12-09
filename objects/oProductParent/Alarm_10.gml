@@ -6,5 +6,5 @@ if (yes) {
 }
 
 npc.is_waiting = false
-npc.alarm[6] = 1
+npc.alarm[2] = 1
 alarm[1] = 60

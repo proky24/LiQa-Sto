@@ -1,5 +1,6 @@
 if (yes) { //pokud NPC chce produkt dvakrát odečteme dva produkty
 	image_index -= 2
+	yes = false
 
 } else {
 	image_index --

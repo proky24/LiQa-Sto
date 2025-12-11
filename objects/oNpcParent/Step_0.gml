@@ -22,7 +22,7 @@ if (is_waiting) {
 }
 
 //pokud NPC došlo k target_x a target_y aktualizuje si cestu 
-if (point_distance(x, y, target_x, target_y) < 2) {
+if (point_distance(x, y, target_x, target_y) < 1) {
 	loop()
 }
 

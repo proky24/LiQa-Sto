@@ -1,5 +1,5 @@
 //pokud už produkt je obsazen nebo NPC pouze prochází nic se neděje
-if (collided || abs(other.target_x - x) > 1) {exit}
+if (collided || abs(other.target_x - x) > 1) {exit} 
 
 collided = true
 npc = other
@@ -32,3 +32,4 @@ if(npc.returning) {
 		alarm[0] = 90 
 	}
 }
+

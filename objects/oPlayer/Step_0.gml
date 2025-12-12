@@ -5,8 +5,8 @@ var left = keyboard_check(ord("A"));
 var up = keyboard_check(ord("W"));
 var down = keyboard_check(ord("S"));
 
-xspd = (right - left) * moveSpd;
-yspd = (down - up) * moveSpd;
+xspd = (right - left) * move_speed;
+yspd = (down - up) * move_speed;
 
 
 if (place_meeting(x + xspd, y, oCollision)) {

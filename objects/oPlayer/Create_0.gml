@@ -1,4 +1,4 @@
-moveSpd = 1
+move_speed = 1
 xspd = 0
 yspd = 0
 

@@ -1,1 +1,1 @@
-show_debug_message(idk)
+show_debug_message(string(idk))

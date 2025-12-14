@@ -6,7 +6,7 @@
   "name":"oBeer_1",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oProductParent","path":"objects/oProductParent/oProductParent.yy",},"propertyId":{"name":"price","path":"objects/oProductParent/oProductParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oProductParent","path":"objects/oProductParent/oProductParent.yy",},"propertyId":{"name":"name","path":"objects/oProductParent/oProductParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Plzen",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oProductParent","path":"objects/oProductParent/oProductParent.yy",},"propertyId":{"name":"name","path":"objects/oProductParent/oProductParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"DeathTongue",},
   ],
   "parent":{
     "name":"Furniture",
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBeer",
-    "path":"sprites/sBeer/sBeer.yy",
+    "name":"sBeer_1",
+    "path":"sprites/sBeer_1/sBeer_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

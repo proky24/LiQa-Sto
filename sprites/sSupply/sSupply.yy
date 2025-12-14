@@ -19,7 +19,7 @@
   "height":16,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"6dcd8460-e810-48ed-a314-096fe1f800af","blendMode":0,"displayName":"default","isLocked":false,"name":"6dcd8460-e810-48ed-a314-096fe1f800af","opacity":65.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"6dcd8460-e810-48ed-a314-096fe1f800af","blendMode":0,"displayName":"default","isLocked":false,"name":"6dcd8460-e810-48ed-a314-096fe1f800af","opacity":80.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sSupply",
   "nineSlice":null,

@@ -1,3 +1,4 @@
+draw_set_colour(c_white)
 positionx = 510
 positiony = 60
 

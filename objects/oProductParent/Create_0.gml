@@ -6,3 +6,5 @@ npc = 0
 yes = false
 
 showing = false
+
+max_supplies = image_index

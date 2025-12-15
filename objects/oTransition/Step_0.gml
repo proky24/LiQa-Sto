@@ -4,7 +4,6 @@ if (room == target_room && image_index < 1) {
 		
 		
 		oComputer.money = money
-		oComputer.alarm[0] = 1
 		oStocksSaving.alarm[0] = 1
 		//oBackSpace.player_x = player_x
 		//oBackSpace.player_y = player_y

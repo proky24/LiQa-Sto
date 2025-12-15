@@ -1,14 +1,16 @@
-
 /// @param product
-function draw_count(product){
+/// @param e
+function draw_count(product, e){
 	var money = oComputer.money
-	if (money - product.price < 0 || product.ordering >= product.max_stock) {
-		return
+	if (money - product.price < 0) {
+		if (e == "plus") {
+			oComputer.money -= product.price 
+			product.ordering ++
+		}
 	} else {
-		oComputer.money -= product.price 
-		product.ordering ++
-		
-	}
-	//draw_text(_x, _y, )
-	
+		 else {
+			oComputer.money += product.price 
+			product.ordering --
+		}
+	} 
 }

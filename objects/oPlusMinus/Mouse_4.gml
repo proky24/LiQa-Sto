@@ -1,1 +1,1 @@
-draw_count(product)
+draw_count(product, operation)

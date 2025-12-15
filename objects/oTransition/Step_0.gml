@@ -5,12 +5,13 @@ if (room == target_room && image_index < 1) {
 		
 		oComputer.money = money
 		oComputer.alarm[0] = 1
-		
+		oStocksSaving.alarm[0] = 1
 		//oBackSpace.player_x = player_x
-		//BackSpace.player_y = player_y
+		//oBackSpace.player_y = player_y
 	} else {
-		//instance_create_depth(player_x, player_y, -bbox_bottom,oPlayer)
-
+		/*oPlayer.x = player_x
+		oPlayer.y = player_y
+		oPlayer.face = DOWN*/
 	}
 
 	instance_destroy(self)

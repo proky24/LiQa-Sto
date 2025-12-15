@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Transition",
+  "%Name":"GetCurrSotck",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Transition",
+  "name":"GetCurrSotck",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Getting stocks",
+    "path":"folders/Scripts/Getting stocks.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

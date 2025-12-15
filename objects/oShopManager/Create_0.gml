@@ -12,5 +12,9 @@ opened = false
 rnd = 0
 
 npcs = [oNpc, oNpc2]
+products = [oShelf, oBeer_1, oBeer]
+
+
+
 spawned = 0
 randomise()

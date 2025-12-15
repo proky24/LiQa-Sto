@@ -1,1 +1,1 @@
-draw_count(count_x, count_y, product)
+draw_count(product)

@@ -6,7 +6,7 @@ image_alpha = 0
 
 total_spend = 0
 
-products = [oShelf, oBeer_1, oBeer]
+products = oShopManager.products
 waypoints = [0, 0, wp_cashier, wp_exit]
 target_x = 0
 target_y = 0
@@ -17,9 +17,7 @@ move_speed = 1
 
 for (var p = 0; p < 2; p++) {
 	var product1 = irandom(array_length(products) - 1)
-	show_debug_message(string(products[product1]) + " chosen product")
 	waypoints[p] = products[product1]
-	show_debug_message(string(waypoints[p]) + " written in waypoints index " + string(p))
 }
 two_products = false
 returning = false
@@ -38,7 +36,6 @@ waypoints_len = array_length(waypoints)
 var rnd = irandom(1)
 if (rnd < 1) {
 	array_delete(waypoints, 1, 1)
-	show_debug_message("deleted")
 	//pokud bude rnd 0 vymažeme product z pole waypoints
 }// 
 else {

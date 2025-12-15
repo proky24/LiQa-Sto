@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"DrawCount",
+  "%Name":"SaveCurrStock",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"DrawCount",
+  "name":"SaveCurrStock",
   "parent":{
-    "name":"Drawing",
-    "path":"folders/Scripts/Drawing.yy",
+    "name":"Getting stocks",
+    "path":"folders/Scripts/Getting stocks.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

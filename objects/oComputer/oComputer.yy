@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sMonitor",
-    "path":"sprites/sMonitor/sMonitor.yy",
+    "name":"sComputerO",
+    "path":"sprites/sComputerO/sComputerO.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -4,12 +4,19 @@
   "eventList":[],
   "managed":true,
   "name":"oBeerD",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStocksParent","path":"objects/oStocksParent/oStocksParent.yy",},"propertyId":{"name":"curr_stock","path":"objects/oStocksParent/oStocksParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStocksParent","path":"objects/oStocksParent/oStocksParent.yy",},"propertyId":{"name":"max_stock","path":"objects/oStocksParent/oStocksParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"6",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStocksParent","path":"objects/oStocksParent/oStocksParent.yy",},"propertyId":{"name":"price","path":"objects/oStocksParent/oStocksParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
+  ],
   "parent":{
     "name":"Products",
     "path":"folders/Objects/Computer/Products.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oStocksParent",
+    "path":"objects/oStocksParent/oStocksParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -1,7 +1,7 @@
 function draw_supplies(){
 
 	var height = sprite_get_height(sprite_index)
-	if (sprite_index == sBeer) {height += 6}
+	if (sprite_index == sBeer ||sprite_index == sBeer_1) {height += 6}
 	
 	var _y =  y - (height * 1.2)
 	

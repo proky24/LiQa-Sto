@@ -12,6 +12,7 @@ money = 0
 
 fast_delivery = false
 delivery_day = 0
+delivery_hour = 0
 
 rnd = 0
 

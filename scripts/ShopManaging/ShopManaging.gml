@@ -3,12 +3,13 @@ function start_day() {
 	if (minutes == 60) {
 		minutes = 0
 		hours ++
-	}
-	
-	if (hours == 18) {
+	} else if(delivery_hour == hours && delivery_day == day){
+		alarm[3] = 1
+	} else if (hours == 18) {
 		opened = false
 		alarm[0] = 1
 		exit
 	} 
+	
 		alarm[1] = 5
 }

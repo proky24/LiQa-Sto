@@ -2,9 +2,9 @@ if (!opened) {
 	//recapitulation() 
 	// ale zatim takhle 
 	
-	/*if (delivery_day == day) {
+	if (delivery_day == day) {
 		oStocksSaving.alarm[1] = 1
-	}*/
+	}
 	
 	image_index = 0
 

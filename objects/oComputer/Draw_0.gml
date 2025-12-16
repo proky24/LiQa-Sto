@@ -1,4 +1,5 @@
 draw_set_colour(c_green)
 //draw_text_transformed(0,0, string(idk), 0, 0, 0)
-draw_text(350, 30, string(money))
+var text = "$" + string(money)
+draw_text(350, 30, text)
 draw_set_colour(c_white)

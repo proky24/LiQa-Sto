@@ -6,10 +6,9 @@ function start_day() {
 	}
 	
 	if (hours == 18) {
-		closed = true
+		opened = false
+		alarm[0] = 1
 		exit
 	} 
-
-		alarm[1] = 10
-
+		alarm[1] = 5
 }

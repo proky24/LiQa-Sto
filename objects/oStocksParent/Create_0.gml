@@ -1,1 +1,1 @@
-ordering = 0
+ordering = 0 // promenna pro ukazku kolik hrac objednava

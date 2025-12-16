@@ -5,10 +5,12 @@ positiony = 60
 hours = 8
 minutes = 0
 money = 0
-day = 1
+day = 0
 
 opened = false
-closed = false
+
+fast_delivery = false
+delivery_day = 0
 
 rnd = 0
 

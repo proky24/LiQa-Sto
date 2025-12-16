@@ -1,6 +1,6 @@
 if (!opened) {
 	opened = true
-	startDay()
+	start_day()
 	image_index = 1
 	rnd = floor(random(600))
 	alarm[0] = rnd

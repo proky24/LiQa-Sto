@@ -8,6 +8,7 @@ money = 0
 day = 1
 
 opened = false
+closed = false
 
 rnd = 0
 

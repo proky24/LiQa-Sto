@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"GetCurrSotck",
+  "%Name":"getOrder",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"GetCurrSotck",
+  "name":"getOrder",
   "parent":{
     "name":"Getting stocks",
     "path":"folders/Scripts/Getting stocks.yy",

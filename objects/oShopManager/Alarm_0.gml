@@ -1,3 +1,4 @@
+if (closed) {exit}
 if (spawned == 2) { //limit spawnutých NPC, pokud je 2 další NPC nespawnuju
 	alarm[0] = 60
 	exit

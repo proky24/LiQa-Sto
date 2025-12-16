@@ -4,10 +4,11 @@ positiony = 60
 
 hours = 8
 minutes = 0
-money = 0
 day = 0
 
 opened = false
+
+money = 0
 
 fast_delivery = false
 delivery_day = 0

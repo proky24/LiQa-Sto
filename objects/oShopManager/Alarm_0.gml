@@ -4,6 +4,7 @@ if (!opened) {
 	
 	if (delivery_day == day) {
 		oStocksSaving.alarm[1] = 1
+		delivery_day = 0
 	}
 	
 	image_index = 0

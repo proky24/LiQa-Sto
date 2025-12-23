@@ -8,7 +8,7 @@ day = 0
 
 opened = false
 
-money = 0
+money = 100
 
 fast_delivery = false
 delivery_day = 0

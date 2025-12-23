@@ -11,5 +11,5 @@ function start_day() {
 		exit
 	} 
 	
-		alarm[1] = 5
+		alarm[1] = 1
 }

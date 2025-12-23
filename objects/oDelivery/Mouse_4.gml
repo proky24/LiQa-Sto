@@ -1,3 +1,4 @@
+if (disabled) {exit}
 var diff =  oComputer.money - price
 if (!fast_delivery && oCart.image_index == 1 && diff > 0 ) {
 	fast_delivery = true

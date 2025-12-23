@@ -1,4 +1,5 @@
 saved_curr_stocks = []
-stock_products = [oLiverOfFlame, oBeerC1, oBeerC]
+stock_products = [oLiverOfFlame, oBeerC, oBeerC1]
 
-saved_order = []
+saved_order = [0, 0, 0]
+ordered = false

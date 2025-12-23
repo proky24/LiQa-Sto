@@ -6,7 +6,7 @@ function draw_supplies(){
 	var _y =  y - (height * 1.2)
 	var _x = x - 6.5
 	
-	var text = string(image_index) + "/" + string(max_supplies)
+	var text = string(image_index) + "/" + string(max_stock)
 	draw_sprite(sSupply, 1, x, _y)
 	draw_text(_x, _y - 4, text)
 	

@@ -11,3 +11,6 @@ instance_create_depth(240, 120, -bbox_bottom, oBoxRight)
 var cargo = instance_create_depth(224, 128, -bbox_bottom, oBoxDown) 
 cargo.cargo = saved_order
 
+saved_order = [0, 0, 0]
+saved_curr_stocks = []
+ordered = false

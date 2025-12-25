@@ -8,6 +8,3 @@ if (yes) {
 npc.is_waiting = false
 npc.alarm[2] = 1
 alarm[1] = 60
-
-
-//komentar

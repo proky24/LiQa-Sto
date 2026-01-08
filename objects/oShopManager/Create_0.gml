@@ -12,14 +12,17 @@ money = 100
 
 fast_delivery = false
 delivery_day = 0
-//delivery_hour = 0
 
 rnd = 0
 
+rep = 0
+max_rep = 5
+
+trend = ""
+end_trend_day = 0
+
 npcs = [oNpc, oNpc2]
 products = [oShelf, oBeer_1, oBeer]
-
-
 
 spawned = 0
 randomise()

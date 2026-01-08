@@ -13,3 +13,10 @@ function start_day() {
 	
 		alarm[1] = 1
 }
+
+function set_trend() {
+	var product = products[irandom(array_length(products) - 1)]
+	
+	trend = product.name
+	end_trend_day = day + 3
+}

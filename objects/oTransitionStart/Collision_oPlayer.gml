@@ -1,5 +1,5 @@
 // zacenme prechod pokud mame zavreno
-if (!instance_exists(oTransition) && !oShopManager.opened ) {
+if (!instance_exists(oTransition) ) {
 	// ulozime momentalni zasoby produktu
 	save_curr_stock() 
 	

@@ -11,16 +11,18 @@ function start_day() {
 		exit
 	} 
 	
-		alarm[1] = 1
+		alarm[1] = 10
 }
 
 function set_trend() {
-	var product = products[irandom(array_length(products) - 1)]
+	var rnd = irandom(array_length(products) - 1)
+	var product = products[rnd]
+	trend_p = rnd
 	
 	var name = product.name
 	end_trend_day = day + 3
 	
-	var text = "Do dne: " + $"{end_trend_day}" + " je " + $"{name}" + " trendy!"
+	var text = "Do dne " + $"{end_trend_day}" + " je " + $"{name}" + " trendy!"
 	trend = text
 	
 }

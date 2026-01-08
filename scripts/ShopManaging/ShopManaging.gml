@@ -17,6 +17,10 @@ function start_day() {
 function set_trend() {
 	var product = products[irandom(array_length(products) - 1)]
 	
-	trend = product.name
+	var name = product.name
 	end_trend_day = day + 3
+	
+	var text = "Do dne: " + $"{end_trend_day}" + " je " + $"{name}" + " trendy!"
+	trend = text
+	
 }

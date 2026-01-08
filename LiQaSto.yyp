@@ -147,6 +147,7 @@
     {"id":{"name":"sPortraitPlayer","path":"sprites/sPortraitPlayer/sPortraitPlayer.yy",},},
     {"id":{"name":"sPultLeft","path":"sprites/sPultLeft/sPultLeft.yy",},},
     {"id":{"name":"sPultRight","path":"sprites/sPultRight/sPultRight.yy",},},
+    {"id":{"name":"sReputation_1","path":"sprites/sReputation_1/sReputation_1.yy",},},
     {"id":{"name":"sReputation","path":"sprites/sReputation/sReputation.yy",},},
     {"id":{"name":"sShelf","path":"sprites/sShelf/sShelf.yy",},},
     {"id":{"name":"sShopTleSet","path":"sprites/sShopTleSet/sShopTleSet.yy",},},

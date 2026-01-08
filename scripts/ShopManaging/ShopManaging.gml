@@ -1,4 +1,6 @@
 function start_day() {
+	
+	
 	minutes ++ 
 	if (minutes == 60) {
 		minutes = 0
@@ -25,4 +27,19 @@ function set_trend() {
 	var text = "Do dne " + $"{end_trend_day}" + " je " + $"{name}" + " trendy!"
 	trend = text
 	
+}
+
+/// @param npc_id
+function add_money_rep(npc_id) {
+	oShopManager.money += npc_id.total_spend
+	
+	var rep = 0
+	
+	if (npc_id.age >= 18) {
+		rep += 5
+	} else {
+		rep += 15
+	}
+	
+	oShopManager.rep = rep
 }

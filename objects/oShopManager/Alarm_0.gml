@@ -7,6 +7,7 @@ if (!opened) {
 		delivery_day = 0
 	}
 	
+	
 	image_index = 0
 
 } else {

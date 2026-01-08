@@ -195,7 +195,9 @@ function scr_game_text(_text_id, _npc_id) {
 			
 			_npc_id.can_buy = false
 			_npc_id.is_waiting = false
-			oShopManager.money += _npc_id.total_spend
+			
+			
+			add_money_rep(_npc_id)
 			
 			oPultRight.alarm[1] = 30
 	}

@@ -12,6 +12,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"buy_dialog","path":"objects/oNpcParent/oNpcParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"npc1",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"portrait","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sPortraitNpc","path":"sprites/sPortraitNpc/sPortraitNpc.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sPortraitNpc",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"dialog","path":"objects/oNpcParent/oNpcParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"facka",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"age","path":"objects/oNpcParent/oNpcParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"18",},
   ],
   "parent":{
     "name":"Npcs",

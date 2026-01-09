@@ -46,7 +46,7 @@ walked = 0
 
 grid = 0
 
-waypoints_len = array_length(waypoints)
+
 
 //50% šance na to že NPC si půjde pro druhý produkt
 var rnd = irandom(1) 
@@ -59,6 +59,7 @@ else {
 	two_products = true
 }
 
+waypoints_len = array_length(waypoints)
 
 path = path_add()
 

@@ -38,8 +38,29 @@ function add_money_rep(npc_id) {
 	if (npc_id.age >= 18) {
 		rep += 5
 	} else {
-		rep += 15
+		rep += 10
 	}
 	
-	oShopManager.rep = rep
+	oShopManager.rep += rep
+}
+
+
+/// @param reason
+function decrease_rep(reason) {
+	var rep = 0
+	switch (reason) {
+		case "age":
+			rep = 5
+		break;
+		
+		case "trend":
+			rep = 7
+		break;
+		
+		case "age_b":
+			rep = 10
+		break;
+	}
+	
+	oShopManager.rep -= rep
 }

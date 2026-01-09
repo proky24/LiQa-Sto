@@ -18,4 +18,4 @@ draw_sprite_stretched(sReputation_1, 0, positionx, _y, _w, _h)
 
 //actuall rep
  _w = _w * (rep / max_rep)
-draw_sprite_stretched_ext(sReputation_1, 0, positionx, _y, _w, _h, c_blue, 0.8)
+draw_sprite_stretched_ext(sReputation_1, 0, positionx, _y, _w, _h, c_aqua, 0.8)

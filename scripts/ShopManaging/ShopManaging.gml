@@ -51,7 +51,7 @@ function decrease_rep(reason) {
 	var rep = 0
 	switch (reason) {
 		case "age":
-			rep = -5
+			rep = -10
 		break;
 		
 		case "trend":
@@ -68,7 +68,7 @@ function decrease_rep(reason) {
 
 /// @param rep
 function check_rep(rep) {
-	if (oShopManager.rep - rep < 0) {
+	if (rep < 0 && oShopManager.rep - rep < 0) {
 		oShopManager.rep = 0
 	}  else if (oShopManager.rep + rep > oShopManager.max_rep) {
 		oShopManager.rep = oShopManager.max_rep

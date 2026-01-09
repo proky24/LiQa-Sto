@@ -52,7 +52,6 @@ grid = 0
 var rnd = irandom(1) 
 if (rnd < 1) {
 	array_delete(waypoints, 0, 1)
-	show_debug_message("deleted trend")
 	//pokud bude rnd 0 vymažeme product z pole waypoints
 }// 
 else {

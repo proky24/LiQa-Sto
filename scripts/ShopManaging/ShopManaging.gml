@@ -19,6 +19,7 @@ function start_day() {
 function set_trend() {
 	var rnd = irandom(array_length(products) - 1)
 	var product = products[rnd]
+	//product.alarm[2] = 1
 	trend_p = rnd
 	
 	var name = product.name
@@ -36,12 +37,12 @@ function add_money_rep(npc_id) {
 	var rep = 0
 	
 	if (npc_id.age >= 18) {
-		rep += 5
+		rep = 5
 	} else {
-		rep += 10
+		rep = 10
 	}
 	
-	oShopManager.rep += rep
+	check_rep(rep)
 }
 
 
@@ -50,17 +51,30 @@ function decrease_rep(reason) {
 	var rep = 0
 	switch (reason) {
 		case "age":
-			rep = 5
+			rep = -5
 		break;
 		
 		case "trend":
-			rep = 7
+			rep = -7
 		break;
 		
 		case "age_b":
-			rep = 10
+			rep = -10
 		break;
 	}
 	
-	oShopManager.rep -= rep
+	check_rep(rep)
+}
+
+/// @param rep
+function check_rep(rep) {
+	if (oShopManager.rep - rep < 0) {
+		oShopManager.rep = 0
+	}  else if (oShopManager.rep + rep > oShopManager.max_rep) {
+		oShopManager.rep = oShopManager.max_rep
+	} else {
+		oShopManager.rep += rep
+	}
+	
+	
 }

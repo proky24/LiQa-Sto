@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Script11",
+  "%Name":"DrawTrend",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Script11",
+  "name":"DrawTrend",
   "parent":{
     "name":"Drawing",
     "path":"folders/Scripts/Drawing.yy",

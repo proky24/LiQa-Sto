@@ -21,7 +21,7 @@ if (!opened) {
 	instance_create_depth(440, 310, 0, npcs[rnd]) //vytvoření random NPC z pole
 	spawned ++
 
-	rnd = floor(random(600))
+	rnd = floor(random(600)) * (rep / max_rep)
 	alarm[0] = rnd
 
 }

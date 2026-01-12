@@ -5,4 +5,6 @@ collided = false
 npc = 0
 yes = false
 
+trend = false
+
 showing = false

@@ -11,5 +11,7 @@ if (!opened) {
 	
 	image_index = 1
 	rnd = floor(random(600))
+	//show_debug_message("spawn " + string(rnd / 60) +"s")
 	alarm[0] = rnd
+
 }

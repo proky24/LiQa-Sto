@@ -1,3 +1,4 @@
-function draw_goldscar() {
-	draw_ellipse(1, 1, 3, 3, true)
+function draw_trend() {
+	var w = sprite_get_width(sprite_index)
+	draw_sprite(sAlert, 0, 16, 16)
 }

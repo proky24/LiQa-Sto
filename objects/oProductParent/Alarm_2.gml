@@ -1,1 +1,1 @@
-draw_goldscar()
+draw_trend()

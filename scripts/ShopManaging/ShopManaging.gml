@@ -19,7 +19,7 @@ function start_day() {
 function set_trend() {
 	var rnd = irandom(array_length(products) - 1)
 	var product = products[rnd]
-	//product.alarm[2] = 1
+	product.alarm[2] = 1
 	trend_p = rnd
 	
 	var name = product.name

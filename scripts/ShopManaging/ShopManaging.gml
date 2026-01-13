@@ -51,7 +51,7 @@ function decrease_rep(reason) {
 	var rep = 0
 	switch (reason) {
 		case "age":
-			rep = -10
+			rep = -5
 		break;
 		
 		case "trend":

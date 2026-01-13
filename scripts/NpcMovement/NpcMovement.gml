@@ -1,6 +1,6 @@
 function loop() {
 	if(is_waiting) {exit} //pokud NPC čeká nic se neděje
-		//if (path_exists(path)) path_delete(path);
+		if (path_exists(path)) path_delete(path);
 		path = path_add();
 		
 		//pokud má NPC namířeno ke kase a kasa je obsazená

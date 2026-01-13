@@ -23,9 +23,9 @@ if (!opened) {
 	
 	
 	var spawn_rate = lerp(2, 1, rep / max_rep)
-	show_debug_message(string(spawn_rate))
+	//show_debug_message(string(spawn_rate))
 	rnd = irandom(600)
 	alarm[0] = rnd * spawn_rate
-	show_debug_message("next spawn " + string(rnd / 60) + "s")
+	//show_debug_message("next spawn " + string(rnd / 60) + "s")
 
 }

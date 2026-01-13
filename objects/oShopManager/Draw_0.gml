@@ -3,7 +3,10 @@ draw_self()
 draw_sprite(sUI, 0, positionx, positiony)
 draw_set_font(global.font_main)
 
-draw_text(positionx + 10, positiony + 15,  string(hours) + ":" + string(minutes))
+var mm = string(minutes);
+if (minutes < 10) mm = "0" + mm;
+
+draw_text(positionx + 10, positiony + 15,  string(hours) + ":" + string(mm))
 draw_text(positionx + 10, positiony + 35, "den " + string(day))
 draw_text(positionx + 10, positiony + 55, "rozpocet " + string(money))
 

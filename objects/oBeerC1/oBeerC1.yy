@@ -6,12 +6,12 @@
   "name":"oBeerC1",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStocksParent","path":"objects/oStocksParent/oStocksParent.yy",},"propertyId":{"name":"curr_stock","path":"objects/oStocksParent/oStocksParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStocksParent","path":"objects/oStocksParent/oStocksParent.yy",},"propertyId":{"name":"max_buy","path":"objects/oStocksParent/oStocksParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"6",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStocksParent","path":"objects/oStocksParent/oStocksParent.yy",},"propertyId":{"name":"max_stock","path":"objects/oStocksParent/oStocksParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"6",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStocksParent","path":"objects/oStocksParent/oStocksParent.yy",},"propertyId":{"name":"price","path":"objects/oStocksParent/oStocksParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStocksParent","path":"objects/oStocksParent/oStocksParent.yy",},"propertyId":{"name":"name","path":"objects/oStocksParent/oStocksParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":" SlichtaMaister",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStocksParent","path":"objects/oStocksParent/oStocksParent.yy",},"propertyId":{"name":"link","path":"objects/oStocksParent/oStocksParent.yy",},"resource":{"name":"oBeer_1","path":"objects/oBeer_1/oBeer_1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"oBeer_1",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStocksParent","path":"objects/oStocksParent/oStocksParent.yy",},"propertyId":{"name":"ordering_y","path":"objects/oStocksParent/oStocksParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"252",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStocksParent","path":"objects/oStocksParent/oStocksParent.yy",},"propertyId":{"name":"max_stock","path":"objects/oStocksParent/oStocksParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"6",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStocksParent","path":"objects/oStocksParent/oStocksParent.yy",},"propertyId":{"name":"max_buy","path":"objects/oStocksParent/oStocksParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"6",},
   ],
   "parent":{
     "name":"Products",

@@ -6,6 +6,7 @@
 
 */
 
+//vytvorime krabice se kterymi hrac muze interagovat a vymazeme ulozene objednavky
 instance_create_depth(224, 112, -bbox_bottom, oBoxTop) 
 instance_create_depth(240, 120, -bbox_bottom, oBoxRight) 
 var cargo = instance_create_depth(224, 128, -bbox_bottom, oBoxDown) 

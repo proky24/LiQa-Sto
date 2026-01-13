@@ -15,7 +15,7 @@ delivery_day = 0
 
 rnd = 0
 
-rep = 50
+rep = 0
 max_rep = 90
 
 trend = ""

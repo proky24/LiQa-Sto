@@ -133,7 +133,7 @@ function scr_game_text(_text_id, _npc_id) {
 		case "id":
 			scr_text("Poprosim vas ukazat obcansy prukaz", "player")
 			scr_text("tady ho mate", "npc", _npc_id)
-			oDialog.alarm[1] = 30
+			oDialog.alarm[1] = 5
 			
 			scr_option("V poradku", "id - 1")
 			scr_option("V neporadku", "id - 0")

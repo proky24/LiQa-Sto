@@ -1,6 +1,5 @@
 function start_day() {
 	
-	
 	minutes ++ 
 	if (minutes == 60) {
 		minutes = 0
@@ -13,7 +12,7 @@ function start_day() {
 		exit
 	} 
 	
-		alarm[1] = 1
+		alarm[1] = 10
 }
 
 function set_trend() {
@@ -23,7 +22,8 @@ function set_trend() {
 	trend_p = rnd
 	
 	var name = product.name
-	end_trend_day = day + 3
+	rnd = irandom_range(1, 3)
+	end_trend_day = day + rnd
 	
 	var text = "Do dne " + $"{end_trend_day}" + " je " + $"{name}" + " trendy!"
 	trend = text
@@ -55,7 +55,7 @@ function decrease_rep(reason) {
 		break;
 		
 		case "trend":
-			rep = -7
+			rep = -3
 		break;
 		
 		case "age_b":

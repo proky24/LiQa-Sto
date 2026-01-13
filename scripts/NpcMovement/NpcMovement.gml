@@ -1,10 +1,10 @@
 function loop() {
 	if(is_waiting) {exit} //pokud NPC čeká nic se neděje
-		if (path_exists(path)) path_delete(path);
+		//if (path_exists(path)) path_delete(path);
 		path = path_add();
 		
-
-		if(oPultRight.collided == true && walked == array_length(waypoints) - 2 && !returning) { //pokud má NPC namířeno ke kase a kasa je obsazená
+		//pokud má NPC namířeno ke kase a kasa je obsazená
+		if(oPultRight.collided == true && walked == array_length(waypoints) - 2 && !returning) { 
 			target_x = oWaypoint.x
 			target_y = oWaypoint.y + 8
 		} else {
@@ -19,7 +19,7 @@ function loop() {
 function stop() {
 	if(can_buy || is_waiting) {
 		sprite_index = sprite_up
-	} else {
+	}/* else {
 		switch (oPlayer.face) {
 		case 0:
 			sprite_index = sprite_left
@@ -34,7 +34,7 @@ function stop() {
 			sprite_index = sprite_up
 			break;	
 		}
-	}
+	}*/
 	
 	
 

@@ -10,7 +10,6 @@ if(npc.returning) {
 	alarm[10] = 90
 } else {
 	
-
 	//pokud došli produkty
 	if (image_index == 0) {
 		if(npc.total_spend == 0 || array_length(npc.waypoints) < 4) { //pokud NPC nemá u sebe jiný produkt nebo nemá vybraný jiný odejde
@@ -21,15 +20,14 @@ if(npc.returning) {
 		alarm[0] = 90
 	
 		exit
-	} else {
-		if(product_duplicate(npc)) {} else {
-		 //posuneme walked na další waypoint a přičteme cenu produktu
-			npc.walked ++
-			npc.total_spend += price
-			
-		}
+	} else if (!product_duplicate(npc)) {
 		
-		alarm[0] = 90 
+		//posuneme walked na další waypoint a přičteme cenu produktu
+		npc.walked ++
+		npc.total_spend += price
+		
+		//alarm[0] = 90 
 	}
+	alarm[0] = 90
 }
 

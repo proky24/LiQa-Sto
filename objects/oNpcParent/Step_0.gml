@@ -1,6 +1,5 @@
 //pokud existuje objekt oDialog a je směrován na NPC
 if(instance_exists(oDialog) && oDialog.npc_id == id) {
-	
 	stop()
 	exit
 }

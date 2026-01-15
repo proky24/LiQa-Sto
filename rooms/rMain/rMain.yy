@@ -63,6 +63,7 @@
     {"name":"inst_330F86B8","path":"rooms/rMain/rMain.yy",},
     {"name":"inst_56C23CEF","path":"rooms/rMain/rMain.yy",},
     {"name":"inst_1B920EE","path":"rooms/rMain/rMain.yy",},
+    {"name":"inst_6A58A2D0","path":"rooms/rMain/rMain.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -126,6 +127,7 @@
         {"$GMRInstance":"v4","%Name":"inst_20712978","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_20712978","objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":144.0,},
         {"$GMRInstance":"v4","%Name":"inst_56C23CEF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_56C23CEF","objectId":{"name":"oStocksSaving","path":"objects/oStocksSaving/oStocksSaving.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":-16.0,},
         {"$GMRInstance":"v4","%Name":"inst_1B920EE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1B920EE","objectId":{"name":"oEntrence","path":"objects/oEntrence/oEntrence.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":2.625,"x":369.0,"y":214.0,},
+        {"$GMRInstance":"v4","%Name":"inst_6A58A2D0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6A58A2D0","objectId":{"name":"oNpc","path":"objects/oNpc/oNpc.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":432.0,"y":288.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"shop","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"shop","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":27,"SerialiseWidth":40,"TileCompressedData":[
           -133,-2147483648,1,198,-12,135,3,167,0,0,-24,-2147483648,2,104,331,-4,7,10,266,7,456,7,363,7,394,102,

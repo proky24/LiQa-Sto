@@ -9,7 +9,6 @@ total_spend = 0
 products = oShopManager.products
 trend_p = oShopManager.trend_p
 
-
 waypoints = [0, 0, wp_cashier, wp_exit]
 waypoints[0] = products[trend_p]
 

@@ -12,7 +12,7 @@ if(npc.returning) {
 	
 	//pokud došli produkty
 	if (image_index == 0) {
-		if(npc.total_spend == 0 || array_length(npc.waypoints) < 4) { //pokud NPC nemá u sebe jiný produkt nebo nemá vybraný jiný odejde
+		if(array_length(npc.waypoints) < 4 || npc.total_spend == 0) { //pokud NPC nemá u sebe jiný produkt nebo nemá vybraný jiný odejde
 			npc.walked = array_length(npc.waypoints) - 1
 		} else {
 			npc.walked ++

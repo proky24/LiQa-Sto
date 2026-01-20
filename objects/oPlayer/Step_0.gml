@@ -9,11 +9,11 @@ xspd = (right - left) * move_speed;
 yspd = (down - up) * move_speed;
 
 
-if (place_meeting(x + xspd, y, oCollision)) {
+if (place_meeting(x + xspd, y, [oCollision, oDoor])) {
 		xspd = 0
 }
 
-if (place_meeting(x, y + yspd, oCollision)) {
+if (place_meeting(x, y + yspd, [oCollision, oDoor])) {
 	yspd = 0
 }
 

@@ -4,7 +4,7 @@ if (!opened) {
 	day ++
 	if (day = end_trend_day && end_trend_day != 0) {set_trend()}
 	else if (end_trend_day = 0) {set_trend()}
-	hours = 8
+	hours = 17
 	minutes = 0
 	
 	start_day()

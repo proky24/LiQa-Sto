@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oNpc_1",
+  "%Name":"oNpcThief",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oNpc_1",
+  "name":"oNpcThief",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_down","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpc","path":"sprites/sNpc/sNpc.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpc",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_up","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcUp","path":"sprites/sNpcUp/sNpcUp.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcUp",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_left","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcLeft","path":"sprites/sNpcLeft/sNpcLeft.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcLeft",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_right","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcRight","path":"sprites/sNpcRight/sNpcRight.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcRight",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_down","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcThief","path":"sprites/sNpcThief/sNpcThief.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcThief",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_up","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcThiefUp","path":"sprites/sNpcThiefUp/sNpcThiefUp.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcThiefUp",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_left","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcThiefLeft","path":"sprites/sNpcThiefLeft/sNpcThiefLeft.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcThiefLeft",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_right","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcThiefRight","path":"sprites/sNpcThiefRight/sNpcThiefRight.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcThiefRight",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"buy_dialog","path":"objects/oNpcParent/oNpcParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"npc1",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"portrait","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sPortraitNpc","path":"sprites/sPortraitNpc/sPortraitNpc.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sPortraitNpc",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"dialog","path":"objects/oNpcParent/oNpcParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"facka",},
@@ -44,8 +44,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sNpc",
-    "path":"sprites/sNpc/sNpc.yy",
+    "name":"sNpcThief",
+    "path":"sprites/sNpcThief/sNpcThief.yy",
   },
   "spriteMaskId":null,
   "visible":true,

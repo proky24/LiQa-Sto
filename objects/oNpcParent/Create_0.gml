@@ -64,3 +64,5 @@ path = path_add()
 alarm[1] = 5
 alarm[2] = 5
 alarm[0] = 5
+
+show_debug_message(string(total_spend))

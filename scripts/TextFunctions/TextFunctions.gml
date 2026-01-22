@@ -127,9 +127,59 @@ function scr_game_text(_text_id, _npc_id) {
 			break;
 			
 		case "thief":
-			scr_text("A mam te ty zlodejicku", "player")
-			scr_text("Rychlosti ja tohle potrebuju", "npc", _npc_id)
+			scr_text("A mam te ty zlodejicku, ted mi to hezky vsechno vratis nebo volam policii!!", "player")
+			scr_text("Ne prosim jenom policii ne", "npc", _npc_id)
+			
+			scr_option("Zaplat mi", "thief - pay")
+			scr_option("Vrat mi to", "thief - back")
 			break;	
+		
+		case "thief - pay":
+			scr_text("Budes to mit hezky s urokem", "player")
+
+			var rnd = irandom(1)
+			if (rnd == 1) {
+				scr_text("Omlouvam se, prosim promin te mi", "npc", _npc_id)
+				
+				scr_option("Vzit si penize", "thief - pay - 1")
+			} else {
+				scr_text("Nemam u sebe ani zvaru proto asi kradu ne", "npc", _npc_id)
+				scr_text("No tak navratil a delej !", "player")
+				scr_text("Omlouvam se, uz to nikdy neudelam", "npc", _npc_id)
+				
+				scr_option("Vzit si produkt", "thief - back - 1")
+			}
+			break;
+			
+		case "thief - back":
+			scr_text("No tak navratil a delej !", "player")
+			scr_text("Omlouvam se, uz to nikdy neudelam", "npc", _npc_id)
+				
+			scr_option("Vzit si produkt", "thief - back - 1")
+			
+			break;
+		
+		case "thief - pay - 1":
+			instance_destroy(oDialog)
+			
+			oShopManager.money += _npc_id.total_spend + (_npc_id.total_spend * 1.4)
+			
+			_npc_id.total_spend = 0
+			_npc_id.move_speed = 1.2
+			_npc_id.alarm[2] = 1
+			
+			break;
+			
+		case "thief - back - 1":
+			instance_destroy(oDialog)
+			
+			oPlayer.invetory = _npc_id.waypoints[0].id
+			
+			_npc_id.total_spend = 0
+			_npc_id.move_speed = 1.2
+			_npc_id.alarm[2] = 1
+			
+			break;
 		
 		case "cumis":
 			scr_text("Na co cumis", "npc", _npc_id)

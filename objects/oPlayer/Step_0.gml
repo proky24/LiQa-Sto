@@ -5,9 +5,14 @@ var left = keyboard_check(ord("A"));
 var up = keyboard_check(ord("W"));
 var down = keyboard_check(ord("S"));
 
-xspd = (right - left) * move_speed;
-yspd = (down - up) * move_speed;
+xspd = (right - left);
+yspd = (down - up);
 
+if(xspd != 0 || yspd != 0) {
+	var len = point_distance(0, 0, xspd, yspd) 
+	xspd /= len 
+	yspd /= len 
+}
 
 if (place_meeting(x + xspd, y, [oCollision, oDoor])) {
 		xspd = 0
@@ -39,8 +44,8 @@ if (xspd = 0 && yspd = 0) {
 
 sprite_index = sprites[face]
 
-x += xspd;
-y += yspd;
+x += xspd  * move_speed;
+y += yspd  * move_speed;
 
 
 depth = -bbox_bottom

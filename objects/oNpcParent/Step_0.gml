@@ -11,7 +11,6 @@ if (distance_to_object(oPlayer) < 16 && keyboard_check_pressed(input_key) && !in
 	} else if(thief) {
 		create_textbox(dialog, id)
 		path_delete(path)
-		//alarm[3] = 180
 	}
 }
 

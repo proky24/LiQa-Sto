@@ -11,4 +11,4 @@ if (page == page_number - 1) {
 	exit
 }
 
-alarm[1] = 120
+alarm[1] = 60

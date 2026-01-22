@@ -62,6 +62,7 @@
         "GMSprite",
       ],"listItems":[],"multiselect":false,"name":"card_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"sNpcId","path":"sprites/sNpcId/sNpcId.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sNpcId","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"age","filters":[],"listItems":[],"multiselect":false,"name":"age","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"thief","filters":[],"listItems":[],"multiselect":false,"name":"thief","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

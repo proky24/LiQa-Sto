@@ -8,11 +8,11 @@ if(instance_exists(oDialog) && oDialog.npc_id == id) {
 if (distance_to_object(oPlayer) < 16 && keyboard_check_pressed(input_key) && !instance_exists(oDialog)) {
 	if (can_buy) {
 		create_textbox(buy_dialog, id)
-	} /*else {
-		create_textbox(dialog, id, true)
+	} else if(thief) {
+		create_textbox(dialog, id)
 		path_delete(path)
-		alarm[3] = 180
-	}*/
+		//alarm[3] = 180
+	}
 }
 
 if (is_waiting) {

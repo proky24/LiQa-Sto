@@ -125,6 +125,11 @@ function scr_game_text(_text_id, _npc_id) {
 		case "facka":
 			scr_text("Nesahejte mi pod sukni uchyle  *dala ti facku*", "npc", _npc_id)
 			break;
+			
+		case "thief":
+			scr_text("A mam te ty zlodejicku", "player")
+			scr_text("Rychlosti ja tohle potrebuju", "npc", _npc_id)
+			break;	
 		
 		case "cumis":
 			scr_text("Na co cumis", "npc", _npc_id)

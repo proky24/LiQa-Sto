@@ -19,7 +19,7 @@ function loop() {
 function stop() {
 	if(can_buy || is_waiting) {
 		sprite_index = sprite_up
-	}/* else {
+	} else {
 		switch (oPlayer.face) {
 		case 0:
 			sprite_index = sprite_left
@@ -34,7 +34,7 @@ function stop() {
 			sprite_index = sprite_up
 			break;	
 		}
-	}*/
+	}
 	
 	
 

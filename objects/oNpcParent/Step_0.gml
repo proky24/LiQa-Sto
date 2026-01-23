@@ -9,8 +9,14 @@ if (distance_to_object(oPlayer) < 16 && keyboard_check_pressed(input_key) && !in
 	if (can_buy) {
 		create_textbox(buy_dialog, id)
 	} else if(thief) {
-		create_textbox(dialog, id)
 		path_delete(path)
+
+		if(total_spend != 0) {
+			create_textbox(dialog, id)
+		} else {
+			create_textbox(buy_dialog, id)
+		}
+		
 	}
 }
 

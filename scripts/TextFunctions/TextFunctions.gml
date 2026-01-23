@@ -180,6 +180,11 @@ function scr_game_text(_text_id, _npc_id) {
 			_npc_id.alarm[2] = 1
 			
 			break;
+			
+		case "npc - thief - notyet":
+			scr_text("co ty tady chlape", "player")
+			
+			break;
 		
 		case "cumis":
 			scr_text("Na co cumis", "npc", _npc_id)

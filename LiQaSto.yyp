@@ -102,6 +102,7 @@
     {"id":{"name":"oWaypointExit","path":"objects/oWaypointExit/oWaypointExit.yy",},},
     {"id":{"name":"rComputer","path":"rooms/rComputer/rComputer.yy",},},
     {"id":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
+    {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"id":{"name":"DrawCount","path":"scripts/DrawCount/DrawCount.yy",},},
     {"id":{"name":"DrawSupplies","path":"scripts/DrawSupplies/DrawSupplies.yy",},},
     {"id":{"name":"DrawTrend","path":"scripts/DrawTrend/DrawTrend.yy",},},
@@ -166,6 +167,7 @@
     {"id":{"name":"sPortraitNpc","path":"sprites/sPortraitNpc/sPortraitNpc.yy",},},
     {"id":{"name":"sPortraitNpcThief","path":"sprites/sPortraitNpcThief/sPortraitNpcThief.yy",},},
     {"id":{"name":"sPortraitPlayer","path":"sprites/sPortraitPlayer/sPortraitPlayer.yy",},},
+    {"id":{"name":"Sprite69","path":"sprites/Sprite69/Sprite69.yy",},},
     {"id":{"name":"sPultLeft","path":"sprites/sPultLeft/sPultLeft.yy",},},
     {"id":{"name":"sPultRight","path":"sprites/sPultRight/sPultRight.yy",},},
     {"id":{"name":"sReputation_1","path":"sprites/sReputation_1/sReputation_1.yy",},},
@@ -188,6 +190,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
     {"roomId":{"name":"rComputer","path":"rooms/rComputer/rComputer.yy",},},
+    {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

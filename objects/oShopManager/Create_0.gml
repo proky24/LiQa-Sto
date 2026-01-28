@@ -18,6 +18,9 @@ rnd = 0
 rep = 30
 max_rep = 90
 
+rep_change = false
+subimg = 0
+
 trend = ""
 trend_p = 0
 end_trend_day = 0

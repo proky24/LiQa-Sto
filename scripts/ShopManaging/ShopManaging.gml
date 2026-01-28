@@ -41,7 +41,7 @@ function add_money_rep(npc_id) {
 	} else {
 		rep = 10
 	}
-	
+	oShopManager.alarm[7] = 1
 	check_rep(rep)
 }
 
@@ -62,7 +62,8 @@ function decrease_rep(reason) {
 			rep = -10
 		break;
 	}
-	
+	//draw_arr_dec()
+	oShopManager.alarm[6] = 1
 	check_rep(rep)
 }
 

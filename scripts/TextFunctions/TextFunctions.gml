@@ -127,7 +127,11 @@ function scr_game_text(_text_id, _npc_id) {
 			break;
 			
 		case "thief":
-			scr_text("A mam te ty zlodejicku, ted mi to hezky vsechno vratis nebo volam policii!!", "player")
+			if(_npc_id.notyet) {
+				scr_text("Ty previte jeden ja myslel ze mas strach z covidu jenom, volam policii")
+			} else {
+				scr_text("A mam te ty zlodejicku, ted mi to hezky vsechno vratis nebo volam policii!!", "player")
+			}
 			scr_text("Ne prosim jenom policii ne", "npc", _npc_id)
 			
 			scr_option("Zaplat mi", "thief - pay")
@@ -182,10 +186,20 @@ function scr_game_text(_text_id, _npc_id) {
 			break;
 			
 		case "npc - thief - notyet":
+			_npc_id.notyet = true
 			scr_text("co ty tady chlape", "player")
+			scr_text("No znate to covid, nechci nic chytit", "npc", _npc_id)
+			scr_text("Hmm, je mi to jasny no", "player")
+			scr_text("........", "npc", _npc_id)
 			
+			scr_option("Vyhodit", "npc - thief - getout")
+			scr_option("Nechat to byt", "npc - thief - letgo")
 			break;
 		
+		case  "npc - thief - getout":
+			scr_text("Bohuzel, nelibis se mi, odejdi prosim", "player")
+			break;
+			
 		case "cumis":
 			scr_text("Na co cumis", "npc", _npc_id)
 			break;
@@ -240,8 +254,9 @@ function scr_game_text(_text_id, _npc_id) {
 			scr_text("No. No. No toto, je neuveritelne", "npc" ,_npc_id)
 			scr_text("Hele nech toho divadla a jdi pryc", "player")
 
-			decrease_rep("age_b")
 			_npc_id.alarm[5] = 1
+			decrease_rep("age_b")
+
 			break;
 			
 		case "id - 2":
@@ -275,8 +290,9 @@ function scr_game_text(_text_id, _npc_id) {
 		case "bribe - !!":
 			scr_text("NE! Rekl jsem ne, okamzite vrat ty veci a vypadni", "player")
 			
-			decrease_rep("age")
+			
 			_npc_id.alarm[5] = 1
+			decrease_rep("age")
 			break;
 		
 		case "sell":

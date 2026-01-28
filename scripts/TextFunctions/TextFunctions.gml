@@ -202,20 +202,46 @@ function scr_game_text(_text_id, _npc_id) {
 		case "id - 1":
 		instance_destroy(oNpcId)
 			scr_text("Vse se zda byti v poradku", "player")
-			scr_text("Jsem cestny obcan", "npc", _npc_id)
+			if (_npc_id.age >= 18) {
+				scr_text(".......", "npc", _npc_id)
+			} else {
+				scr_text("Jsem cestny obcan", "npc", _npc_id)
+			}
 			
-			scr_option("blablabla", "blablabla")
 			scr_option("Prodat", "sell")	
 			break;
 			
 		case "id - 0":
 			instance_destroy(oNpcId)
 			scr_text("Tady mi neco nehraje", "player")
-			scr_text("Tak snad se nejak domluvime", "npc", _npc_id)
+			if (_npc_id.age >= 18) {
+				scr_text("Delate si srandu ? Nevidite ze mi bylo osmnact ?", "npc", _npc_id)
+				
+				scr_option("Ajo, omlouvam se", "id - 0 - 1")
+				scr_option("Nelzi mi", "id - 0 - 0")
+			} else { 
+				scr_text("Tak snad se nejak domluvime", "npc", _npc_id)
 			
-			scr_option("Uplatek", "bribe - 1")
-			scr_option("Zapomen", "bribe - !")
-			scr_option("Prodat", "id - 2")
+				scr_option("Uplatek", "bribe - 1")
+				scr_option("Zapomen", "bribe - !")
+				scr_option("Smilovat se", "id - 2")
+			}
+			break;
+		
+		case "id - 0 - 1":
+			scr_text("Omlouvam se, asi jsem se prehledl. Mate to mit", "player")
+			scr_text("V poradku", "npc" ,_npc_id)
+			
+			scr_option("Prodat", "sell")
+			break;
+			
+		case "id - 0 - 0":
+			scr_text("Prestan mi tu lhat do oci, tobe osmanct rozhodne nebylo", "player")
+			scr_text("No. No. No toto, je neuveritelne", "npc" ,_npc_id)
+			scr_text("Hele nech toho divadla a jdi pryc", "player")
+
+			decrease_rep("age_b")
+			_npc_id.alarm[5] = 1
 			break;
 			
 		case "id - 2":
@@ -224,6 +250,16 @@ function scr_game_text(_text_id, _npc_id) {
 			
 			scr_option("Prodat", "sell")
 			//oDialog.alarm[2] = 300
+			break;
+			
+		case "bribe - 1":
+			scr_text("Tak prodat ti to muzu, ale vezmu si vic penez za tzhle trable, co kdyby prisli policajti?", "player")
+			scr_text("Jo jasne, prosim jenom mi to prodejte", "npc", _npc_id)
+	
+	
+			_npc_id.total_spend *= 1.5
+		
+			scr_option("Prodat", "sell")
 			break;
 		
 		case "bribe - !":
@@ -238,16 +274,9 @@ function scr_game_text(_text_id, _npc_id) {
 			
 		case "bribe - !!":
 			scr_text("NE! Rekl jsem ne, okamzite vrat ty veci a vypadni", "player")
-			/*npc_id.total_spend = 0
-			npc_id.waypoints[0].alarm[10] = 180
-			if (npc_id.two_products){
-				npc_id.waypoints[1].alarm[10] = 180
-			}
-			npc_id.can_buy = false
-			npc_id.is_waiting = false *///reseni ze se sami produktu doplni 
 			
+			decrease_rep("age")
 			_npc_id.alarm[5] = 1
-			
 			break;
 		
 		case "sell":

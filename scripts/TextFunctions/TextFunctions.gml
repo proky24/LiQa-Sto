@@ -52,7 +52,8 @@ function scr_text(_text, speaker, _npc_id) {// ulozime text do text[page_number]
 
 /// @param text_id
 /// @param npc_id
-function scr_game_text(_text_id, _npc_id) {        
+function scr_game_text(_text_id, _npc_id) {  
+	var rnd = irandom(1)
 	switch (_text_id){
 		case "npc1":
 		scr_text("Dobry den", "npc", _npc_id) // prvni parametr = text, durhy parametr = kdo to rika
@@ -128,7 +129,7 @@ function scr_game_text(_text_id, _npc_id) {
 			
 		case "thief":
 			if(_npc_id.notyet) {
-				scr_text("Ty previte jeden ja myslel ze mas strach z covidu jenom, volam policii")
+				scr_text("Ty previte jeden ja myslel ze mas strach z covidu jenom, volam policii", "player")
 			} else {
 				scr_text("A mam te ty zlodejicku, ted mi to hezky vsechno vratis nebo volam policii!!", "player")
 			}
@@ -141,7 +142,7 @@ function scr_game_text(_text_id, _npc_id) {
 		case "thief - pay":
 			scr_text("Budes to mit hezky s urokem", "player")
 
-			var rnd = irandom(1)
+			
 			if (rnd == 1) {
 				scr_text("Omlouvam se, prosim promin te mi", "npc", _npc_id)
 				
@@ -186,19 +187,42 @@ function scr_game_text(_text_id, _npc_id) {
 			break;
 			
 		case "npc - thief - notyet":
-			_npc_id.notyet = true
 			scr_text("co ty tady chlape", "player")
 			scr_text("No znate to covid, nechci nic chytit", "npc", _npc_id)
 			scr_text("Hmm, je mi to jasny no", "player")
 			scr_text("........", "npc", _npc_id)
 			
-			scr_option("Vyhodit", "npc - thief - getout")
+			scr_option("Poprosit o odchod", "npc - thief - getout")
 			scr_option("Nechat to byt", "npc - thief - letgo")
 			break;
 		
 		case  "npc - thief - getout":
-			scr_text("Bohuzel, nelibis se mi, odejdi prosim", "player")
+			if(_npc_id.notyet) {
+				scr_text("Hele myslim to vazne prosim odejdi", "player")
+			} else {
+				scr_text("Bohuzel, nelibis se mi, odejdi prosim", "player")
+				_npc_id.notyet = true
+			}
+			
+			if(rnd == 1) {
+				scr_text("Chapu, nechci zadne potize", "npc", _npc_id)
+				_npc_id.walked = 1
+				scr_option("Vyhodit", "npc - thief - letgo")
+			} else {
+				scr_text("Jojooo, hned odejdu", "npc", _npc_id)
+				
+				scr_option("Poprosit o odchod", "npc - thief - getout")
+				scr_option("Nechat ho byt", "npc - thief - letgo")
+			}
+			
 			break;
+
+		case   "npc - thief - letgo":
+		instance_destroy(oDialog)
+		_npc_id.notyet = true
+			_npc_id.alarm[2] = 1
+			
+			break;			
 			
 		case "cumis":
 			scr_text("Na co cumis", "npc", _npc_id)

@@ -27,4 +27,3 @@ var _x = positionx - (sprite_get_width(sArrowRepUp) * 2)
 if (rep_change) {
 	draw_sprite(sArrowRepUp, subimg, _x, _y)
 } 
-show_debug_message(rep_change)

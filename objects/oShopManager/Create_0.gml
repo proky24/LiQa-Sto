@@ -30,3 +30,9 @@ products = [oShelf, oBeer_1, oBeer]
 
 spawned = 0
 randomise()
+
+result = max_rep / rep
+show_debug_message(string(result))
+
+result = rep / max_rep
+show_debug_message(string(result))

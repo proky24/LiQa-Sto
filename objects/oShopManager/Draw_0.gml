@@ -27,3 +27,13 @@ var _x = positionx - (sprite_get_width(sArrowRepUp) * 2)
 if (rep_change) {
 	draw_sprite(sArrowRepUp, subimg, _x, _y)
 } 
+
+var subimg1 = 0
+if(rep / max_rep  < 0.5) {
+	subimg1 = 0	
+} else {
+	subimg1 = 1
+}
+_x = positionx + 98
+
+draw_sprite(sEmoji, subimg1, _x, _y)

@@ -178,6 +178,7 @@
     {"id":{"name":"sPrisonLight","path":"sprites/sPrisonLight/sPrisonLight.yy",},},
     {"id":{"name":"sPrisonPath","path":"sprites/sPrisonPath/sPrisonPath.yy",},},
     {"id":{"name":"sPrisonWall","path":"sprites/sPrisonWall/sPrisonWall.yy",},},
+    {"id":{"name":"Sprite79","path":"sprites/Sprite79/Sprite79.yy",},},
     {"id":{"name":"sPultLeft","path":"sprites/sPultLeft/sPultLeft.yy",},},
     {"id":{"name":"sPultRight","path":"sprites/sPultRight/sPultRight.yy",},},
     {"id":{"name":"sReputation_1","path":"sprites/sReputation_1/sReputation_1.yy",},},

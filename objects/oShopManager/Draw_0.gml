@@ -31,9 +31,12 @@ if (rep_change) {
 var subimg1 = 0
 if(rep / max_rep  < 0.5) {
 	subimg1 = 0	
-} else {
+} else if (rep / max_rep < 0.7){
 	subimg1 = 1
+} else {
+	subimg1 = 2
 }
 _x = positionx + 98
+_y -= 4
 
 draw_sprite(sEmoji, subimg1, _x, _y)

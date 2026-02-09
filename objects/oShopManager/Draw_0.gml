@@ -23,10 +23,7 @@ draw_sprite_stretched(sReputation_1, 0, positionx, _y, _w, _h)
  _w = _w * (rep / max_rep)
 draw_sprite_stretched_ext(sReputation_1, 0, positionx, _y, _w, _h, c_aqua, 0.8)
 
-var _x = positionx - (sprite_get_width(sArrowRepUp) * 2) 
-if (rep_change) {
-	draw_sprite(sArrowRepUp, subimg, _x, _y)
-} 
+
 
 var subimg1 = 0
 if(rep / max_rep  < 0.5) {
@@ -36,7 +33,13 @@ if(rep / max_rep  < 0.5) {
 } else {
 	subimg1 = 2
 }
-_x = positionx + 98
+var _x = positionx + 98
 _y -= 4
-
 draw_sprite(sEmoji, subimg1, _x, _y)
+
+_x += (sprite_get_width(sArrowRepUp) * 2) + 2
+_y += 4
+if (rep_change) {
+	draw_sprite(sArrowRepUp, subimg, _x, _y)
+} 
+

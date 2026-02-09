@@ -104,7 +104,7 @@
     {"id":{"name":"oWaypointExit","path":"objects/oWaypointExit/oWaypointExit.yy",},},
     {"id":{"name":"rComputer","path":"rooms/rComputer/rComputer.yy",},},
     {"id":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
-    {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
+    {"id":{"name":"rPrison","path":"rooms/rPrison/rPrison.yy",},},
     {"id":{"name":"DrawCount","path":"scripts/DrawCount/DrawCount.yy",},},
     {"id":{"name":"DrawSupplies","path":"scripts/DrawSupplies/DrawSupplies.yy",},},
     {"id":{"name":"GetCurrStock","path":"scripts/GetCurrStock/GetCurrStock.yy",},},
@@ -201,7 +201,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
-    {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
+    {"roomId":{"name":"rPrison","path":"rooms/rPrison/rPrison.yy",},},
     {"roomId":{"name":"rComputer","path":"rooms/rComputer/rComputer.yy",},},
   ],
   "templateType":"game",

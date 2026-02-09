@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"oNpcPolice",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"oNpcPolice",
   "overriddenProperties":[
@@ -9,7 +12,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_up","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcPoliceUp","path":"sprites/sNpcPoliceUp/sNpcPoliceUp.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcPoliceUp",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_left","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcPoliceLeft","path":"sprites/sNpcPoliceLeft/sNpcPoliceLeft.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcPoliceLeft",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"sprite_right","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sNpcPoliceRight","path":"sprites/sNpcPoliceRight/sNpcPoliceRight.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sNpcPoliceRight",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"buy_dialog","path":"objects/oNpcParent/oNpcParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"npc1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"buy_dialog","path":"objects/oNpcParent/oNpcParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"police",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"portrait","path":"objects/oNpcParent/oNpcParent.yy",},"resource":{"name":"sPortraitNpc","path":"sprites/sPortraitNpc/sPortraitNpc.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sPortraitNpc",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"dialog","path":"objects/oNpcParent/oNpcParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"facka",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oNpcParent","path":"objects/oNpcParent/oNpcParent.yy",},"propertyId":{"name":"age","path":"objects/oNpcParent/oNpcParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"27",},

@@ -222,8 +222,45 @@ function scr_game_text(_text_id, _npc_id) {
 		_npc_id.notyet = true
 			_npc_id.alarm[2] = 1
 			
-			break;			
+			break;
 			
+		case "police":
+			scr_text("Dobry den, bohuzel musim vam oznamit, ze tu mame zatykac a pujdete s nami", "npc", _npc_id)
+			
+			scr_option("Jaky zatykac?", "police - q")
+			scr_option("Vzdorovat", "police - f")
+			scr_option("Jit s policii", "police - s")
+			break;
+			
+		case "police - q":
+			scr_text("Dobry den, mohl bych se co to je za zatykac?", "player")
+			scr_text("Ale samozrejme, jednoduse prodavate alkohol nezletilym osobam, coz je v zakoniku trestne", "npc", _npc_id)
+			
+			scr_option("Ja neprodovam detem", "police - q - d")
+			scr_option("Jit s policii", "police - s")
+			break;
+			
+		case  "police - q - d":
+			scr_text("Ja ale neprodavam alkohol detem, to jste si me asi spletli nebo mate spatneho informatora", "player")
+			scr_text("Nase informace nejsou chybne. Treba jste spatne zkontroloval obcanku", "npc", _npc_id)
+			scr_text("Muzete s nami spolupracovat v klidu, nebo budeme donuceni pouzit donucovaci prostredky", "npc", _npc_id)
+			
+			scr_option("Jit s policii", "police - s")
+			break;
+		
+		case "police - s":
+			instance_destroy(oDialog)
+			var tran = instance_create_depth(0, 0, -99999, oTransition)
+			tran.target_room = rPrison
+			break;
+		
+		case "police - f":
+			scr_text("Nesouhlasim a nepreju si byt kamkoli eskortovan, okamzite chci pravnika", "player")
+			scr_text("O techto vecech bohuzel nerozhodujete, doporocuji vam byt v klidu a jit s nami", "npc", _npc_id)
+			
+			scr_option("Jit s policii", "police - s")
+			break;
+		
 		case "cumis":
 			scr_text("Na co cumis", "npc", _npc_id)
 			break;

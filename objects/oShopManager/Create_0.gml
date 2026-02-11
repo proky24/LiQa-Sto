@@ -25,6 +25,8 @@ trend = ""
 trend_p = 0
 end_trend_day = 0
 
+arrested_times = 0
+
 npcs = [oNpc, oNpc2, oNpc3]
 products = [oShelf, oBeer_1, oBeer]
 

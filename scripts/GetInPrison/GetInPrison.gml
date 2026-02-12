@@ -3,6 +3,4 @@ function get_in_prison(){
 	oShopManager.arrested_times ++
 	
 	oShopManager.day += oShopManager.arrested_times
-	
-	
 }

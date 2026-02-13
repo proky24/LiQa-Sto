@@ -30,6 +30,9 @@ arrested_times = 0
 npcs = [oNpc, oNpc2, oNpc3]
 products = [oShelf, oBeer_1, oBeer]
 
+illegal_sells = 0
+called_police = false
+
 spawned = 0
 randomise()
 

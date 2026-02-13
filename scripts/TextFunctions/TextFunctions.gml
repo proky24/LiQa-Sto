@@ -254,7 +254,7 @@ function scr_game_text(_text_id, _npc_id) {
 			
 			var tran = instance_create_depth(0, 0, -9999999, oTransitionPrison)
 			tran.target_room = rPrison
-			tran.alarm[1] = 22
+			oShopManager.alarm[9] = 22
 			
 			break;
 		
@@ -368,6 +368,10 @@ function scr_game_text(_text_id, _npc_id) {
 			
 			
 			add_money_rep(_npc_id)
+			if(_npc_id.age < 18){
+				oShopManager.illegal_sells ++
+				call_the_police(oShopManager.illegal_sells)
+			}
 			
 			oPultRight.alarm[1] = 30
 	}

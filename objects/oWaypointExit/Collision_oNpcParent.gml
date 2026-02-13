@@ -7,6 +7,8 @@ if (npc1.thief) {
 other.image_alpha = lerp(other.image_alpha, 0, 0.1);
 	if other.image_alpha == 0 {
 		instance_destroy(other);
-		oShopManager.spawned --
+		if(!oShopManager.called_police) {
+			oShopManager.spawned --
+		}
 }
 

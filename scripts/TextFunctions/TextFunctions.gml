@@ -252,10 +252,10 @@ function scr_game_text(_text_id, _npc_id) {
 			instance_destroy(oDialog)
 			
 			
-			var tran = instance_create_depth(0, 0, -99999, oTransitionPrison)
+			var tran = instance_create_depth(0, 0, -9999999, oTransitionPrison)
 			tran.target_room = rPrison
+			tran.alarm[1] = 22
 			
-			get_in_prison()
 			break;
 		
 		case "police - f":

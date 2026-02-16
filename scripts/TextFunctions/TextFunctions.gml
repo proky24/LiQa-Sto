@@ -187,7 +187,7 @@ function scr_game_text(_text_id, _npc_id) {
 			break;
 			
 		case "npc - thief - notyet":
-			scr_text("co ty tady chlape", "player")
+			scr_text("Co ty tady chlape", "player")
 			scr_text("No znate to covid, nechci nic chytit", "npc", _npc_id)
 			scr_text("Hmm, je mi to jasny no", "player")
 			scr_text("........", "npc", _npc_id)

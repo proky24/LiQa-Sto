@@ -178,6 +178,7 @@
     {"id":{"name":"sPoretraiNpc2","path":"sprites/sPoretraiNpc2/sPoretraiNpc2.yy",},},
     {"id":{"name":"sPortraitNpc_1","path":"sprites/sPortraitNpc_1/sPortraitNpc_1.yy",},},
     {"id":{"name":"sPortraitNpc","path":"sprites/sPortraitNpc/sPortraitNpc.yy",},},
+    {"id":{"name":"sPortraitNpcPolice","path":"sprites/sPortraitNpcPolice/sPortraitNpcPolice.yy",},},
     {"id":{"name":"sPortraitNpcThief","path":"sprites/sPortraitNpcThief/sPortraitNpcThief.yy",},},
     {"id":{"name":"sPortraitPlayer","path":"sprites/sPortraitPlayer/sPortraitPlayer.yy",},},
     {"id":{"name":"sPrison","path":"sprites/sPrison/sPrison.yy",},},

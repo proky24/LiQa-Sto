@@ -1,5 +1,6 @@
-if (!opened) {
+if (!opened && recap) {
 	opened = true
+	recap = false
 	
 	day ++
 	if (day = end_trend_day && end_trend_day != 0) {set_trend()}

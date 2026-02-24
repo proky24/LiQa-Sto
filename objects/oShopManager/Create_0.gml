@@ -33,11 +33,10 @@ products = [oShelf, oBeer_1, oBeer]
 illegal_sells = 0
 called_police = false
 
+recap = true
+
 spawned = 0
 randomise()
 
-result = max_rep / rep
-show_debug_message(string(result))
 
-result = rep / max_rep
-show_debug_message(string(result))
+

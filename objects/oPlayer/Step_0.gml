@@ -1,4 +1,4 @@
-if instance_exists(oDialog) {image_index = 0 exit}
+if instance_exists(oDialog) || instance_exists(oShade)  {image_index = 0 exit}
 
 var right = keyboard_check(ord("D"));
 var left = keyboard_check(ord("A"));

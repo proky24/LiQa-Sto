@@ -5,8 +5,10 @@ trans.target_room = rRecap
 var minus = 0
 for (var p = 0; p < array_length(products); p++) {
 	minus += products[p].image_index * products[p].buy_price
-	show_debug_message(string(products[p]) + string(products[p].image_index) + string(products[p].buy_price))
 }
 trans.profit = money - minus
+trans.day = day
+trans.rep = rep
+trans.rep_gained = rep_gained
 recap = true
 //recapitulation()

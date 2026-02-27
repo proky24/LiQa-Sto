@@ -9,7 +9,7 @@ draw_text(_x, _y, text)
 
 text = "Profit: "
 _x = x + 20
-_y += (string_height(text) * 2)
+_y += (string_height(text) * 3)
 draw_text( _x, _y, text)
 if (profit < 0 ) {
 	draw_set_colour(c_red)
@@ -23,7 +23,7 @@ draw_set_colour(c_white)
 
 /*   //////////////////////////////////////////////       */
 
-text = "Ziskana reputace: " + $"{rep_gained}"
+/*text = "Cena naskladneni: " + $"{minus}$"
 
 _x += 20 + string_width(string(profit)) 
 draw_text(_x, _y, text)
@@ -31,9 +31,9 @@ draw_text(_x, _y, text)
 /*   //////////////////////////////////////////////       */
 
 _x = x + 20
-_y += (string_height(text) * 3)
+_y += (string_height(text) * 4)
 
-text = "Cena naskladneni: " + $"{minus}$"
+text = "Ziskana reputace: " + $"{rep_gained}"
 
 draw_text(_x, _y, text)
 
@@ -48,7 +48,7 @@ if (illegal_sells >= 1) {
 } else {
 	text = "Policie si pro tebe jde"
 }
-_y += (string_height(text) * 3)
+_y += (string_height(text) * 4)
 draw_text(_x, _y, text)
 
 /*   //////////////////////////////////////////////       */

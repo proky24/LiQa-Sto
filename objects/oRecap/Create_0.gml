@@ -1,6 +1,9 @@
 profit = 0
+money = 0
 text = ""
 day = 0
 rep = 0
 rep_gained = 0
 max_rep = 90
+illegal_sells = 0
+minus = 0

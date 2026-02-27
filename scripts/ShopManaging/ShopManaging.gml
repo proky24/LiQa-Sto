@@ -71,10 +71,13 @@ function decrease_rep(reason) {
 function check_rep(rep) {
 	if (rep < 0 && oShopManager.rep - rep < 0) {
 		oShopManager.rep = 0
+		oShopManager.rep_gained = 0
 	}  else if (oShopManager.rep + rep > oShopManager.max_rep) {
 		oShopManager.rep = oShopManager.max_rep
+		oShopManager.rep_gained = oShopManager.max_rep
 	} else {
 		oShopManager.rep += rep
+		oShopManager.rep_gained += rep
 	}
 	
 	

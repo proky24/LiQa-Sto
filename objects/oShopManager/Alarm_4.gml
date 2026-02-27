@@ -7,8 +7,11 @@ for (var p = 0; p < array_length(products); p++) {
 	minus += products[p].image_index * products[p].buy_price
 }
 trans.profit = money - minus
+trans.money = money
+trans.minus = minus
 trans.day = day
 trans.rep = rep
 trans.rep_gained = rep_gained
+trans.illegal_sells = illegal_sells
 recap = true
 //recapitulation()

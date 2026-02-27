@@ -1,5 +1,6 @@
 if (!opened) {
-	
+	image_index = 0
+
 	if(instance_exists(oNpcParent)) {
 		alarm[0] = 30
 	} else {
@@ -8,13 +9,12 @@ if (!opened) {
 			delivery_day = 0
 		}
 		
-		image_index = 0
 		alarm[4] = 90
 	}
 	
 
 } else {
-	if (spawned == 0) { //limit spawnutých NPC, pokud je 2 další NPC nespawnuju
+	if (spawned == 1) { //limit spawnutých NPC, pokud je 2 další NPC nespawnuju
 		alarm[0] = 60
 		exit
 	} 

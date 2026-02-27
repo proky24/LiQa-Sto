@@ -94,7 +94,6 @@
     {"id":{"name":"oPultLeft","path":"objects/oPultLeft/oPultLeft.yy",},},
     {"id":{"name":"oPultRight","path":"objects/oPultRight/oPultRight.yy",},},
     {"id":{"name":"oRecap","path":"objects/oRecap/oRecap.yy",},},
-    {"id":{"name":"oShade","path":"objects/oShade/oShade.yy",},},
     {"id":{"name":"oShelf","path":"objects/oShelf/oShelf.yy",},},
     {"id":{"name":"oShopManager","path":"objects/oShopManager/oShopManager.yy",},},
     {"id":{"name":"oStocksParent","path":"objects/oStocksParent/oStocksParent.yy",},},

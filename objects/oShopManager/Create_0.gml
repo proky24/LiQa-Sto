@@ -1,5 +1,5 @@
 draw_set_colour(c_white)
-positionx = 510
+positionx = 502
 positiony = 60
 
 hours = 8
@@ -16,7 +16,7 @@ delivery_day = 0
 rnd = 0
 
 rep = 0
-max_rep = 90
+max_rep = 100
 rep_gained = 0
 
 rep_change = false

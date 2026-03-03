@@ -33,7 +33,7 @@ draw_text(_x, _y, text)
 _x = x + 20
 _y += (string_height(text) * 4)
 
-text = "Ziskana reputace: " + $"{rep_gained}"
+text = "Ziskana reputace: " + $"{rep_gained}" +"   (" + $"{rep}" + " / " + $"{max_rep}" + ")"
 
 draw_text(_x, _y, text)
 

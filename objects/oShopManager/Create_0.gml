@@ -8,7 +8,7 @@ day = 0
 
 opened = false
 
-money = 100
+money = 0
 
 fast_delivery = false
 delivery_day = 0
@@ -27,12 +27,12 @@ trend_p = 0
 end_trend_day = 0
 
 arrested_times = 0
+called_police = false
 
 npcs = [oNpc, oNpc2, oNpc3]
 products = [oShelf, oBeer_1, oBeer]
 
 illegal_sells = 0
-called_police = false
 
 recap = true
 

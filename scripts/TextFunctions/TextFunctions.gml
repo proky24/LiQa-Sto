@@ -368,10 +368,10 @@ function scr_game_text(_text_id, _npc_id) {
 			
 			
 			add_money_rep(_npc_id)
-			if(_npc_id.age < 18){
+			/*if(_npc_id.age < 18){
 				oShopManager.illegal_sells ++
 				call_the_police(oShopManager.illegal_sells)
-			}
+			}*/
 			
 			oPultRight.alarm[1] = 30
 	}

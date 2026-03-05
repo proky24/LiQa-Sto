@@ -4,5 +4,9 @@ if(oShopManager.opened) {
 	oShopManager.rep -= oShopManager.rep_gained
 }	
 
+with (oProductParent) {
+	image_index += sold
+}
+
 save_game()
 

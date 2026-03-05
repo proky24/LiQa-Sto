@@ -25,7 +25,6 @@ if(npc.returning) {
 		//posuneme walked na další waypoint a přičteme cenu produktu
 		npc.walked ++
 		npc.total_spend += price
-		
 		//alarm[0] = 90 
 	}
 	alarm[0] = 90

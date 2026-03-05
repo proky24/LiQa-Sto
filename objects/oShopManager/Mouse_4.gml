@@ -4,6 +4,10 @@ if (!opened && recap) {
 	rep_gained = 0
 	money_gained = 0
 	
+	with (oProductParent) {
+		sold = 0
+	}
+	
 	day ++
 	if (day = end_trend_day && end_trend_day != 0) {set_trend()}
 	else if (end_trend_day = 0) {set_trend()}

@@ -54,7 +54,6 @@ function save_game() {
 function load_game() {
 	if file_exists("savedProducts.txt") {
 		var file = file_text_open_read("savedProducts.txt")
-		
 		var _json = file_text_read_string(file)
 		
 		var array_products = json_parse(_json)
@@ -78,7 +77,17 @@ function load_game() {
 		
 		instance_destroy(oShopManager)
 		
-		instance_create_layer(struct.x, struct.y, "Instances", oShopManager, struct)	
+		var shopManager = instance_create_layer(struct.x, struct.y, "Instances", oShopManager)
+		
+		shopManager.day = struct.day
+		shopManager.money = struct.money
+		shopManager.delivery_day = struct.delivery_day
+		shopManager.rep = struct.rep
+		shopManager.trend = struct.trend
+		shopManager.trend_p = struct.trend_p
+		shopManager.end_trend_day = struct.end_trend_day
+		shopManager.arrested_times = struct.arrested_times
+		shopManager.illegal_sells = struct.illegal_sells
 		
 		file_text_close(file)
 	}	

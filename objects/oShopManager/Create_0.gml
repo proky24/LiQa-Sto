@@ -1,4 +1,5 @@
 draw_set_colour(c_white)
+
 positionx = 502
 positiony = 60
 
@@ -9,6 +10,7 @@ day = 0
 opened = false
 
 money = 0
+money_gained = 0
 
 fast_delivery = false
 delivery_day = 0
@@ -38,6 +40,3 @@ recap = true
 
 spawned = 0
 randomise()
-
-
-

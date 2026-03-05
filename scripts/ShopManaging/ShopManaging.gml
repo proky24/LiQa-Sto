@@ -33,6 +33,7 @@ function set_trend() {
 /// @param npc_id
 function add_money_rep(npc_id) {
 	oShopManager.money += npc_id.total_spend
+	oShopManager.money_gained += npc_id.total_spend
 	
 	var rep = 0
 	

@@ -1,6 +1,7 @@
 function save_game() {
 	var fileP = file_text_open_write("savedProducts.txt")
 	var fileM = file_text_open_write("savedManager.txt")
+	var fileO = file_text_open_write("savedOrder.txt")
 	
 	var array_products = []
 	
@@ -13,7 +14,7 @@ function save_game() {
 		}
 		
 		array_push(array_products, struct)
-		show_debug_message(array_products)
+		//show_debug_message(array_products)
 	}
 	
 	
@@ -41,7 +42,7 @@ function save_game() {
 		illegal_sells: oShopManager.illegal_sells,
 	}
 	_shopManager = struct		
-	show_debug_message(_shopManager)
+	//show_debug_message(_shopManager)
 
 	
 	_string = json_stringify(_shopManager)
@@ -49,6 +50,18 @@ function save_game() {
 	file_text_write_string(fileM, _string)
 	
 	file_text_close(fileM)
+	
+	////////////////////////////////////
+	
+	array_products = oStocksSaving.saved_order
+	show_debug_message(array_products)
+	
+	_string = json_stringify(array_products)
+	
+	file_text_write_string(fileO, _string)
+	
+	file_text_close(fileO)
+	
 }
 
 function load_game() {
@@ -91,5 +104,19 @@ function load_game() {
 		
 		file_text_close(file)
 	}	
+	
+	if file_exists("savedOrder.txt") {
+		var file = file_text_open_read("savedOrder.txt")
+		var _json = file_text_read_string(file)
 		
+		var order = json_parse(_json)
+		
+		instance_destroy(oStocksSaving)
+		
+		var stocksSaving = instance_create_layer(0, 0, "Instances", oStocksSaving)
+		
+		stocksSaving.saved_order = order
+		
+		file_text_close(file)
+	}
 }

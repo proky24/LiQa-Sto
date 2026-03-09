@@ -21,16 +21,14 @@ if (!opened) {
 	
 	rnd = irandom(2)
 
-	instance_create_depth(440, 310, 0, npcs[1]) //vytvoření random NPC z pole
+	instance_create_depth(440, 310, 0, npcs[rnd]) //vytvoření random NPC z pole
 	spawned ++
 	
 	
 	var spawn_rate = power(1 - (rep / max_rep), 2)
 	//lerp(2, 1, rep / max_rep)
-	show_debug_message(string(spawn_rate))
 	rnd = irandom(600)
 	alarm[0] = rnd * spawn_rate
-	show_debug_message(string(rnd * spawn_rate))
 	//show_debug_message("next spawn " + string(rnd / 60) + "s")
 
 }

@@ -7,8 +7,9 @@ function product_duplicate(npc) {
 				npc.total_spend += price //přičteme cenu pouze jednoho produktu pokud je jich méně než dva	 
 			} else {
 				npc.total_spend += (price * 2)
+							yes = true
 			}
-			yes = true
+
 			return true
 	 } 
 }

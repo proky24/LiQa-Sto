@@ -52,11 +52,12 @@ function save_game() {
 	file_text_close(fileM)
 	
 	////////////////////////////////////
+	var array_order = []
 	
-	array_products = oStocksSaving.saved_order
-	show_debug_message(array_products)
+	array_order = oStocksSaving.saved_order
+	//show_debug_message(array_order)
 	
-	_string = json_stringify(array_products)
+	_string = json_stringify(array_order)
 	
 	file_text_write_string(fileO, _string)
 	

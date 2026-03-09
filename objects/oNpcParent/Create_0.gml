@@ -11,9 +11,10 @@ trend_p = oShopManager.trend_p
 
 waypoints = [0, 0, wp_cashier, wp_exit]
 waypoints[0] = products[trend_p]
+waypoints[1] = products[trend_p]
 
-var product1 = irandom(array_length(products) - 1)
-waypoints[1] = products[product1]
+/*var product1 = irandom(array_length(products) - 1)
+waypoints[1] = products[product1]*/
 
 
 target_x = 0
@@ -48,14 +49,14 @@ grid = 0
 
 
 //50% šance na to že NPC si půjde pro druhý produkt
-var rnd = irandom(1) 
+/*var rnd = irandom(1) 
 if (rnd < 1) {
 	array_delete(waypoints, 0, 1)
 	//pokud bude rnd 0 vymažeme product z pole waypoints
 }// 
 else {
 	two_products = true
-}
+}*/
 
 waypoints_len = array_length(waypoints)
 

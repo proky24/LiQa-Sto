@@ -54,9 +54,9 @@ if (rnd < 1) {
 	array_delete(waypoints, 0, 1)
 	//pokud bude rnd 0 vymažeme product z pole waypoints
 }// 
-else {
+else {*/
 	two_products = true
-}*/
+//}
 
 waypoints_len = array_length(waypoints)
 

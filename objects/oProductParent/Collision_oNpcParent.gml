@@ -6,7 +6,7 @@ npc = other
 npc.is_waiting = true
 
 if(npc.returning) {
-	product_duplicate(npc)
+	//product_duplicate(npc)
 	alarm[10] = 90
 } else {
 	

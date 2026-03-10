@@ -7,7 +7,7 @@ if (instance_exists(oDialog) && oDialog.npc_id == id ) {
 } else {
 		array_delete(waypoints, 1, 1) // pokud ne tak na prvním indexu
 }
-
+show_debug_message(waypoints)
 can_buy = false
 is_waiting = false
 walked = 0

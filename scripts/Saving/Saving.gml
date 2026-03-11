@@ -66,6 +66,9 @@ function save_game() {
 }
 
 function load_game() {
+	
+	room_goto(_room)
+	
 	if file_exists("savedProducts.txt") {
 		var file = file_text_open_read("savedProducts.txt")
 		var _json = file_text_read_string(file)
@@ -121,3 +124,16 @@ function load_game() {
 		file_text_close(file)
 	}
 }
+
+function save_room() {
+	for (var p = 0; p < array_length(rooms); p++) {
+		var room_curr = room_get_name(room)
+
+		if (room_curr == rooms[p]) {
+			_room = rooms_ref[p]
+			show_debug_message(string(_room) + " curr room")	
+		}
+	}
+	
+	var fileR = file_text_open_write("")
+}	

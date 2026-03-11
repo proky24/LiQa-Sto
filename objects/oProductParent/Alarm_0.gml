@@ -15,4 +15,3 @@ if (yes) { //pokud NPC chce produkt dvakrát odečteme dva produkty
 npc.is_waiting = false // NPC nečeká a může na další waypoint
 npc.alarm[1] = 1 // zavoláme aktualizaci cesty NPC
 alarm[1] = 60
-show_debug_message(string(prev_img_index) + "prev img index")

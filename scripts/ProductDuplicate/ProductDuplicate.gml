@@ -2,9 +2,7 @@
 function product_duplicate(npc) {
 	 if (npc.waypoints[0] == npc.waypoints[1]) { //pokud má NPC stejný produkt dvakrát
 
-			
-			if (npc.returning) {
-				
+			if (npc.returning) {				
 				return true 
 			}
 			

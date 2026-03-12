@@ -48,14 +48,12 @@ grid = 0
 
 
 //50% šance na to že NPC si půjde pro druhý produkt
-var rnd = irandom(1) 
+/*var rnd = irandom(1) 
 if (rnd < 1) {
 	array_delete(waypoints, 0, 1)
+	two_products = false
 	//pokud bude rnd 0 vymažeme product z pole waypoints
-} 
-else {
-	two_products = true
-}
+} */
 
 waypoints_len = array_length(waypoints)
 

@@ -1,11 +1,8 @@
-if (prev_img_index != 1) { 
+if (product_duplicate(npc) && prev_img_index != 1) { 
 	npc.walked += 2	
 	image_index += 2
 	sold -= 2
 } else {
-	if (product_duplicate(npc)) {
-		array_delete(npc.waypoints, 1, 1) 
-	}
 	image_index ++
 	npc.walked ++
 	sold --

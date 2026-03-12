@@ -8,11 +8,13 @@ if (_room == "rMain") {
 		oShopManager.rep -= oShopManager.rep_gained
 	
 		with (oProductParent) {
-			image_index += sold
+			if(sold < 0) {
+				image_index -= sold
+			} else {
+				image_index += sold
+			}
 		}	
 	}	
 	
 	save_game()
-} else if(_room == "rPrison") {
-	
-}
+} 

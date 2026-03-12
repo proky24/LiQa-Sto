@@ -365,7 +365,11 @@ function scr_game_text(_text_id, _npc_id) {
 			
 			_npc_id.can_buy = false
 			_npc_id.is_waiting = false
+			//_npc_id.waypoints[0].sold ++
+			//_npc_id.waypoints[1].sold ++
 			
+			show_debug_message(string(_npc_id.waypoints[0].sold))
+			show_debug_message(string(_npc_id.waypoints[1].sold))
 			
 			add_money_rep(_npc_id)
 			if(_npc_id.age < 18){

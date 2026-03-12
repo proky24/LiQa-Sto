@@ -73,7 +73,11 @@ function load_game() {
 		
 		var _string = json_parse(_json)
 		
-		room_goto(_string)
+		if (_string == rooms_ref[1]) {
+			room_goto(rooms_ref[0])			
+		} else {
+			room_goto(_string)
+		}
 		
 		file_text_close(fileR)
 	}

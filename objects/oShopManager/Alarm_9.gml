@@ -5,10 +5,11 @@ oPlayer.x = 288
 oPlayer.y = 144
 
 rep = 0
+illegal_sells = 0
 arrested_times ++
 	
 day += arrested_times
-if (day = end_trend_day) {set_trend()}
+if (day >= end_trend_day) {set_trend()}
 hours = 8
 minutes = 0
 	

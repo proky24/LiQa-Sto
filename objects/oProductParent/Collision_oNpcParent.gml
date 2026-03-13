@@ -12,10 +12,15 @@ if(npc.returning) {
 	
 	//pokud došli produkty
 	if (image_index == 0) {
-		if(array_length(npc.waypoints) < 4 || npc.total_spend == 0) { //pokud NPC nemá u sebe jiný produkt nebo nemá vybraný jiný odejde
+		if(array_length(npc.waypoints) < 4) { //pokud NPC nemá u sebe jiný produkt nebo nemá vybraný jiný odejde
 			npc.walked = array_length(npc.waypoints) - 1
 		} else {
-			npc.walked ++
+			for (var p = 0; p < array_length(npc.waypoints); p++){
+				if(npc.waypoints[p] == object_index){
+					array_delete(npc.waypoints, p, 1)
+					npc.two_products = false
+				}
+			}
 		}
 		alarm[0] = 90
 	

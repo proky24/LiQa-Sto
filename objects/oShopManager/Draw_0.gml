@@ -43,7 +43,7 @@ if (rep_change) {
 	draw_sprite(sArrowRepUp, subimg, _x, _y)
 } 
 
-if(!opened && !called_police) {
+/*if(!opened && !called_police) {
 	draw_sprite_ext(sUI, 0, 40, positiony, 1.5, 1.5, 0, c_white, 1)
 	
 	var minus = 0
@@ -61,7 +61,7 @@ if(!opened && !called_police) {
 
 	/*   //////////////////////////////////////////////       */
 
-	text = "Profit: "
+	/*text = "Profit: "
 	_x = 50
 	_y += (string_height(text) * 2.5)
 	draw_text( _x, _y, text)
@@ -84,7 +84,7 @@ if(!opened && !called_police) {
 
 	/*   //////////////////////////////////////////////       */
 
-	_x = 50
+	/*_x = 50
 	_y += (string_height(text) * 4)
 
 	text = "Ziskana reputace: " + $"{rep_gained}" +"   (" + $"{rep}" + " / " + $"{max_rep}" + ")"
@@ -93,7 +93,7 @@ if(!opened && !called_police) {
 
 	/*   //////////////////////////////////////////////       */
 
-	_x = 50
+	/*_x = 50
 
 	if (illegal_sells >= 1) {
 		text = "Policie ma malinke podezreni"
@@ -106,4 +106,4 @@ if(!opened && !called_police) {
 	draw_text(_x, _y, text)
 
 	/*   //////////////////////////////////////////////       */
-}
+//}

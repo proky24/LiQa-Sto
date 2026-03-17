@@ -9,7 +9,7 @@ if (!opened) {
 			delivery_day = 0
 		}
 		
-		//alarm[4] = 90
+		alarm[4] = 90
 	}
 	
 

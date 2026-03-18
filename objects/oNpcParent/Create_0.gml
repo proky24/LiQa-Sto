@@ -10,7 +10,7 @@ products = oShopManager.products
 trend_p = oShopManager.trend_p
 
 waypoints = [0, 0, wp_cashier, wp_exit]
-waypoints[0] = products[0]
+waypoints[0] = products[trend_p]
 
 var product1 = irandom(array_length(products) - 1)
 waypoints[1] = products[product1]

@@ -1,6 +1,6 @@
 function call_the_police(illegal_sells){
 	
-	var rnd = irandom_range(1, illegal_sells)
+	var rnd = irandom_range(1, 200)
 	
 	if (rnd < illegal_sells) {
 		oShopManager.called_police = true

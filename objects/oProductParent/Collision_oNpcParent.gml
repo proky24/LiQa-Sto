@@ -19,6 +19,11 @@ if(npc.returning) {
 				if(npc.waypoints[p] == object_index){
 					array_delete(npc.waypoints, p, 1)
 					npc.two_products = false
+					p = -1
+					
+					if (array_length(npc.waypoints) == 2) {
+						npc.walked ++
+					}
 				}
 			}
 		}

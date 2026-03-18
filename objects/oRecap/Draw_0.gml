@@ -41,7 +41,7 @@ draw_text(_x, _y, text)
 
 _x = x + 20
 
-if (illegal_sells >= 1) {
+if (illegal_sells == 1) {
 	text = "Policie ma malinke podezreni"
 } else if (illegal_sells <= 100) {
 	text = "Policie si vsima neceho divneho"

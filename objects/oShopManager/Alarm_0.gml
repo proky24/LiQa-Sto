@@ -25,10 +25,10 @@ if (!opened) {
 	spawned ++
 	
 	
-	var spawn_rate = power(1 - (rep / max_rep), 2)
+	//var spawn_rate = power(1 - (rep / max_rep), 2)
 	//lerp(2, 1, rep / max_rep)
-	rnd = irandom(600)
-	alarm[0] = rnd * spawn_rate
+	//rnd = irandom(600)
+	alarm[0] = 60//rnd * spawn_rate
 	//show_debug_message("next spawn " + string(rnd / 60) + "s")
 
 }

@@ -15,7 +15,7 @@ if(xspd != 0 || yspd != 0) {
 }
 
 if (place_meeting(x + xspd, y, [oCollision, oDoor])) {
-		xspd = 0
+	xspd = 0
 }
 
 if (place_meeting(x, y + yspd, [oCollision, oDoor])) {

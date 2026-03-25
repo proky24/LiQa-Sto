@@ -8,10 +8,11 @@ var down = keyboard_check(ord("S"));
 xspd = (right - left);
 yspd = (down - up);
 
-if(xspd != 0 || yspd != 0) {
-	var len = point_distance(0, 0, xspd, yspd) 
+if(xspd != 0 && yspd != 0) {
+	/*var len = point_distance(0, 0, xspd, yspd) 
 	xspd /= len 
-	yspd /= len 
+	yspd /= len*/
+	image_index = 0 exit
 }
 
 if (place_meeting(x + xspd, y, [oCollision, oDoor])) {

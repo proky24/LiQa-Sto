@@ -1,4 +1,4 @@
-input_key = vk_space
+  input_key = vk_space
 can_buy = false 
 can_talk = false
 

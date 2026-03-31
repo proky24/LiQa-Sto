@@ -1,9 +1,15 @@
 //pokud už produkt je obsazen nebo NPC pouze prochází nic se neděje
 if (collided || abs(other.target_x - x) > 1) {exit} 
 
+
 collided = true
 npc = other
 npc.is_waiting = true
+
+if(npc.thief && instance_exists(oNpcSecurity)) {
+	oNpcSecurity.alarm[0] = 1 
+}
+
 
 if(npc.returning) {
 	//product_duplicate(npc)
@@ -14,10 +20,7 @@ if(npc.returning) {
 	if (image_index == 0) {
 		if(array_length(npc.waypoints) < 4) { //pokud NPC nemá u sebe jiný produkt nebo nemá vybraný jiný odejde
 			npc.walked = array_length(npc.waypoints) - 1
-			npc.is_waiting = false
-			npc.alarm[1] = 1
-			alarm[1] = 60
-			exit
+			npc.is_waiting = false  
 		} else {
 			for (var p = 0; p < array_length(npc.waypoints); p++){
 				if(npc.waypoints[p] == object_index){

@@ -109,6 +109,8 @@
     {"id":{"name":"oWall_2","path":"objects/oWall_2/oWall_2.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"oWaypoint","path":"objects/oWaypoint/oWaypoint.yy",},},
+    {"id":{"name":"oWaypointDefaultSec","path":"objects/oWaypointDefaultSec/oWaypointDefaultSec.yy",},},
+    {"id":{"name":"oWaypointDoorsSec","path":"objects/oWaypointDoorsSec/oWaypointDoorsSec.yy",},},
     {"id":{"name":"oWaypointExit","path":"objects/oWaypointExit/oWaypointExit.yy",},},
     {"id":{"name":"rComputer","path":"rooms/rComputer/rComputer.yy",},},
     {"id":{"name":"rIntermediateShop","path":"rooms/rIntermediateShop/rIntermediateShop.yy",},},

@@ -1,7 +1,7 @@
  // Inherit the parent event
 event_inherited();
 
-waypoints = [oWaypointDefaultSec, oWaypointDoorsSec]
+waypoints = [oWaypointDefaultSec, oWaypointDoorsSec, oWaypointThiefSec]
 walked = 0
 
 image_speed = 0

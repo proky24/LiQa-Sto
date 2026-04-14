@@ -1,8 +1,11 @@
 //zastavíme NPC
-if (!collided) {
+if (!collided && abs(other.target_x - x) < 1) {
 	collided = true
-	other.sprite_index = other.sprite_down
-	other.image_index = 0
+	other.is_waiting = true
 	other.walked = 1
-	other.alarm[1] = 60
+	
+	var rnd = irandom_range(1, 1200)
+	
+	other.alarm[1] = rnd
+	alarm[1] = rnd + 100
 }

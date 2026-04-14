@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sWaypointExit",
-    "path":"sprites/sWaypointExit/sWaypointExit.yy",
+    "name":"sWaypointSec",
+    "path":"sprites/sWaypointSec/sWaypointSec.yy",
   },
   "spriteMaskId":null,
   "visible":false,

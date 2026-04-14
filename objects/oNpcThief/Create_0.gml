@@ -13,4 +13,4 @@ if (instance_exists(oNpcSecurity)) {
 	oNpcSecurity.move_speed = 1.4
 	oNpcSecurity.walked = 2
 	oNpcSecurity.alarm[1] = 20
-}
+} 

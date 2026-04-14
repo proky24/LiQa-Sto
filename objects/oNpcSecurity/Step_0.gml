@@ -12,6 +12,7 @@ if (is_waiting) {
 
 if (place_meeting(x + 16, y, oNpcThief)) {
 	show_debug_message("dej honir x") 
+	oNpcThief.alarm[6] = 1
 }
 
 if (place_meeting(x, y + 16, oNpcThief)) {

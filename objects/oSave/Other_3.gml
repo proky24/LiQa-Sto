@@ -1,4 +1,4 @@
-var _room = room_get_name(room) 
+/*var _room = room_get_name(room) 
 
 if (_room == "rMain") {
 	

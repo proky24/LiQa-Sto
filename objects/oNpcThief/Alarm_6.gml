@@ -1,5 +1,3 @@
 if (oNpcSecurity.invetory == 0) {
-	oNpcSecurity.invetory = waypoints[0].id
-	
+	oNpcSecurity.invetory = waypoints[0].id	
 }
-

@@ -19,24 +19,11 @@ function loop() {
 function stop() {
 	if(can_buy || is_waiting) {
 		sprite_index = sprite_up
-	} else {
-		switch (oPlayer.face) {
-		case 0:
-			sprite_index = sprite_left
-			break;
-		case 2:
-			sprite_index = sprite_right
-			break;
-		case 1:
-			sprite_index = sprite_down
-			break;
-		case 3:
-			sprite_index = sprite_up
-			break;	
-		}
-	}
+	} 
 	
-	
-
 	image_index = 0	
+}
+
+function security_breach() {
+	
 }

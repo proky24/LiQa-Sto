@@ -6,7 +6,7 @@ collided = true
 npc = other
 npc.is_waiting = true
 
-if(npc.thief && instance_exists(oNpcSecurity)) {
+if(npc.thief) {
 	if (image_index == 0) {
 		npc.walked = array_length(npc.waypoints) - 1
 		npc.alarm[3] = 90
@@ -14,8 +14,10 @@ if(npc.thief && instance_exists(oNpcSecurity)) {
 		npc.move_speed = 1.3
 		npc.stealing = true
 		
+	if(instance_exists(oNpcSecurity)) {
 		oNpcSecurity.move_speed = 1.5
 		oNpcSecurity.alarm[6] = 1 
+	}
 		
 		oPlayer.move_speed = 1.2	
 	}

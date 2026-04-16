@@ -10,8 +10,7 @@ if (is_waiting) {
 	image_speed = 0
 }
 
-if (place_meeting(x + 16, y, oNpcThief) && oNpcThief.stealing) {
-	
-	
-	oNpcThief.alarm[6] = 1
+if (place_meeting(x + 16, y, oNpcThief) && oNpcThief.stealing && !handeling) {
+	handeling = true
+	security_breach()
 }

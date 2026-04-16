@@ -26,4 +26,25 @@ function stop() {
 
 function security_breach() {
 	
+	oNpcThief.alarm[6] = 1
+	oNpcThief.is_waiting = true
+	
+	
+	is_waiting = true
+	switch (oNpcThief.sprite_index) {
+		case oNpcThief.sprite_down:
+			sprite_index = sprite_up
+		break;
+		case oNpcThief.sprite_up:
+			sprite_index = sprite_down
+		break;
+		case oNpcThief.sprite_left:
+			sprite_index = sprite_right
+		break;
+		case oNpcThief.sprite_right:
+			sprite_index = sprite_left
+		break;
+	}
+	
+	alarm[7] = 180
 }

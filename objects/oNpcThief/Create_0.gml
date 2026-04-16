@@ -9,3 +9,4 @@ notyet = false
 thief = true
 stealing = false
 
+path = path_add()

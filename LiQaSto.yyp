@@ -112,6 +112,7 @@
     {"id":{"name":"oWaypointDefaultSec","path":"objects/oWaypointDefaultSec/oWaypointDefaultSec.yy",},},
     {"id":{"name":"oWaypointDoorsSec","path":"objects/oWaypointDoorsSec/oWaypointDoorsSec.yy",},},
     {"id":{"name":"oWaypointExit","path":"objects/oWaypointExit/oWaypointExit.yy",},},
+    {"id":{"name":"oWaypointsSecReset","path":"objects/oWaypointsSecReset/oWaypointsSecReset.yy",},},
     {"id":{"name":"oWaypointThiefSec","path":"objects/oWaypointThiefSec/oWaypointThiefSec.yy",},},
     {"id":{"name":"rComputer","path":"rooms/rComputer/rComputer.yy",},},
     {"id":{"name":"rIntermediateShop","path":"rooms/rIntermediateShop/rIntermediateShop.yy",},},

@@ -7,5 +7,5 @@ if (!collided && abs(other.target_x - x) < 1) {
 	var rnd = irandom_range(1, 1200)
 	
 	other.alarm[1] = rnd
-	alarm[1] = rnd + 100
+	alarm[0] = rnd 
 }  

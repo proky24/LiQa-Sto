@@ -40,4 +40,4 @@ recap = true
 
 spawned = 0
 randomise()
-alarm[10] = 1000
+alarm[10] = 100

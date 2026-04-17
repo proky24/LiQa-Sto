@@ -25,7 +25,5 @@ if (collision_circle(x, y - 8, 10, oNpcThief, false, true) && oNpcThief.stealing
 
 	oNpcThief.alarm[6] = 1
 	
-	
-	
 	alarm[7] = 180
 }

@@ -18,7 +18,6 @@ function loop() {
 
 function stop() {
 	if(thief && caught) {
-		show_debug_message("bitch prilezla zpet")
 		switch (oNpcSecurity.sprite_index) {
 			case oNpcSecurity.sprite_down:
 				sprite_index = sprite_up
@@ -36,6 +35,8 @@ function stop() {
 				sprite_index = sprite_left
 			break;
 		}
+		image_index = 0
+		exit
 	}
 	
 	if(can_buy || is_waiting) {

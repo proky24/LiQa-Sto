@@ -15,7 +15,7 @@ if (handeling) {
 	image_speed = 0
 }
 
-if (collision_circle(x, y, 12, oNpcThief, false, true) && oNpcThief.stealing && !handeling) {
+if (collision_circle(x, y - 8, 10, oNpcThief, false, true) && oNpcThief.stealing && !handeling) {
 	handeling = true
 	path_end()
 	is_waiting = true

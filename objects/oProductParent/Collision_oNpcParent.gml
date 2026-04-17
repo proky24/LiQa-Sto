@@ -19,7 +19,7 @@ if(npc.thief) {
 	
 	if(instance_exists(oNpcSecurity)) {
 		oNpcSecurity.move_speed = 1.5
-		oNpcSecurity.alarm[6] = 1 
+		oNpcSecurity.alarm[6] = 60
 	}
 		
 	oPlayer.move_speed = 1.2	

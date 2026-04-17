@@ -1,6 +1,6 @@
 depth = -bbox_bottom
 
-if (is_waiting) {
+if (is_waiting && !handeling) {
 	if (walked == 2) {
 		sprite_index = sprite_left
 	} else {
@@ -10,7 +10,19 @@ if (is_waiting) {
 	image_speed = 0
 }
 
-if (place_meeting(x + 16, y, oNpcThief) && oNpcThief.stealing && !handeling) {
+if (handeling) {
+	image_index = 0
+	image_speed = 0
+}
+
+if (collision_circle(x, y, 12, oNpcThief, false, true) && oNpcThief.stealing && !handeling) {
 	handeling = true
-	security_breach()
+	path_end()
+	is_waiting = true
+
+	oNpcThief.alarm[6] = 1
+	
+	
+	
+	alarm[7] = 180
 }

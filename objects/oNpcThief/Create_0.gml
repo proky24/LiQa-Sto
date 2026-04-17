@@ -8,5 +8,6 @@ move_speed = 1
 notyet = false 
 thief = true
 stealing = false
+caught = false
 
 path = path_add()

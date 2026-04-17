@@ -17,34 +17,30 @@ function loop() {
 }
 
 function stop() {
+	if(thief && caught) {
+		show_debug_message("bitch prilezla zpet")
+		switch (oNpcSecurity.sprite_index) {
+			case oNpcSecurity.sprite_down:
+				sprite_index = sprite_up
+			break;
+			
+			case oNpcSecurity.sprite_up:
+				sprite_index = sprite_down
+			break;
+			
+			case oNpcSecurity.sprite_left:
+				sprite_index = sprite_right
+			break;
+			
+			case oNpcSecurity.sprite_right:
+				sprite_index = sprite_left
+			break;
+		}
+	}
+	
 	if(can_buy || is_waiting) {
 		sprite_index = sprite_up
 	} 
 	
 	image_index = 0	
-}
-
-function security_breach() {
-	
-	oNpcThief.alarm[6] = 1
-	oNpcThief.is_waiting = true
-	
-	
-	is_waiting = true
-	switch (oNpcThief.sprite_index) {
-		case oNpcThief.sprite_down:
-			sprite_index = sprite_up
-		break;
-		case oNpcThief.sprite_up:
-			sprite_index = sprite_down
-		break;
-		case oNpcThief.sprite_left:
-			sprite_index = sprite_right
-		break;
-		case oNpcThief.sprite_right:
-			sprite_index = sprite_left
-		break;
-	}
-	
-	alarm[7] = 180
 }

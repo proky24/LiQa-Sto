@@ -4,8 +4,13 @@ if (product_duplicate(npc) && prev_img_index != 1) {
 	sold -= 2
 } else {
 	image_index ++
-	npc.walked ++
 	sold --
+	if(npc.security) {
+		inventory = 0
+		walked = 0
+	} else {
+		npc.walked ++
+	}
 }
 
 npc.total_spend = 0

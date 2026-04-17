@@ -3,6 +3,9 @@ depth = -bbox_bottom
 if (is_waiting && !handeling) {
 	if (walked == 2) {
 		sprite_index = sprite_left
+	} else if (walked == 3) {
+		sprite_index = sprite_up
+		
 	} else {
 		sprite_index = sprite_down
 	}

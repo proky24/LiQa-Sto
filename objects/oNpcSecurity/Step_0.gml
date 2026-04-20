@@ -27,3 +27,8 @@ if (collision_circle(x, y - 8, 10, oNpcThief, false, true) && oNpcThief.stealing
 	
 	alarm[7] = 180
 }
+
+if (!oShopManager.opened && oShopManager.spawned == 0) {
+	is_waiting = false
+	walked = 4
+}

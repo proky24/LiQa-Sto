@@ -7,4 +7,5 @@ if (distance_to_object(oPlayer) < 8 && array_length(cargo) != 0 && keyboard_chec
 	instance_destroy(oBoxTop)
 	instance_destroy(oBoxRight)
 	instance_destroy(self)
+	oShopManager.alarm[4] = 60
 }

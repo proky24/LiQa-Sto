@@ -1,7 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-waypoints = [oWaypointDefaultSec, oWaypointDoorsSec, oWaypointThiefSec, 0, oPultRight]
+waypoints = [oWaypointDefaultSec, oWaypointDoorsSec, oWaypointThiefSec, 0, oWaypointExit]
 walked = 0
 
 is_waiting = false

@@ -8,6 +8,7 @@ minutes = 0
 day = 0
 
 opened = false
+security_sub = false
 
 money = 0
 money_gained = 0
@@ -40,4 +41,3 @@ recap = true
 
 spawned = 0
 randomise()
-alarm[10] = 100

@@ -6,6 +6,7 @@
   "name":"oVladimirLevchenko",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStocksParent","path":"objects/oStocksParent/oStocksParent.yy",},"propertyId":{"name":"page","path":"objects/oStocksParent/oStocksParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStocksParent","path":"objects/oStocksParent/oStocksParent.yy",},"propertyId":{"name":"name","path":"objects/oStocksParent/oStocksParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Služby ochranky",},
   ],
   "parent":{
     "name":"Products",

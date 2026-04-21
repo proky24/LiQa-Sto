@@ -144,7 +144,6 @@ function save_room() {
 
 		if (room_curr == rooms[p]) {
 			_room = rooms_ref[p]
-			show_debug_message(string(_room) + " curr room")	
 		}
 	}
 	

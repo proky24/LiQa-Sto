@@ -129,6 +129,7 @@
     {"id":{"name":"GetInPrison","path":"scripts/GetInPrison/GetInPrison.yy",},},
     {"id":{"name":"getOrder","path":"scripts/getOrder/getOrder.yy",},},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},},
+    {"id":{"name":"MovePage","path":"scripts/MovePage/MovePage.yy",},},
     {"id":{"name":"NpcMovement","path":"scripts/NpcMovement/NpcMovement.yy",},},
     {"id":{"name":"ProductDuplicate","path":"scripts/ProductDuplicate/ProductDuplicate.yy",},},
     {"id":{"name":"Recapitulation","path":"scripts/Recapitulation/Recapitulation.yy",},},

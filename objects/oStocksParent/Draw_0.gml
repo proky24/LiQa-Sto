@@ -1,4 +1,5 @@
 draw_self() 
+if(image_alpha == 0) {exit}
 draw_set_colour(c_black)
 var _y = y + (sprite_get_height(sprite_index) / 2) 
 var _x = x + 64

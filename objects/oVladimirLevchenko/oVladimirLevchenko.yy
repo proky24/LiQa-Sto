@@ -4,12 +4,17 @@
   "eventList":[],
   "managed":true,
   "name":"oVladimirLevchenko",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStocksParent","path":"objects/oStocksParent/oStocksParent.yy",},"propertyId":{"name":"page","path":"objects/oStocksParent/oStocksParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+  ],
   "parent":{
     "name":"Products",
     "path":"folders/Objects/Computer/Products.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oStocksParent",
+    "path":"objects/oStocksParent/oStocksParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

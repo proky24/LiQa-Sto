@@ -7,3 +7,4 @@ if (fast_delivery) {
 
 oStocksSaving.fast_delivery = fast_delivery
 fast_delivery = false
+

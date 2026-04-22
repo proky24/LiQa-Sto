@@ -10,6 +10,7 @@ if (room == target_room && image_index < 1) {
 	} else {
 		oShopManager.money = money
 		oShopManager.fast_delivery = fast_delivery
+		oShopManager.security_sub = security_sub
 		oShopManager.alarm[2] = 1
 	}
 

@@ -10,7 +10,7 @@ day = 0
 opened = false
 security_sub = false
 
-money = 0
+money = 75
 money_gained = 0
 
 fast_delivery = false

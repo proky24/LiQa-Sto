@@ -7,7 +7,7 @@ draw_text(_x, _y, text)
 
 /*   //////////////////////////////////////////////       */
 
-text = "Profit: "
+text = "Vydelek: "
 _x = x + 20
 _y += (string_height(text) * 3)
 draw_text( _x, _y, text)
@@ -36,6 +36,13 @@ _y += (string_height(text) * 4)
 text = "Ziskana reputace: " + $"{rep_gained}" +"   (" + $"{rep}" + " / " + $"{max_rep}" + ")"
 
 draw_text(_x, _y, text)
+
+/*   //////////////////////////////////////////////       */
+
+if (security_sub_msg) {
+	
+}
+
 
 /*   //////////////////////////////////////////////       */
 

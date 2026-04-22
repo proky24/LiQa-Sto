@@ -5,7 +5,14 @@ if (!called_police) {
 	for (var p = 0; p < array_length(products); p++) {
 		minus += products[p].image_index * products[p].buy_price
 	}
-	trans.profit = money - minus
+	if (security_sub) {
+		if (money >= 75) {
+			minus += 75
+		} else {
+			trans.security_sub_msg = true
+		}	
+	}
+	trans.profit = money - minus 
 	trans.money = money
 	trans.minus = minus
 	trans.day = day

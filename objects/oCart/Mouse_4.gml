@@ -7,6 +7,7 @@ if (oComputer.previous_money != oComputer.money) {
 		tran.target_room = rMain
 		tran.money = oComputer.money
 		tran.fast_delivery = fast_delivery
+		tran.security_sub = oContract.security_sub
 	}
 }
 

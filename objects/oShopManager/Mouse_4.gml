@@ -11,9 +11,9 @@ if (!opened && recap) {
 	day ++
 	if (day = end_trend_day && end_trend_day != 0) {set_trend()}
 	else if (end_trend_day = 0) {set_trend()}
-	if (security_sub) {instance_create_layer(440, 310, 0, oNpcSecurity, "Instances")}
-	hours = 8
-	minutes = 0
+	if (security_sub) {instance_create_layer(440, 310, "Instances", oNpcSecurity)}
+	hours = 17
+	minutes = 50
 	
 	start_day()
 	

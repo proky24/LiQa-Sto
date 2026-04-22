@@ -7,6 +7,7 @@ function move_page(_page){
 
 	for (var p = 0; p < array_length(products[prev_page].content); p++) {
 		products[prev_page].content[p].image_alpha = 0
+		
 		with (oPlusMinus) {
 			if (product == oComputer.products[oComputer.prev_page].content[p]) {
 				image_alpha = 0

@@ -1,5 +1,4 @@
 draw_self()
-
 text = "Den: " + $"{day}"
 var _x = (x + sprite_get_width(sUI)) - (string_width(text) / 2) 
 var _y = y + (string_height(text) * 2)

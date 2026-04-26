@@ -7,7 +7,7 @@ if (!called_police) {
 		minus += products[p].image_index * products[p].buy_price
 	}
 	if (security_sub) {
-		if (money >= 75) {
+		if (money >= 75 * 2) {
 			money -= 75
 			trans.security_sub_msg = 1
 		} else {

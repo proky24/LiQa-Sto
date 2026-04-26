@@ -8,6 +8,7 @@
 
 //vytvorime krabice se kterymi hrac muze interagovat a vymazeme ulozene objednavky
 var i = 0
+show_debug_message("what will you have in 500 years")
 for (var p = 0; p < array_length(saved_order); p++) {
 		if (saved_order[p] == 0) {
 			i++

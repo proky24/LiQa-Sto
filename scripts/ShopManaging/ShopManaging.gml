@@ -12,7 +12,7 @@ function start_day() {
 		exit
 	} 
 	
-		alarm[1] = 5
+		alarm[1] = 10
 }
 
 function set_trend() {

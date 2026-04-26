@@ -1,7 +1,9 @@
+show_debug_message("alarm 0")
 if (!opened) {
 	image_index = 0
 	
 	if(instance_exists(oNpcParent)) {
+			show_debug_message("wrong")
 		alarm[0] = 30
 	} else {
 		if (delivery_day == day) {

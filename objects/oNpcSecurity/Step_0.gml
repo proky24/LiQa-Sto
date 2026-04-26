@@ -1,7 +1,6 @@
 depth = -bbox_bottom
 
 if (!oShopManager.opened && oShopManager.spawned == 0) {
-	show_debug_message("jdu domu")
 	is_waiting = false
 	walked = 4
 }

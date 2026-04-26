@@ -71,7 +71,6 @@
     {"name":"inst_3E0A3CB6","path":"rooms/rMain/rMain.yy",},
     {"name":"inst_387942D4","path":"rooms/rMain/rMain.yy",},
     {"name":"inst_261F052F","path":"rooms/rMain/rMain.yy",},
-    {"name":"inst_2A3D638B","path":"rooms/rMain/rMain.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -143,7 +142,6 @@
         {"$GMRInstance":"v4","%Name":"inst_3E0A3CB6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3E0A3CB6","objectId":{"name":"oWaypointDefaultSec","path":"objects/oWaypointDefaultSec/oWaypointDefaultSec.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":360.0,"y":205.0,},
         {"$GMRInstance":"v4","%Name":"inst_387942D4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_387942D4","objectId":{"name":"oWaypointDoorsSec","path":"objects/oWaypointDoorsSec/oWaypointDoorsSec.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":265.0,"y":128.0,},
         {"$GMRInstance":"v4","%Name":"inst_261F052F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_261F052F","objectId":{"name":"oWaypointThiefSec","path":"objects/oWaypointThiefSec/oWaypointThiefSec.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":358.0,"y":237.0,},
-        {"$GMRInstance":"v4","%Name":"inst_2A3D638B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2A3D638B","objectId":{"name":"oNpcSecurity","path":"objects/oNpcSecurity/oNpcSecurity.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":401.0,"y":289.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"shop","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"shop","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -133,-2147483648,1,198,-12,135,3,167,0,0,-24,-2147483648,2,104,331,-4,7,10,266,7,456,7,363,7,394,102,

@@ -11,9 +11,15 @@ if (!opened && recap) {
 	day ++
 	if (day = end_trend_day && end_trend_day != 0) {set_trend()}
 	else if (end_trend_day = 0) {set_trend()}
-	if (security_sub) {instance_create_layer(440, 310, "Instances", oNpcSecurity)}
+	if (security_sub) {
+		if (money >= 75) {
+			instance_create_layer(440, 310, "Instances", oNpcSecurity)
+		} else {
+			security_sub = false		
+		}
+	}
 	hours = 17
-	minutes = 50
+	minutes = 0
 	
 	start_day()
 	

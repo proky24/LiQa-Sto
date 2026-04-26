@@ -15,7 +15,8 @@ if (!opened) {
 	
 
 } else {
-	if (spawned == 2) { //limit spawnutých NPC, pokud je 2 další NPC nespawnuju
+	show_debug_message(string(spawned))
+	if (spawned == 0) { //limit spawnutých NPC, pokud je 2 další NPC nespawnuju
 		alarm[0] = 60
 		exit
 	} 

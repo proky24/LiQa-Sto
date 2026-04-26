@@ -1,4 +1,4 @@
-if (oComputer.previous_money != oComputer.money) {
+if (oComputer.previous_money != oComputer.money || oContract.image_index == 1) {
 	get_order()
 
 	if (!instance_exists(oTransition)) {

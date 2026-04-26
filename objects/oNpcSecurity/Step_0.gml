@@ -1,5 +1,11 @@
 depth = -bbox_bottom
 
+if (!oShopManager.opened && oShopManager.spawned == 0) {
+	show_debug_message("jdu domu")
+	is_waiting = false
+	walked = 4
+}
+
 if (is_waiting && !handeling) {
 	if (walked == 2) {
 		sprite_index = sprite_left
@@ -26,9 +32,4 @@ if (collision_circle(x, y - 8, 10, oNpcThief, false, true) && oNpcThief.stealing
 	oNpcThief.alarm[6] = 1
 	
 	alarm[7] = 180
-}
-
-if (!oShopManager.opened && oShopManager.spawned == 0) {
-	is_waiting = false
-	walked = 4
 }

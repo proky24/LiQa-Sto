@@ -39,8 +39,18 @@ draw_text(_x, _y, text)
 
 /*   //////////////////////////////////////////////       */
 
-if (security_sub_msg) {
+switch (security_sub_msg) {
+	case 1:
+		show_debug_message("zaplaceno a nezruseno")
+	break;
 	
+	case 2:
+		show_debug_message("2 nezaplaceno a zruseno")
+	break;
+	
+	case 3:
+		show_debug_message("3 nemam najato")
+	break;
 }
 
 

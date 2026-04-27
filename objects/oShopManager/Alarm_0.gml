@@ -1,9 +1,7 @@
-show_debug_message("alarm 0")
 if (!opened) {
 	image_index = 0
 	
 	if(instance_exists(oNpcParent)) {
-			show_debug_message("wrong")
 		alarm[0] = 30
 	} else {
 		if (delivery_day == day) {
@@ -17,7 +15,6 @@ if (!opened) {
 	
 
 } else {
-	show_debug_message(string(spawned))
 	if (spawned == 0) { //limit spawnutých NPC, pokud je 2 další NPC nespawnuju
 		alarm[0] = 60
 		exit

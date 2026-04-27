@@ -15,3 +15,9 @@ if (ordered) { // spojeni objednavek
 }
 
 alarm[0] = 1
+
+if (security_sub) {
+	oContract.image_index = 1
+} else {
+	oContract.image_index = 0
+}

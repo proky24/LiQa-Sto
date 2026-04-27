@@ -38,20 +38,22 @@ draw_text(_x, _y, text)
 
 /*   //////////////////////////////////////////////       */
 
+_y += (string_height(text) * 4)
 switch (security_sub_msg) {
 	case 1:
-		show_debug_message("zaplaceno a nezruseno")
+		text = "Sluzba ochranky byla prodlouzena"
 	break;
 	
 	case 2:
-		show_debug_message("2 nezaplaceno a zruseno")
+		text = "Sluzba ochranky byla zrusena"
 	break;
 	
 	case 3:
-		show_debug_message("3 nemam najato")
+		text = "Neni najata ochranka"
 	break;
 }
 
+draw_text(_x, _y, text)
 
 /*   //////////////////////////////////////////////       */
 

@@ -18,14 +18,14 @@ if (!opened && recap) {
 			security_sub = false		
 		}
 	}
-	hours = 17
+	hours = 8
 	minutes = 0
 	
 	start_day()
 	
 	image_index = 1
 	rnd = floor(random(600))
-	show_debug_message("spawn " + string(rnd / 60) +"s")
+	//show_debug_message("spawn " + string(rnd / 60) +"s")
 	alarm[0] = rnd
 
 }

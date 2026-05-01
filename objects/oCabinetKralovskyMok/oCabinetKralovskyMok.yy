@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oCabinet",
+  "%Name":"oCabinetKralovskyMok",
   "eventList":[],
   "managed":true,
-  "name":"oCabinet",
+  "name":"oCabinetKralovskyMok",
   "overriddenProperties":[],
   "parent":{
     "name":"Furniture",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCabinet",
-    "path":"sprites/sCabinet/sCabinet.yy",
+    "name":"sCabinetSKralovskyMok",
+    "path":"sprites/sCabinetSKralovskyMok/sCabinetSKralovskyMok.yy",
   },
   "spriteMaskId":null,
   "visible":true,

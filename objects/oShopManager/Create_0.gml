@@ -7,6 +7,8 @@ hours = 8
 minutes = 0
 day = 0
 
+level = 1
+
 opened = false
 security_sub = false
 
@@ -41,3 +43,21 @@ recap = true
 
 spawned = 0
 randomise()
+
+p = 0
+beer = []
+with (oBeer) {
+	show_debug_message(id) 
+	oShopManager.beer[oShopManager.p] = id
+	show_debug_message(oShopManager.beer)
+	oShopManager.p ++
+}
+
+p = 0
+beer_1 = []
+with (oBeer_1) {
+	show_debug_message(id) 
+	oShopManager.beer_1[oShopManager.p] = id
+	show_debug_message(oShopManager.beer_1)
+	oShopManager.p ++
+}

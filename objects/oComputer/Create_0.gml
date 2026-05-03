@@ -7,7 +7,7 @@ curr_page = 0
 prev_page = 0
 
 first_page = [oLiverOfFlame, oBeerC, oBeerC1]
-second_page = [oVladimirLevchenko]
+second_page = [oVladimirLevchenko, oSecondShopProduct]
 
 products = [
 	{
@@ -23,4 +23,3 @@ for (var p = 0; p < array_length(products[curr_page].content); p++) {
 }
 
 products[1].content[0].image_alpha = 0
-show_debug_message(string(curr_page) + " craete " + string(id))

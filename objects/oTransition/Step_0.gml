@@ -6,8 +6,10 @@ if (room == target_room && image_index < 1) {
 		oComputer.previous_money = money  // promenna kterou pouzivame pro zdurazneni ze hrac ma neco v kosiku
 		oStocksSaving.security_sub = security_sub
 		oStocksSaving.alarm[2] = 1		
-	} else if(room == rPrison){
-		instance_create_depth(0, 0, -99999999, oPrisonTimer)
+	} else if(room == rIntermediateShop){
+		oShopManager.money = money
+		oShopManager.level = 1
+		oStocksSaving.level = 1
 	} else {
 		oShopManager.money = money
 		oShopManager.fast_delivery = fast_delivery

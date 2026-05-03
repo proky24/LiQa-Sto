@@ -7,12 +7,12 @@ hours = 8
 minutes = 0
 day = 0
 
-level = 1
+level = 0
 
 opened = false
 security_sub = false
 
-money = 0
+money = 500
 money_gained = 0
 
 fast_delivery = false

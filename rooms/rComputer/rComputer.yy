@@ -21,6 +21,8 @@
     {"name":"inst_DB33AFC","path":"rooms/rComputer/rComputer.yy",},
     {"name":"inst_54AAFEBE","path":"rooms/rComputer/rComputer.yy",},
     {"name":"inst_2FC2097","path":"rooms/rComputer/rComputer.yy",},
+    {"name":"inst_10DFE592","path":"rooms/rComputer/rComputer.yy",},
+    {"name":"inst_5A2D031A","path":"rooms/rComputer/rComputer.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -59,6 +61,8 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oPlusMinus","path":"objects/oPlusMinus/oPlusMinus.yy",},"propertyId":{"name":"operation","path":"objects/oPlusMinus/oPlusMinus.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.775,"scaleY":0.74375,"x":492.0,"y":165.0,},
         {"$GMRInstance":"v4","%Name":"inst_13A7A5FB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_13A7A5FB","objectId":{"name":"oVladimirLevchenko","path":"objects/oVladimirLevchenko/oVladimirLevchenko.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.5,"scaleY":1.5,"x":192.0,"y":74.5,},
+        {"$GMRInstance":"v4","%Name":"inst_10DFE592","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_10DFE592","objectId":{"name":"oSecondShopProduct","path":"objects/oSecondShopProduct/oSecondShopProduct.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.5,"scaleY":1.5,"x":192.0,"y":154.5,},
+        {"$GMRInstance":"v4","%Name":"inst_5A2D031A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5A2D031A","objectId":{"name":"oThirdShopProduct","path":"objects/oThirdShopProduct/oThirdShopProduct.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.5,"scaleY":1.5,"x":192.0,"y":234.5,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_E02A3CD","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_E02A3CD","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":6.0263157,"scaleY":7.594595,"spriteId":{"name":"sComputer","path":"sprites/sComputer/sComputer.yy",},"x":30.0,"y":48.0,},

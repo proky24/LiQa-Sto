@@ -7,10 +7,10 @@ function draw_supplies(){
 	var _y =  y - (height * 1.2)
 	var _x = x - 6.5
 	
-	if (sprite_index == sCabinetDlvSkvost || sprite_index == sCabinetSKralovskyMok || sprite_index == sCabinetSpanikovice ) {height -= 6}
+	if (sprite_index == sCabinetDlvSkvost || sprite_index == sCabinetSKralovskyMok || sprite_index == sCabinetSpanikovice ) {_y += 6}
 	if (sprite_index == sCabinetDlvSkvost) { 
-		_x_scale = string_width(text) / 11
-		_x -= 1
+		_x_scale = string_width(text) / 12
+		_x -= 1.5
 	}
 	
 	

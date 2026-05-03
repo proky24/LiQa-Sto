@@ -9,7 +9,10 @@
     "name":"Furniture",
     "path":"folders/Objects/Furniture.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oProductParent",
+    "path":"objects/oProductParent/oProductParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

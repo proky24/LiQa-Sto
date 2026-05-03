@@ -1,1 +1,0 @@
-products = oShopManager.products

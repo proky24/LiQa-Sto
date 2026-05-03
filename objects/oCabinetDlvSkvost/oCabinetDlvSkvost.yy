@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oCabinetSpanikovice",
+  "%Name":"oCabinetDlvSkvost",
   "eventList":[],
   "managed":true,
-  "name":"oCabinetSpanikovice",
+  "name":"oCabinetDlvSkvost",
   "overriddenProperties":[],
   "parent":{
     "name":"Furniture",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCabinetSpanikovice",
-    "path":"sprites/sCabinetSpanikovice/sCabinetSpanikovice.yy",
+    "name":"sCabinetDlvSkvost",
+    "path":"sprites/sCabinetDlvSkvost/sCabinetDlvSkvost.yy",
   },
   "spriteMaskId":null,
   "visible":true,

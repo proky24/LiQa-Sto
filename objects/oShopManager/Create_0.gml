@@ -44,7 +44,7 @@ recap = true
 spawned = 0
 randomise()
 
-p = 0
+/*p = 0
 beer = []
 with (oBeer) {
 	show_debug_message(id) 

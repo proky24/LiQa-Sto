@@ -22,13 +22,13 @@ function move_page(_page){
 	for (var p = 0; p < array_length(products[curr_page].content); p++) {
 		products[curr_page].content[p].image_alpha = 1
 		
-		/*if (curr_page == 0 || curr_page == 1){
+		if (curr_page == 0 || curr_page == 1){
 			with (oPlusMinus) {
-				if (product == oComputer.products[oComputer.prev_page].content[p]) {
-					image_alpha = 0
+				if (product == oComputer.products[oComputer.curr_page].content[p]) {
+					image_alpha = 1
 				}
 			}	
-		}*/
+		}
 	}
 	
 	/*if (curr_page == 1) {

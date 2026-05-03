@@ -7,7 +7,8 @@ curr_page = 0
 prev_page = 0
 
 first_page = [oLiverOfFlame, oBeerC, oBeerC1]
-second_page = [oVladimirLevchenko, oSecondShopProduct]
+second_page = [oDlvSkvost, oSpanikovice, oKralovskyMok]
+third_page = [oVladimirLevchenko, oSecondShopProduct]
 
 products = [
 	{
@@ -15,11 +16,8 @@ products = [
 	},
 	{
 		content: second_page
+	},
+	{
+		content: third_page
 	}
 ]
-
-for (var p = 0; p < array_length(products[curr_page].content); p++) {
-	products[curr_page].content[p].image_alpha = 1
-}
-
-products[1].content[0].image_alpha = 0

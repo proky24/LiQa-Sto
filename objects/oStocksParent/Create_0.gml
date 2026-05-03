@@ -3,8 +3,8 @@ if(page > 0) {
 	image_alpha = 0
 }
 
-
-/*_oPLus = instance_create_layer(oPlus_x, oPlus_y, "Instances", oPlusMinus)
+/*
+_oPLus = instance_create_layer(oPlus_x, oPlus_y, "Instances", oPlusMinus)
 
 _oPLus.image_xscale = 0.775
 _oPLus.image_yscale = 0.74375

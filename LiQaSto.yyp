@@ -254,8 +254,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rIntermediateShop","path":"rooms/rIntermediateShop/rIntermediateShop.yy",},},
     {"roomId":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
+    {"roomId":{"name":"rIntermediateShop","path":"rooms/rIntermediateShop/rIntermediateShop.yy",},},
     {"roomId":{"name":"rRecap","path":"rooms/rRecap/rRecap.yy",},},
     {"roomId":{"name":"rPrison","path":"rooms/rPrison/rPrison.yy",},},
     {"roomId":{"name":"rComputer","path":"rooms/rComputer/rComputer.yy",},},

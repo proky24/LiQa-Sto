@@ -4,7 +4,9 @@
   "eventList":[],
   "managed":true,
   "name":"oCabinetSpanikovice",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oProductParent","path":"objects/oProductParent/oProductParent.yy",},"propertyId":{"name":"max_stock","path":"objects/oProductParent/oProductParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"9",},
+  ],
   "parent":{
     "name":"Furniture",
     "path":"folders/Objects/Furniture.yy",

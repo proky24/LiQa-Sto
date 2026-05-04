@@ -7,7 +7,22 @@ hours = 8
 minutes = 0
 day = 0
 
-level = oStocksSaving.level
+level = 0
+products = []
+switch (level) {
+	case 0:
+		products = [oShelf, oBeer_1, oBeer]
+	break;
+	
+	case 1:
+		products = [oShelf, oBeer_1, oBeer, oCabinetDlvSkvost, oCabinetSpanikovice, oCabinetKralovskyMok]
+	break;
+	
+	case 2:
+	break;
+}
+
+oStocksSaving.alarm[3] = 10
 
 opened = false
 security_sub = false
@@ -35,7 +50,6 @@ arrested_times = 0
 called_police = false
 
 npcs = [oNpc, oNpc2, oNpc3]
-products = [oShelf, oBeer_1, oBeer]
 
 illegal_sells = 0
 

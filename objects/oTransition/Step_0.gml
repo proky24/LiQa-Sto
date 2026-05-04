@@ -6,15 +6,21 @@ if (room == target_room && image_index < 1) {
 		oComputer.previous_money = money  // promenna kterou pouzivame pro zdurazneni ze hrac ma neco v kosiku
 		oStocksSaving.security_sub = security_sub
 		oStocksSaving.alarm[2] = 1		
+		oStocksParent.alarm[1] = 1
 	} else if(room == rIntermediateShop){
 		file_delete("savedProducts.txt")
 		file_delete("savedOrder.txt")
 		file_delete("savedRoom.txt")
+		
+		room_instance_clear(rMain)
+		room_restart()
+		
 		load_game()
 		
 		oShopManager.money = money
 		oShopManager.level = 1
-		oStocksSaving.level = 1
+		
+		oShopManager.alarm[5] = 1
 	} else {
 		oShopManager.money = money
 		oShopManager.fast_delivery = fast_delivery

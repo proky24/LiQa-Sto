@@ -40,7 +40,8 @@ function save_game() {
 		end_trend_day: oShopManager.end_trend_day,
 		arrested_times: oShopManager.arrested_times,
 		illegal_sells: oShopManager.illegal_sells,
-		security_sub: oShopManager.security_sub
+		security_sub: oShopManager.security_sub,
+		level: oShopManager.level
 	}
 	_shopManager = struct		
 	//show_debug_message(_shopManager)
@@ -120,6 +121,7 @@ function load_game() {
 		shopManager.arrested_times = struct.arrested_times
 		shopManager.illegal_sells = struct.illegal_sells
 		shopManager.security_sub = struct.security_sub
+		shopManager.level = struct.level
 		
 		file_text_close(file)
 	}	

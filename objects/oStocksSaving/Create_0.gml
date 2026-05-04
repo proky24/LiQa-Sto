@@ -1,4 +1,4 @@
-level = 0
+level = 1
 stock_products = []
 _room = 0
 switch (level) {

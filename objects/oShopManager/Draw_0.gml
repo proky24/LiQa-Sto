@@ -8,10 +8,14 @@ if (minutes < 10) mm = "0" + mm;
 
 draw_text(positionx + 10, positiony + 25,  string(hours) + ":" + string(mm))
 draw_text(positionx + 10, positiony + 45, "Den " + string(day))
-draw_text(positionx + 10, positiony + 65, "Rozpocet " + string(money))
+draw_text(positionx + 10, positiony + 65, "Rozpocet " + string(money) + "$")
 
 var max_w = string_width(trend)
-draw_text_ext_colour(242, 33, trend, 0, max_w, c_yellow, c_yellow, c_yellow, c_yellow, 1)
+var _y = 33
+if (level > 0) {
+	_y = 26
+}
+draw_text_ext_colour(242, _y, trend, 0, max_w, c_yellow, c_yellow, c_yellow, c_yellow, 1)
 
 //rep pozadi
 var _y = oShopManager.y + sprite_get_height(sReputation) + 8

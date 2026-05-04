@@ -12,7 +12,7 @@ function start_day() {
 		exit
 	} 
 	
-		alarm[1] = 10
+		alarm[1] = 5
 }
 
 function set_trend() {
@@ -20,7 +20,6 @@ function set_trend() {
 	var product = products[rnd]
 	//product.trend = true
 	trend_p = rnd
-	
 	var name = product.name
 	rnd = irandom_range(1, 3)
 	end_trend_day = day + rnd

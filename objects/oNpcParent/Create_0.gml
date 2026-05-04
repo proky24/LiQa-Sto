@@ -1,4 +1,4 @@
- input_key = vk_space
+input_key = vk_space
 can_buy = false 
 can_talk = false
 
@@ -20,6 +20,7 @@ target_x = 0
 target_y = 0
 move_speed = 1
 
+security = false
 
 /*for (var p = 0; p < 2; p++) {
 	var product1 = irandom(array_length(products) - 1)

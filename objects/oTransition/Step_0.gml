@@ -7,6 +7,11 @@ if (room == target_room && image_index < 1) {
 		oStocksSaving.security_sub = security_sub
 		oStocksSaving.alarm[2] = 1		
 	} else if(room == rIntermediateShop){
+		file_delete("savedProducts.txt")
+		file_delete("savedOrder.txt")
+		file_delete("savedRoom.txt")
+		load_game()
+		
 		oShopManager.money = money
 		oShopManager.level = 1
 		oStocksSaving.level = 1

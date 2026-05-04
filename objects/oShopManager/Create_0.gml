@@ -7,7 +7,7 @@ hours = 8
 minutes = 0
 day = 0
 
-level = 0
+level = oStocksSaving.level
 
 opened = false
 security_sub = false

@@ -54,17 +54,18 @@ function save_game() {
 	file_text_close(fileM)
 	
 	////////////////////////////////////
-	var array_order = []
+	if (instance_exists(oStocksSaving)) {
+		var array_order = []
 	
-	array_order = oStocksSaving.saved_order
-	//show_debug_message(array_order)
+		array_order = oStocksSaving.saved_order
+		//show_debug_message(array_order)
 	
-	_string = json_stringify(array_order)
+		_string = json_stringify(array_order)
 	
-	file_text_write_string(fileO, _string)
+		file_text_write_string(fileO, _string)
 	
-	file_text_close(fileO)
-	
+		file_text_close(fileO)
+	}
 }
 
 function load_game() {
@@ -75,8 +76,17 @@ function load_game() {
 		
 		var _string = json_parse(_json)
 		
-		if (_string == rooms_ref[1]) {
-			room_goto(rooms_ref[0])			
+		if (_string == rooms_ref[2]) {
+			switch (oShopManager.level) {
+				case 0:
+					room_goto(rooms_ref[0])
+				break;
+				
+				case 1:
+					room_goto(rooms_ref[1])
+				break;
+			}
+			
 		} else {
 			room_goto(_string)
 		}
@@ -122,6 +132,8 @@ function load_game() {
 		shopManager.illegal_sells = struct.illegal_sells
 		shopManager.security_sub = struct.security_sub
 		shopManager.level = struct.level
+		
+		show_debug_message(string(struct) + " id " + string(shopManager.id) + " room where creating " + room_get_name(room))
 		
 		file_text_close(file)
 	}	

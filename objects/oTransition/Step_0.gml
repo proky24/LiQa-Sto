@@ -15,6 +15,11 @@ if (room == target_room && image_index < 1) {
 		room_instance_clear(rMain)
 		room_restart()
 		
+		instance_create_layer(0, 0, "Instances", oStocksSaving)
+		instance_create_layer(0, 0, "Instances", oSave)
+		
+		instance_destroy(oShopManager)
+		
 		load_game()
 		
 		oShopManager.money = money

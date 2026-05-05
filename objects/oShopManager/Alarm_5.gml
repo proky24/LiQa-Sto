@@ -13,3 +13,5 @@ switch (level) {
 
 oStocksSaving.alarm[3] = 10
 oProductParent.alarm[4] = 10
+
+oSave.alarm[0] = 1

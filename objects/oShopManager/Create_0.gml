@@ -8,8 +8,8 @@ minutes = 0
 day = 0
 
 level = 0
-products = []
-switch (level) {
+products = [oShelf, oBeer_1, oBeer]
+/*switch (level) {
 	case 0:
 		products = [oShelf, oBeer_1, oBeer]
 	break;
@@ -22,7 +22,7 @@ switch (level) {
 	break;
 }
 
-oStocksSaving.alarm[3] = 10
+oStocksSaving.alarm[3] = 10*/
 
 opened = false
 security_sub = false

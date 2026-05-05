@@ -1,3 +1,3 @@
-//load_game()
+load_game()
 
 

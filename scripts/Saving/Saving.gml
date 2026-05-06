@@ -44,7 +44,7 @@ function save_game() {
 		level: oShopManager.level
 	}
 	_shopManager = struct		
-	//show_debug_message(_shopManager)
+	show_debug_message(string(_shopManager) + " saved manager id oSave " + string(id)) 
 
 	
 	_string = json_stringify(_shopManager)
@@ -133,6 +133,7 @@ function load_game() {
 		shopManager.security_sub = struct.security_sub
 		shopManager.level = struct.level
 		
+		shopManager.alarm[5] = 1
 		show_debug_message(string(struct) + " id " + string(shopManager.id) + " room where creating " + room_get_name(room))
 		
 		file_text_close(file)

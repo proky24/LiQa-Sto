@@ -1,4 +1,5 @@
 level = oShopManager.level
+show_debug_message(string(level) + " vypni to nazvuc to")
 switch (level) {
 	case 0:
 		_room = rMain

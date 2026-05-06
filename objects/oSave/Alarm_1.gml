@@ -1,3 +1,1 @@
 load_game()
-
-

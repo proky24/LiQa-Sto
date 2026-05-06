@@ -1,4 +1,4 @@
-var tran = instance_create_depth(0, 0, -9999, oTransition)
+var tran = instance_create_depth(0, 0, -9999, oTransitionBackSpace)
 var _room = oStocksSaving._room
 
 tran.target_room = _room

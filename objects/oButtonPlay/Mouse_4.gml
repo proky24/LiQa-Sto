@@ -1,5 +1,6 @@
-if (!instance_exists(oTransitionMenu)) {
-	var tran = instance_create_depth(0, 0, -99999999, oTransitionMenu)
-	
-	tran.target_room = target_room
-}
+// Inherit the parent event
+event_inherited();
+
+image_index = 1
+alarm[0] = 10
+doing = true

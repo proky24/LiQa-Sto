@@ -8,7 +8,7 @@
   "managed":true,
   "name":"oButtonPrettySure",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oButtonParent","path":"objects/oButtonParent/oButtonParent.yy",},"propertyId":{"name":"text","path":"objects/oButtonParent/oButtonParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"celkem jisty",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oButtonParent","path":"objects/oButtonParent/oButtonParent.yy",},"propertyId":{"name":"text","path":"objects/oButtonParent/oButtonParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"celkem jist",},
   ],
   "parent":{
     "name":"Are You Sure",
@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sButtonMenu",
-    "path":"sprites/sButtonMenu/sButtonMenu.yy",
+    "name":"sButtonMenuPlay",
+    "path":"sprites/sButtonMenuPlay/sButtonMenuPlay.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,3 +1,6 @@
+// Inherit the parent event
+event_inherited();
+
 target_room = 0
 if file_exists("savedManager.txt") {
 	var file = file_text_open_read("savedManager.txt")

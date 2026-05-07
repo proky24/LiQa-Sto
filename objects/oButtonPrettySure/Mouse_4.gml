@@ -1,3 +1,5 @@
+// Inherit the parent event
+event_inherited();
 
 if (!instance_exists(oTransitionMenu)) {
 	file_delete("savedProducts.txt")

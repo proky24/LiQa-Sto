@@ -2,13 +2,12 @@
   "$GMObject":"",
   "%Name":"oButtonAreYouSure",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oButtonAreYouSure",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oButtonParent","path":"objects/oButtonParent/oButtonParent.yy",},"propertyId":{"name":"text","path":"objects/oButtonParent/oButtonParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Jste si jisty ?",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oButtonParent","path":"objects/oButtonParent/oButtonParent.yy",},"propertyId":{"name":"text","path":"objects/oButtonParent/oButtonParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"jsi si jist?",},
   ],
   "parent":{
     "name":"Are You Sure",
@@ -36,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sButtonMenu",
-    "path":"sprites/sButtonMenu/sButtonMenu.yy",
+    "name":"sButtonMenuPlay",
+    "path":"sprites/sButtonMenuPlay/sButtonMenuPlay.yy",
   },
   "spriteMaskId":null,
   "visible":true,

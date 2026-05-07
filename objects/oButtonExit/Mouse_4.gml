@@ -1,6 +1,4 @@
 // Inherit the parent event
 event_inherited();
 
-target_room = rMain
-
-image_xscale = 2
+alarm[0] = 5

@@ -2,5 +2,3 @@
 event_inherited();
 
 target_room = rMain
-
-image_xscale = 2

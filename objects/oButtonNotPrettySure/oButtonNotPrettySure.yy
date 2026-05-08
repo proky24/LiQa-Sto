@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"oButtonNotPrettySure",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"oButtonNotPrettySure",
   "overriddenProperties":[
@@ -33,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sButtonMenuPlay",
-    "path":"sprites/sButtonMenuPlay/sButtonMenuPlay.yy",
+    "name":"sButtonMenuNotPrettySure",
+    "path":"sprites/sButtonMenuNotPrettySure/sButtonMenuNotPrettySure.yy",
   },
   "spriteMaskId":null,
   "visible":true,

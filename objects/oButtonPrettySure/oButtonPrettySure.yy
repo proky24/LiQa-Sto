@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sButtonMenuPlay",
-    "path":"sprites/sButtonMenuPlay/sButtonMenuPlay.yy",
+    "name":"sButtonMenuPrettySure",
+    "path":"sprites/sButtonMenuPrettySure/sButtonMenuPrettySure.yy",
   },
   "spriteMaskId":null,
   "visible":true,

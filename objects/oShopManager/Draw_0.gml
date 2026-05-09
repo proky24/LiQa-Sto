@@ -18,7 +18,7 @@ if (level > 0) {
 draw_text_ext_colour(242, _y, trend, 0, max_w, c_yellow, c_yellow, c_yellow, c_yellow, 1)
 
 //rep pozadi
-var _y = oShopManager.y + sprite_get_height(sReputation) + 8
+_y = oShopManager.y + sprite_get_height(sReputation) + 8
 var _w = 100
 var _h = 8
 draw_sprite_stretched(sReputation_1, 0, positionx, _y, _w, _h)

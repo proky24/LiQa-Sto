@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":32,
   "bbox_left":3,
-  "bbox_right":92,
+  "bbox_right":93,
   "bbox_top":2,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,15 +12,15 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"a261ce05-709d-427e-b8f6-cf1012eccaf7","name":"a261ce05-709d-427e-b8f6-cf1012eccaf7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"1786bc50-651b-4c99-bda5-2c6044dcf0f5","name":"1786bc50-651b-4c99-bda5-2c6044dcf0f5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2e24997b-5d3e-4386-8503-62f8b7febe9e","name":"2e24997b-5d3e-4386-8503-62f8b7febe9e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"df6f63c7-8854-4e40-a84a-f87e569320af","name":"df6f63c7-8854-4e40-a84a-f87e569320af","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":33,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"4d6d7684-11cf-4235-9f30-2c990a682eed","blendMode":0,"displayName":"default","isLocked":false,"name":"4d6d7684-11cf-4235-9f30-2c990a682eed","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"389a59ed-c054-4f27-a71a-3d9565e1e121","blendMode":0,"displayName":"default","isLocked":false,"name":"389a59ed-c054-4f27-a71a-3d9565e1e121","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sButtonMenuExit",
   "nineSlice":{
@@ -89,16 +89,16 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a261ce05-709d-427e-b8f6-cf1012eccaf7","path":"sprites/sButtonMenuExit/sButtonMenuExit.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4b2e2b29-b3cd-431e-9c2f-531c963f2b78","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2e24997b-5d3e-4386-8503-62f8b7febe9e","path":"sprites/sButtonMenuExit/sButtonMenuExit.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"cb1f046a-712e-4d0f-a9ec-43ad89f54676","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1786bc50-651b-4c99-bda5-2c6044dcf0f5","path":"sprites/sButtonMenuExit/sButtonMenuExit.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"bfdf890a-4145-4dbd-b4db-c11748ee3209","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"df6f63c7-8854-4e40-a84a-f87e569320af","path":"sprites/sButtonMenuExit/sButtonMenuExit.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ac1116c4-a5d9-44eb-a534-242211fb9e73","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":48,
+    "xorigin":47,
     "yorigin":16,
   },
   "swatchColours":null,
@@ -109,5 +109,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":96,
+  "width":94,
 }

@@ -19,6 +19,7 @@ if (room == target_room && image_index < 1) {
 		
 		
 	} else {
+		game_restart()
 		/*oShopManager.money = money
 		oShopManager.fast_delivery = fast_delivery
 		oShopManager.security_sub = security_sub

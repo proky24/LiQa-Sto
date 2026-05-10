@@ -5,7 +5,7 @@ depth = -999
 x = room_width / 2
 y = room_height / 2 
 
-image_xscale = 5
+image_xscale = 4.5
 image_yscale = 6
 
 function toggle_ig_menu() {

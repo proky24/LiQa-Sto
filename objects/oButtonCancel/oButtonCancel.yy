@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oButtonIGSettings",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oButtonCancel",
+  "eventList":[],
   "managed":true,
-  "name":"oButtonIGSettings",
+  "name":"oButtonCancel",
   "overriddenProperties":[],
   "parent":{
     "name":"Buttons",
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sButtonSettings",
-    "path":"sprites/sButtonSettings/sButtonSettings.yy",
+    "name":"sButtonCancel",
+    "path":"sprites/sButtonCancel/sButtonCancel.yy",
   },
   "spriteMaskId":null,
   "visible":true,

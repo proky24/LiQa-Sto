@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oButtonIGSettings",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oButtonApply",
+  "eventList":[],
   "managed":true,
-  "name":"oButtonIGSettings",
+  "name":"oButtonApply",
   "overriddenProperties":[],
   "parent":{
     "name":"Buttons",
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sButtonSettings",
-    "path":"sprites/sButtonSettings/sButtonSettings.yy",
+    "name":"sButtonApply",
+    "path":"sprites/sButtonApply/sButtonApply.yy",
   },
   "spriteMaskId":null,
   "visible":true,

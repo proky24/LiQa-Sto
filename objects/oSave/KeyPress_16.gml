@@ -1,4 +1,4 @@
-if (!pause) {
+/*if (!pause) {
 	instance_deactivate_all(true)
 	pause = true
 } else {

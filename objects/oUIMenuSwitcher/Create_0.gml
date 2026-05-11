@@ -24,5 +24,11 @@ function toggle_ig_menu() {
 		with (oButtonParent) {
 			instance_destroy()
 		}
+		
+		if(instance_exists(oSlider)) {
+			with (oSlider) {
+				instance_destroy()
+			}
+		}
 	}
 }

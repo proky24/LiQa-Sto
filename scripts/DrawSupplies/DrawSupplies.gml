@@ -8,7 +8,7 @@ function draw_supplies(){
 	var _x = x - 6.5
 	
 	if (sprite_index == sCabinetDlvSkvost || sprite_index == sCabinetSKralovskyMok || sprite_index == sCabinetSpanikovice ) {_y += 6}
-	if (sprite_index == sCabinetDlvSkvost) { 
+	if (sprite_index == sCabinetDlvSkvost || sprite_index == sCabinetPirateRum) { 
 		_x_scale = string_width(text) / 12
 		_x -= 1.5
 	}

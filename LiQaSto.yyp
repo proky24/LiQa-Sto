@@ -300,9 +300,9 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rExpertShop","path":"rooms/rExpertShop/rExpertShop.yy",},},
-    {"roomId":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
-    {"roomId":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
     {"roomId":{"name":"rIntermediateShop","path":"rooms/rIntermediateShop/rIntermediateShop.yy",},},
+    {"roomId":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
+    {"roomId":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
     {"roomId":{"name":"rRecap","path":"rooms/rRecap/rRecap.yy",},},
     {"roomId":{"name":"rPrison","path":"rooms/rPrison/rPrison.yy",},},
     {"roomId":{"name":"rComputer","path":"rooms/rComputer/rComputer.yy",},},

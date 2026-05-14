@@ -22,7 +22,7 @@ if(i == 3) {
 	var cargo = instance_create_depth(224, 128, -bbox_bottom, oBoxDown) 
 	cargo.cargo = saved_order
 
-	saved_order = [0, 0, 0]
+	saved_order = []
 	saved_curr_stocks = []
 	ordered = false
 }

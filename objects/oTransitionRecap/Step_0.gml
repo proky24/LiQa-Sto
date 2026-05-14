@@ -10,6 +10,7 @@ if (room == target_room && image_index < 1) {
 		oRecap.security_sub_msg = security_sub_msg
 		
 		oRecapTimer.alarm[0] = 600
+		oRecapTimer.target_room = recap_timer_room
 	}
 	instance_destroy(self)
 }

@@ -13,7 +13,7 @@ products = [oShelf, oBeer_1, oBeer]
 opened = false
 security_sub = false
 
-money = 500
+money = 1000
 money_gained = 0
 
 fast_delivery = false

@@ -25,6 +25,7 @@ if (!called_police) {
 	trans.rep_gained = rep_gained
 	trans.illegal_sells = illegal_sells
 	recap = true	
+	trans.recap_timer_room = room
 } else {
 	alarm[4] = 30
 }

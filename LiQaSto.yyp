@@ -136,6 +136,7 @@
     {"id":{"name":"oTransitionMenu","path":"objects/oTransitionMenu/oTransitionMenu.yy",},},
     {"id":{"name":"oTransitionPrison","path":"objects/oTransitionPrison/oTransitionPrison.yy",},},
     {"id":{"name":"oTransitionRecap","path":"objects/oTransitionRecap/oTransitionRecap.yy",},},
+    {"id":{"name":"oTransitionShops","path":"objects/oTransitionShops/oTransitionShops.yy",},},
     {"id":{"name":"oTransitionStart","path":"objects/oTransitionStart/oTransitionStart.yy",},},
     {"id":{"name":"oUIMenuSwitcher","path":"objects/oUIMenuSwitcher/oUIMenuSwitcher.yy",},},
     {"id":{"name":"oVladimirLevchenko","path":"objects/oVladimirLevchenko/oVladimirLevchenko.yy",},},
@@ -301,8 +302,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
-    {"roomId":{"name":"rIntermediateShop","path":"rooms/rIntermediateShop/rIntermediateShop.yy",},},
     {"roomId":{"name":"rExpertShop","path":"rooms/rExpertShop/rExpertShop.yy",},},
+    {"roomId":{"name":"rIntermediateShop","path":"rooms/rIntermediateShop/rIntermediateShop.yy",},},
     {"roomId":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
     {"roomId":{"name":"rRecap","path":"rooms/rRecap/rRecap.yy",},},
     {"roomId":{"name":"rPrison","path":"rooms/rPrison/rPrison.yy",},},

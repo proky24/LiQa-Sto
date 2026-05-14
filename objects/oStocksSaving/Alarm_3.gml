@@ -14,5 +14,8 @@ switch (level) {
 	break;
 	
 	case 2:
+		_room = rExpertShop
+		stock_products = [oLiverOfFlame, oBeerC, oBeerC1, oDlvSkvost, oSpanikovice, oKralovskyMok]
+		saved_order = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 	break;
 }

@@ -1,9 +1,9 @@
 _room = rMain
 stock_products = [oLiverOfFlame, oBeerC, oBeerC1]
-saved_order = [0, 0, 0]
+saved_order = [] //melo by fungovat kdyztak po trech nulach
 level = 0
 saved_curr_stocks = []
-
+boxpositions[0, 0] = []
 
 
 ordered = false

@@ -13,7 +13,7 @@ products = [oShelf, oBeer_1, oBeer]
 opened = false
 security_sub = false
 
-money = 1000
+money = 10000
 money_gained = 0
 
 fast_delivery = false
@@ -43,7 +43,7 @@ recap = true
 
 spawned = 0
 randomise()
-
+//alarm[10] = 250
 /*p = 0
 beer = []
 with (oBeer) {

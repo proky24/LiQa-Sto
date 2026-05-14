@@ -14,7 +14,7 @@ for (var p = 0; p < array_length(saved_order); p++) {
 	}
 }
 
-if(i == 3) {
+if(i == recap_trigger[level]) {
 	oShopManager.alarm[4] = 90	
 } else {
 	instance_create_depth(224, 112, -bbox_bottom, oBoxTop) 
@@ -22,7 +22,7 @@ if(i == 3) {
 	var cargo = instance_create_depth(224, 128, -bbox_bottom, oBoxDown) 
 	cargo.cargo = saved_order
 
-	saved_order = []
+	alarm[3] = 1
 	saved_curr_stocks = []
 	ordered = false
 }

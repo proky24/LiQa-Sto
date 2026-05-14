@@ -13,6 +13,7 @@ if(npc.thief) {
 		npc.move_speed = 1.3
 		npc.stealing = true
 		npc.walked ++
+		npc.total_spend = price
 	}
 	
 	alarm[0] = 60

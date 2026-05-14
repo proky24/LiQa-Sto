@@ -15,6 +15,7 @@ if (room == target_room && image_index < 1) {
 			
 			instance_create_layer(0, 0, "Instances", oStocksSaving)
 			
+			oShopManager.alarm[5] = 1
 		}
 		
 		

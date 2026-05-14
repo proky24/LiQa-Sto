@@ -3,8 +3,8 @@ stock_products = [oLiverOfFlame, oBeerC, oBeerC1]
 saved_order = [] //melo by fungovat kdyztak po trech nulach
 level = 0
 saved_curr_stocks = []
-boxpositions[0, 0] = []
 
+recap_trigger = [3, 6, 9]
 
 ordered = false
 

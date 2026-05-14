@@ -134,7 +134,7 @@ function load_game() {
 		shopManager.level = struct.level
 		
 		shopManager.alarm[5] = 1
-		show_debug_message(string(struct) + " id " + string(shopManager.id) + " room where creating " + room_get_name(room))
+		//show_debug_message(string(struct) + " id " + string(shopManager.id) + " room where creating " + room_get_name(room))
 		
 		file_text_close(file)
 	}	

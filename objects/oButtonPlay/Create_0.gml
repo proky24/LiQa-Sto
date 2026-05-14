@@ -18,6 +18,7 @@ if file_exists("savedManager.txt") {
 		break;
 		
 		case 2:
+			target_room = rExpertShop
 		break;
 	}
 } else {

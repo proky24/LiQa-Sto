@@ -8,7 +8,8 @@ prev_page = 0
 
 first_page = [oLiverOfFlame, oBeerC, oBeerC1]
 second_page = [oDlvSkvost, oSpanikovice, oKralovskyMok]
-third_page = [oVladimirLevchenko, oSecondShopProduct, oThirdShopProduct]
+third_page = [oPirateRum, oElixirTriPer, oDaPremiumShi]
+forth_page = [oVladimirLevchenko, oSecondShopProduct, oThirdShopProduct]
 
 level = oStocksSaving.level
 products = []
@@ -20,7 +21,7 @@ switch (level) {
 				content: first_page
 			},
 			{
-				content: third_page
+				content: forth_page
 			}
 		]
 	break;
@@ -34,7 +35,7 @@ switch (level) {
 				content: second_page
 			},
 			{
-				content: third_page
+				content: forth_page
 			}
 		]
 	break;
@@ -49,6 +50,9 @@ switch (level) {
 			},
 			{
 				content: third_page
+			},
+			{
+				content: forth_page
 			}
 		]
 	break;

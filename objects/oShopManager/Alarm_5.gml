@@ -8,6 +8,7 @@ switch (level) {
 	break;
 	
 	case 2:
+		products = [oShelf, oBeer_1, oBeer, oCabinetDlvSkvost, oCabinetSpanikovice, oCabinetKralovskyMok, oCabinetPirateRum, oCabinetElixirTriPer, oCabinetDaPremiumShi]
 	break;
 }
 

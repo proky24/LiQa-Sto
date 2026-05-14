@@ -11,6 +11,19 @@ if (oBuyButton.shop_upgrade) {
 	exit
 }
 
+if (oBuyButton_1.shop_upgrade) {
+	if (!instance_exists(oTransitionShops)) {
+		room_instance_clear(rMain)
+		instance_destroy(oStocksSaving)
+		instance_destroy(oSave)
+		var tran = instance_create_depth(0, 0, -9999, oTransitionShops)
+		tran.target_room = rExpertShop
+		tran.money = oComputer.money
+		tran.security_sub = oContract.security_sub
+	}
+	exit
+}
+
 if (oComputer.previous_money != oComputer.money || oContract.image_index == 1) {
 	get_order()
 	

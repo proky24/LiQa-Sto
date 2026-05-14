@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sDaPremiumShi",
-    "path":"sprites/sDaPremiumShi/sDaPremiumShi.yy",
+    "name":"sCabinetDaPremiumShi",
+    "path":"sprites/sCabinetDaPremiumShi/sCabinetDaPremiumShi.yy",
   },
   "spriteMaskId":null,
   "visible":true,

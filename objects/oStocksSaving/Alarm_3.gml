@@ -15,7 +15,7 @@ switch (level) {
 	
 	case 2:
 		_room = rExpertShop
-		stock_products = [oLiverOfFlame, oBeerC, oBeerC1, oDlvSkvost, oSpanikovice, oKralovskyMok]
+		stock_products = [oLiverOfFlame, oBeerC, oBeerC1, oDlvSkvost, oSpanikovice, oKralovskyMok, oPirateRum, oElixirTriPer, oDaPremiumShi]
 		saved_order = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 	break;
 }

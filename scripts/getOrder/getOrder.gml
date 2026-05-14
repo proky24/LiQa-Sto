@@ -4,5 +4,4 @@ function get_order(){ //ulozime objednavku a typ  dopravy
 			oStocksSaving.saved_order[p] += oStocksSaving.stock_products[p].ordering
 	}
 	fast_delivery = oDelivery.fast_delivery
-	show_debug_message(oStocksSaving.saved_order)
 }

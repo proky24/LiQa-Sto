@@ -1,5 +1,7 @@
 if (image_alpha == 0) {
 	buy.image_alpha = 0
-} else {
+} else if (instance_exists(oStocksSaving) && oStocksSaving.level == 2) {
+	buy.image_alpha = 0.85
+}else {
 	buy.image_alpha = 1
 }

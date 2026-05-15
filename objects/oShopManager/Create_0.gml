@@ -1,5 +1,7 @@
 draw_set_colour(c_white)
 
+cursor = 0
+
 positionx = 502
 positiony = 60
 

@@ -6,6 +6,8 @@
   "name":"oCabinetElixirTriPer",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oProductParent","path":"objects/oProductParent/oProductParent.yy",},"propertyId":{"name":"max_stock","path":"objects/oProductParent/oProductParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oProductParent","path":"objects/oProductParent/oProductParent.yy",},"propertyId":{"name":"name","path":"objects/oProductParent/oProductParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Elixir tri Per",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oProductParent","path":"objects/oProductParent/oProductParent.yy",},"propertyId":{"name":"price","path":"objects/oProductParent/oProductParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
   ],
   "parent":{
     "name":"Furniture",

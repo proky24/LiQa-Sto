@@ -6,7 +6,8 @@
   "name":"oCabinetPirateRum",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oProductParent","path":"objects/oProductParent/oProductParent.yy",},"propertyId":{"name":"max_stock","path":"objects/oProductParent/oProductParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"12",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oProductParent","path":"objects/oProductParent/oProductParent.yy",},"propertyId":{"name":"name","path":"objects/oProductParent/oProductParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"none",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oProductParent","path":"objects/oProductParent/oProductParent.yy",},"propertyId":{"name":"name","path":"objects/oProductParent/oProductParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Pirate Rum",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oProductParent","path":"objects/oProductParent/oProductParent.yy",},"propertyId":{"name":"price","path":"objects/oProductParent/oProductParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"15",},
   ],
   "parent":{
     "name":"Furniture",

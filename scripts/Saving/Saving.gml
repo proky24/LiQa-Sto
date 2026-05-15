@@ -44,7 +44,7 @@ function save_game() {
 		level: oShopManager.level
 	}
 	_shopManager = struct		
-	show_debug_message(string(_shopManager) + " saved manager id oSave " + string(id)) 
+	//show_debug_message(string(_shopManager) + " saved manager id oSave " + string(id)) 
 
 	
 	_string = json_stringify(_shopManager)
@@ -76,7 +76,7 @@ function load_game() {
 		
 		var _string = json_parse(_json)
 		
-		if (_string == rooms_ref[2]) {
+		if (_string == rooms_ref[3]) {
 			switch (oShopManager.level) {
 				case 0:
 					room_goto(rooms_ref[0])
@@ -84,6 +84,10 @@ function load_game() {
 				
 				case 1:
 					room_goto(rooms_ref[1])
+				break;
+				
+				case 2:
+					room_goto(rooms_ref[2])
 				break;
 			}
 			

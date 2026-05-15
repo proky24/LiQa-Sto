@@ -22,7 +22,7 @@ function move_page(_page){
 	for (var p = 0; p < array_length(products[curr_page].content); p++) {
 		products[curr_page].content[p].image_alpha = 1
 		
-		if (curr_page == 0 || curr_page == 1){
+		if (curr_page <= 3){
 			with (oPlusMinus) {
 				if (product == oComputer.products[oComputer.curr_page].content[p]) {
 					image_alpha = 1
@@ -30,23 +30,4 @@ function move_page(_page){
 			}	
 		}
 	}
-	
-	/*if (curr_page == 1) {
-		oVladimirLevchenko.image_alpha = 1
-	}
-
-	if (curr_page == 0) {
-		products[curr_page].content[0].image_alpha = 1
-		products[curr_page].content[1].image_alpha = 1 
-		products[curr_page].content[2].image_alpha = 1
-		
-		for (var p = 0; p < array_length(products[curr_page].content); p++) {
-			with (oPlusMinus) {
-				if (product == oComputer.products[oComputer.curr_page].content[p]) {
-					image_alpha = 1
-				}
-			}	
-		}	
-	}*/
-
 }

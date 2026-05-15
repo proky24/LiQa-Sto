@@ -70,34 +70,6 @@ function save_game() {
 
 function load_game() {
 	
-	if file_exists("savedRoom.txt"){
-		var fileR = file_text_open_read("savedRoom.txt")
-		var _json = file_text_read_string(fileR)
-		
-		var _string = json_parse(_json)
-		
-		if (_string == rooms_ref[3]) {
-			switch (oShopManager.level) {
-				case 0:
-					room_goto(rooms_ref[0])
-				break;
-				
-				case 1:
-					room_goto(rooms_ref[1])
-				break;
-				
-				case 2:
-					room_goto(rooms_ref[2])
-				break;
-			}
-			
-		} else {
-			room_goto(_string)
-		}
-		
-		file_text_close(fileR)
-	}
-	
 	if file_exists("savedProducts.txt") {
 		var file = file_text_open_read("savedProducts.txt")
 		var _json = file_text_read_string(file)
@@ -142,6 +114,34 @@ function load_game() {
 		
 		file_text_close(file)
 	}	
+	
+	if file_exists("savedRoom.txt"){
+		var fileR = file_text_open_read("savedRoom.txt")
+		var _json = file_text_read_string(fileR)
+		
+		var _string = json_parse(_json)
+		
+		if (_string == rooms_ref[3]) {
+			switch (oShopManager.level) {
+				case 0:
+					room_goto(rooms_ref[0])
+				break;
+				
+				case 1:
+					room_goto(rooms_ref[1])
+				break;
+				
+				case 2:
+					room_goto(rooms_ref[2])
+				break;
+			}
+			
+		} else {
+			room_goto(_string)
+		}
+		
+		file_text_close(fileR)
+	}
 	
 	if file_exists("savedOrder.txt") {
 		var file = file_text_open_read("savedOrder.txt")

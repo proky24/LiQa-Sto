@@ -21,6 +21,9 @@ money_gained = 0
 fast_delivery = false
 delivery_day = 0
 
+max_spawn = [2, 3, 6]
+queue_waypoints = []
+
 rnd = 0
 
 rep = 0

@@ -1,5 +1,4 @@
 if (!called_police) {
-	show_debug_message("halo")
 	var trans = instance_create_depth(0, 0, -9999999999, oTransitionRecap)
 	trans.target_room = rRecap
 	var minus = 0

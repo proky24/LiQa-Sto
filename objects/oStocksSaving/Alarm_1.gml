@@ -14,12 +14,17 @@ for (var p = 0; p < array_length(saved_order); p++) {
 	}
 }
 
+if (level > 0) {
+	other_boxes_offset._x = -16
+	show_debug_message(other_boxes_offset._x)
+}
+
 if(i == recap_trigger[level]) {
 	oShopManager.alarm[4] = 90	
 } else {
-	instance_create_depth(224, 112, -bbox_bottom, oBoxTop) 
-	instance_create_depth(240, 120, -bbox_bottom, oBoxRight) 
-	var cargo = instance_create_depth(224, 128, -bbox_bottom, oBoxDown) 
+	instance_create_depth(cargo_box_cor[level]._x, cargo_box_cor[level]._y - other_boxes_offset._y, -bbox_bottom, oBoxTop) 
+	instance_create_depth(cargo_box_cor[level]._x + other_boxes_offset._x, cargo_box_cor[level]._y - (other_boxes_offset._y / 2), -bbox_bottom, oBoxRight) 
+	var cargo = instance_create_depth(cargo_box_cor[level]._x, cargo_box_cor[level]._y, -bbox_bottom, oBoxDown) 
 	cargo.cargo = saved_order
 
 	alarm[3] = 1

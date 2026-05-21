@@ -15,7 +15,7 @@ if (!opened) {
 	
 
 } else {
-	if (spawned == 0) { //limit spawnutých NPC, pokud je 2 další NPC nespawnuju
+	if (spawned == 2) { //limit spawnutých NPC, pokud je 2 další NPC nespawnuju
 		alarm[0] = 60
 		exit
 	} 
@@ -26,10 +26,10 @@ if (!opened) {
 	spawned ++
 	
 	
-	//var spawn_rate = power(1 - (rep / max_rep), 2)
+	var spawn_rate = power(1 - (rep / max_rep), 2)
 	//lerp(2, 1, rep / max_rep)
-	//rnd = irandom(600)
-	alarm[0] = 60//rnd * spawn_rate
+	rnd = irandom(600)
+	alarm[0] = rnd * spawn_rate
 	//show_debug_message("next spawn " + string(rnd / 60) + "s")
 
 }

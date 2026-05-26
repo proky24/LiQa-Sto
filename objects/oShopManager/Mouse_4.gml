@@ -27,5 +27,5 @@ if (!opened && recap) {
 	rnd = floor(random(600))
 	//show_debug_message("spawn " + string(rnd / 60) +"s")
 	alarm[0] = rnd
-
+	oMusicManager.alarm[0] = 1
 }

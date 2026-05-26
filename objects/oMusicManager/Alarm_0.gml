@@ -1,0 +1,1 @@
+set_song(sn_level, 2*60, 30)

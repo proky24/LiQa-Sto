@@ -22,7 +22,7 @@ if (!opened) {
 	
 	rnd = irandom(2)
 
-	instance_create_depth(440, 310, 0, npcs[rnd]) //vytvoření random NPC z pole
+	instance_create_depth(spawn_cor[level]._x, spawn_cor[level]._y, 0, npcs[rnd]) //vytvoření random NPC z pole
 	spawned ++
 	
 	

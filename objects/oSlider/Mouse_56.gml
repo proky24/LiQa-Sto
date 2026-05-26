@@ -1,16 +1,16 @@
 
 being_dragged = false
 
-/*switch (setting) {
-	case "music":
+switch (setting) {
+	case "hudby":
 		global.music_volume = amount_current
 	
-		audio_sound_gain(snd_Music, amount_current / 100, 0)
+		audio_group_set_gain(audiogroup_default, amount_current / 100, 0)
 	break;
 	
-	case "sound":
+	case "sfx":
 		global.sound_volume = amount_current
 	
-		audio_group_set_gain(snd_Sound, amount_current / 100, 0)
+		audio_group_set_gain(group_sfx, amount_current / 100, 0)
 	break;
 }

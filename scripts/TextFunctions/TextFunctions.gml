@@ -361,6 +361,7 @@ function scr_game_text(_text_id, _npc_id) {
 			break;
 		
 		case "sell":
+			oMusicManager.alarm[1] = 1
 			instance_destroy(oDialog)
 			
 			_npc_id.can_buy = false

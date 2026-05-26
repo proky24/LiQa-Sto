@@ -7,7 +7,11 @@ _x = oButtonIGSettings.x
 _y = oButtonIGSettings.y + 25
 
 var sfx = instance_create_depth(_x, _y, -99999, oSlider)
-sfx.text = "efektu"
+sfx.setting = "sfx"
+
+with (oSlider) {
+	alarm[0] = 1
+}
 
 _x = oButtonMainMenu.x - sprite_get_width(sButtonApply) / 1.5
 _y = oButtonMainMenu.y

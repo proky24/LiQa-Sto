@@ -1,7 +1,7 @@
 draw_self()
 
 var _x = x + 3
-var _text = "Hlasitost " + text
+var _text = "Hlasitost " + setting
 var _y = y - sprite_get_height(sSlider) - string_height(_text)
 draw_text(_x, _y, _text)
 

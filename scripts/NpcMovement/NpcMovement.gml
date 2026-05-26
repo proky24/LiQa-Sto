@@ -5,7 +5,7 @@ function loop() {
 		var queue_waypoints = oShopManager.queue_waypoints[oShopManager.level].queue
 		
 		//pokud má NPC namířeno ke kase a kasa je obsazená
-		if(oPultRight.collided == true && walked == array_length(waypoints) - 2 && !returning) { 
+		if(oPultRight.collided && walked == array_length(waypoints) - 2 && !returning) { 
 			if (oShopManager.level < 1) {
 				target_x = oWaypoint.x
 				target_y = oWaypoint.y + 8
@@ -14,7 +14,7 @@ function loop() {
 					if (!queue_waypoints[p].collided && queue_waypoints[p].queue_pos < queue_pos) {
 						target_x = queue_waypoints[p].x
 						target_y = queue_waypoints[p].y + 8
-					}
+					} 
 				}
 			}
 			

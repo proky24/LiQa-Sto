@@ -22,6 +22,20 @@ fast_delivery = false
 delivery_day = 0
 
 max_spawn = [2, 3, 6]
+spawn_cor = [
+	{
+		_x: 440,
+		_y: 310
+	},
+	{
+		_x: 440,
+		_y: 310
+	},
+	{
+		_x: 520,
+		_y: 340
+	}
+]
 queue_waypoints = [
 	{
 		queue: [oWaypoint]

@@ -1,0 +1,1 @@
+audio_play_sound(sfx_cash_register, 8, false)

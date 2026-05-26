@@ -32,6 +32,7 @@
     {"name":"inst_7257E7E7","path":"rooms/rIntermediateShop/rIntermediateShop.yy",},
     {"name":"inst_567A0ACA","path":"rooms/rIntermediateShop/rIntermediateShop.yy",},
     {"name":"inst_3E454447","path":"rooms/rIntermediateShop/rIntermediateShop.yy",},
+    {"name":"inst_3C9C5CB7","path":"rooms/rIntermediateShop/rIntermediateShop.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -64,6 +65,7 @@
         {"$GMRInstance":"v4","%Name":"inst_27FB3010","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":11,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_27FB3010","objectId":{"name":"oCabinetDlvSkvost","path":"objects/oCabinetDlvSkvost/oCabinetDlvSkvost.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":277.0,"y":272.0,},
         {"$GMRInstance":"v4","%Name":"inst_567A0ACA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_567A0ACA","objectId":{"name":"oWaypointExit","path":"objects/oWaypointExit/oWaypointExit.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":272.0,},
         {"$GMRInstance":"v4","%Name":"inst_3E454447","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3E454447","objectId":{"name":"oWaypoint","path":"objects/oWaypoint/oWaypoint.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":328.0,"y":240.0,},
+        {"$GMRInstance":"v4","%Name":"inst_3C9C5CB7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3C9C5CB7","objectId":{"name":"oWaypoint_1","path":"objects/oWaypoint_1/oWaypoint_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":296.0,"y":208.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"shop","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"shop","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -13,-2147483648,-11,0,-29,-2147483648,-11,0,-28,-2147483648,1,103,-8,133,3,72,32,0,-24,-2147483648,1,

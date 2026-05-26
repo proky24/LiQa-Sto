@@ -1,6 +1,6 @@
 var _room = room_get_name(room) 
 
-if (_room == "rMain" || _room == "rIntermediateShop" ) {
+if (_room == "rMain" || _room == "rIntermediateShop" || _room == "rExpertShop") {
 	
 	if(oShopManager.opened) {
 		oShopManager.day --

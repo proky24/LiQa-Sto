@@ -1,3 +1,3 @@
 collided = false
-queue_pos = 0
+queue_pos = 1
 npc = 0

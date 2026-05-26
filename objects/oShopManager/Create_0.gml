@@ -22,7 +22,17 @@ fast_delivery = false
 delivery_day = 0
 
 max_spawn = [2, 3, 6]
-queue_waypoints = []
+queue_waypoints = [
+	{
+		queue: [oWaypoint]
+	},
+	{
+		queue: [oWaypoint, oWaypoint_1]
+	},
+	{
+		queue: [oWaypoint, oWaypoint_1, oWaypoint_2, oWaypoint_3, oWaypoint_4]
+	}
+]
 
 rnd = 0
 

@@ -18,7 +18,7 @@ if (!opened && recap) {
 			security_sub = false		
 		}
 	}
-	hours = 17
+	hours = 8
 	minutes = 55
 	
 	start_day()

@@ -1,0 +1,1 @@
+set_song(sn_menu, 30, 60)

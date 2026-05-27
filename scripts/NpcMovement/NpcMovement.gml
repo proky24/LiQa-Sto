@@ -9,18 +9,30 @@ function loop() {
 			if (oShopManager.level < 1) {
 				target_x = oWaypoint.x
 				target_y = oWaypoint.y + 8
+				queue_pos = oWaypoint.queue_pos
 			} else {
 				for (var p = 0; p < array_length(queue_waypoints); p++) {
 					if (!queue_waypoints[p].collided && queue_waypoints[p].queue_pos < queue_pos) {
+						
 						target_x = queue_waypoints[p].x
 						target_y = queue_waypoints[p].y + 8
+						queue_pos = queue_waypoints[p].queue_pos
+						queue_waypoints[p].collided = true
+						mp_grid_path(grid, path, x, y, target_x, target_y, 0);
+						path_start(path, move_speed, path_action_stop, true);
+						show_debug_message("on the way to " + string(queue_waypoints[p]) + " queue_pos " + string(queue_pos) + " wp queue_pos " + string(queue_waypoints[p].queue_pos))
+						exit
 					} 
 				}
 			}
 			
 		} else {
-			target_x = waypoints[walked].x
-			target_y = waypoints[walked].y + 8
+			if (oShopManager.level > 0 && queue_pos != 999) {
+				alarm[4] = 1
+			} else {
+				target_x = waypoints[walked].x
+				target_y = waypoints[walked].y + 8
+			}
 		}
 		
 		mp_grid_path(grid, path, x, y, target_x, target_y, 0);

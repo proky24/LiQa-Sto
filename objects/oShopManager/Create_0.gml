@@ -33,7 +33,7 @@ spawn_cor = [
 	},
 	{
 		_x: 520,
-		_y: 340
+		_y: 344
 	}
 ]
 queue_waypoints = [

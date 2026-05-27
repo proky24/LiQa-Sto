@@ -21,7 +21,7 @@ if (room == target_room && image_index < 1) {
 	//} else {
 		//potom
 	//}
-
+	
 	instance_destroy(self)
 
 }

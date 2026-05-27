@@ -9,6 +9,7 @@ function start_day() {
 	if (hours == 18) {
 		opened = false
 		alarm[0] = 1
+		oMusicManager.alarm[2] = 1
 		exit
 	} 
 	

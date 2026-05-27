@@ -6,7 +6,7 @@ if (distance_to_object(oPlayer) < 8 && array_length(cargo) != 0 && keyboard_chec
 				oBoxDown.ids[oBoxDown._p] = id
 				oBoxDown._p ++
 			}
-			if (count > 1/* && cargo[p] > oShopManager.products[p].max_stock*/) {
+			if (count > 1) {
 
 				var _cargo = cargo[p] 
 				
@@ -26,19 +26,7 @@ if (distance_to_object(oPlayer) < 8 && array_length(cargo) != 0 && keyboard_chec
 				_p = 0
 				count = 0
 				
-			}/* else if (count > 1 && cargo[p] <= oShopManager.products[p].max_stock) {
-				for (var q = 0; q < array_length(ids); q++) {
-					if (ids[q].image_index != ids[q].max_stock && cargo[p] > 0) {
-						ids[q].image_index += cargo[p]
-						cargo[p] -= ids[q].image_index
-						show_debug_message(string(cargo[p]))
-					}
-				}
-				
-				ids = []
-				_p = 0
-				count = 0
-			}*/ else {
+			} else {
 				oShopManager.products[p].image_index += cargo[p]
 			}
 		}

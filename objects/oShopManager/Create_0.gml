@@ -15,6 +15,10 @@ products = [oShelf, oBeer_1, oBeer]
 opened = false
 security_sub = false
 
+level_speed = 5
+
+count = 0
+
 money = 10000
 money_gained = 0
 

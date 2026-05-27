@@ -9,6 +9,9 @@ other.image_alpha = lerp(other.image_alpha, 0, 0.1);
 		instance_destroy(other);
 		if(!oShopManager.called_police && !other.security) {
 			oShopManager.spawned --
+			if (oShopManager.spawned == 0) {
+				oShopManager.level_speed = 4
+			}
 		}
 }
 

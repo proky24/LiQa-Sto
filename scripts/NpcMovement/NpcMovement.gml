@@ -20,7 +20,6 @@ function loop() {
 						queue_waypoints[p].collided = true
 						mp_grid_path(grid, path, x, y, target_x, target_y, 0);
 						path_start(path, move_speed, path_action_stop, true);
-						show_debug_message("on the way to " + string(queue_waypoints[p]) + " queue_pos " + string(queue_pos) + " wp queue_pos " + string(queue_waypoints[p].queue_pos))
 						exit
 					} 
 				}

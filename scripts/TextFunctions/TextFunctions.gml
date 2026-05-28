@@ -103,10 +103,37 @@ function scr_game_text(_text_id, _npc_id) {
 		case "npc3":
 			scr_text("*zira jakoby tyden nespal, pachne po chlastu*", "npc", _npc_id)
 			scr_text("Pane?.. jste v pohode", "player")
-			scr_text("*predlozi kartu*", "npc", _npc_id)
+			scr_text("Ano, v poradku", "npc", _npc_id)
 			
+			
+			scr_option("Nepotrebujete zachranku?", "npc3 - 1")
+			scr_option("Ukazte obcanku", "id - teen")
 			scr_option("Prodat", "sell")
 			break;
+		
+		case "npc3 - 1":
+			scr_text("Nepotrebujete zachranku? Nezdate se mi v poradku", "player")
+			scr_text("Potrebuju... chlast", "npc", _npc_id)
+			
+			scr_option("Ukazte obcanku", "id - teen")
+			scr_option("Prodat", "sell")
+		break;
+			
+		case "id - teen":
+			scr_text("......", "npc", _npc_id)
+			oDialog.alarm[1] = 5
+			
+			scr_option("Vzdyt to je falesny!", "id - teen - false")
+			scr_option("Prodat", "sell")
+		break;
+		
+		case "id - teen - false":
+			instance_destroy(oNpcId)
+			scr_text("Vzdyt to je padelek vypadni okamzite!", "player")
+			
+			_npc_id.alarm[5] = 1 
+			decrease_rep("age_b")
+		break;
 			
 		case "npc4":
 			scr_text("Zajimavy vyber.", "player")
@@ -122,6 +149,31 @@ function scr_game_text(_text_id, _npc_id) {
 				
 				scr_automate_options()
 				break;
+				
+		case "npc5":
+			scr_text("Nejsi na tohle moc mladej?", "player")
+			scr_text("To neni jak to vypada, posila me mamka", "npc", _npc_id)
+			
+			scr_option("Mas dukaz?", "id - kid")
+			break;
+			
+		case "npc6":
+		scr_text("Deti jsou doma moc?", "player")
+		scr_text("Ted jsou ve skolce, musim se stihnout hodit do nalady", "npc", _npc_id)
+			
+		
+		scr_automate_options()
+		break;
+		
+		case "npc7":
+		scr_text("CO JEEEEEEEEEE", "npc", _npc_id)
+		scr_text("CO JEEEEEEEEEEEEEE", "player")
+		scr_text("EEEEEEEEEEEEEEEEEEE :P", "npc", _npc_id)
+		scr_text(":PPPPPPPPPPPP", "player")
+		scr_text("Jak ja bych to rozjel se Schodikem", "npc", _npc_id)
+		
+		scr_automate_options()
+		break;
 				
 		case "facka":
 			scr_text("Nesahejte mi pod sukni uchyle  *dala ti facku*", "npc", _npc_id)
@@ -325,6 +377,7 @@ function scr_game_text(_text_id, _npc_id) {
 			break;
 			
 		case "id - 2":
+		instance_destroy(oNpcId)
 			scr_text("Dneska mam dobrou naladu.. mas to mit", "player")
 			scr_text("Dekuju! dekuju moc!", "npc", _npc_id)
 			
@@ -341,15 +394,23 @@ function scr_game_text(_text_id, _npc_id) {
 		
 			scr_option("Prodat", "sell")
 			break;
+			
+		case "id - kid":
+			scr_text("j-jj-Jo... tady mate", "npc", _npc_id)
+			oDialog.alarm[1] = 5
+			
+			scr_option("Zapomen", "bribe - !")
+			scr_option("Smilovat se", "id - 2")
+		break;
 		
 		case "bribe - !":
+		instance_destroy(oNpcId)
 			scr_text("Zapomen, chces aby mi to tu zavreli?", "player")
 			scr_text("Ne, ja, eeh, to ne-", "npc", _npc_id)
 			scr_text("Prestan koktat a okamzite bez vratit ten chlast a jdi pryc!", "player")
 			scr_text("*smutne kouka*", "npc", _npc_id)
 			
 			scr_option("NE!", "bribe - !!")
-			scr_option("No tak jo", "bribe - ! - 1")
 			break;
 			
 		case "bribe - !!":

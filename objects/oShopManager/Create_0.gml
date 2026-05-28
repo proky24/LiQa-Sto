@@ -68,7 +68,7 @@ end_trend_day = 0
 arrested_times = 0
 called_police = false
 
-npcs = [oNpc, oNpc2, oNpc3]
+npcs = [oNpc, oNpc2, oNpc3, oNpc4, oNpc5, oNpc6]
 
 illegal_sells = 0
 

@@ -23,7 +23,7 @@ if (!opened && recap) {
 	
 	start_day()
 	
-	image_index = 1
+	alarm[11] = 7
 	rnd = floor(random(600))
 	//show_debug_message("spawn " + string(rnd / 60) +"s")
 	alarm[0] = rnd

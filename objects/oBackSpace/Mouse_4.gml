@@ -7,3 +7,5 @@ tran.fast_delivery = false
 tran.security_sub = oContract.security_sub
 
 oMusicManager.alarm[3] = 1
+image_index = 1
+alarm[0] = 10

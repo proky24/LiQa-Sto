@@ -1,4 +1,8 @@
 if (oBuyButton.shop_upgrade) {
+	handeling = true
+	oMusicManager.alarm[5] = 1
+	image_index ++
+	alarm[0] = 10
 	if (!instance_exists(oTransitionShops)) {
 		room_instance_clear(rMain)
 		instance_destroy(oStocksSaving)
@@ -12,6 +16,10 @@ if (oBuyButton.shop_upgrade) {
 }
 
 if (oBuyButton_1.shop_upgrade) {
+	handeling = true
+	oMusicManager.alarm[5] = 1
+	image_index = ++
+	alarm[0] = 10
 	if (!instance_exists(oTransitionShops)) {
 		room_instance_clear(rMain)
 		instance_destroy(oStocksSaving)
@@ -26,7 +34,10 @@ if (oBuyButton_1.shop_upgrade) {
 
 if (oComputer.previous_money != oComputer.money || oContract.image_index == 1) {
 	get_order()
-	
+	handeling = true
+	oMusicManager.alarm[5] = 1
+	image_index ++
+	alarm[0] = 10
 	if (!instance_exists(oTransition)) {
 	
 		var tran = instance_create_depth(0, 0, -9999, oTransition)
@@ -38,4 +49,3 @@ if (oComputer.previous_money != oComputer.money || oContract.image_index == 1) {
 }
 
 oMusicManager.alarm[3] = 1
-oMusicManager.alarm[5] = 1

@@ -20,7 +20,7 @@ if (!opened) {
 		exit
 	} 
 	
-	rnd = irandom(7)
+	rnd = irandom(6)
 
 	instance_create_depth(spawn_cor[level]._x, spawn_cor[level]._y, 0, npcs[rnd]) //vytvoření random NPC z pole
 	spawned ++

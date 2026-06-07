@@ -18,6 +18,7 @@ security_sub = false
 level_speed = 5
 
 count = 0
+duplicate_count = 0
 
 money = 10000
 money_gained = 0
@@ -52,6 +53,13 @@ queue_waypoints = [
 	}
 ]
 
+array = []
+struct = {
+	content: array 
+}
+
+duplicate_products = []
+
 rnd = 0
 
 rep = 0
@@ -76,21 +84,3 @@ recap = true
 
 spawned = 0
 randomise()
-//alarm[10] = 250
-/*p = 0
-beer = []
-with (oBeer) {
-	show_debug_message(id) 
-	oShopManager.beer[oShopManager.p] = id
-	show_debug_message(oShopManager.beer)
-	oShopManager.p ++
-}
-
-p = 0
-beer_1 = []
-with (oBeer_1) {
-	show_debug_message(id) 
-	oShopManager.beer_1[oShopManager.p] = id
-	show_debug_message(oShopManager.beer_1)
-	oShopManager.p ++
-}

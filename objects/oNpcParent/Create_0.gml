@@ -24,18 +24,6 @@ move_speed = 1
 
 security = false
 
-/*for (var p = 0; p < 2; p++) {
-	var product1 = irandom(array_length(products) - 1)
-	var rnd1 = irandom_range(1, 2)
-
-	if (rnd1 > 1) {
-		show_debug_message("trend hunting")
-		show_debug_message(string(p))
-		waypoints[p] = products[trend_p]
-	} else {
-		waypoints[p] = products[product1]
-	}
-}*/
 
 two_products = true
 returning = false
@@ -55,6 +43,7 @@ if (rnd < 1) {
 	two_products = false
 	//pokud bude rnd 0 vymažeme product z pole waypoints
 }
+
 
 waypoints_len = array_length(waypoints)
 

@@ -12,13 +12,13 @@ if (distance_to_object(oPlayer) < 8 && array_length(cargo) != 0 && keyboard_chec
 				
 				for (var q = 0; q < array_length(ids); q++) {
 					if (_cargo > 0) {
-						show_debug_message(string(_cargo) + " cargo")
+						//show_debug_message(string(_cargo) + " cargo")
 						var max_stock = ids[q].max_stock - ids[q].image_index
-						show_debug_message(string(max_stock) + " max_Stock")
+						//show_debug_message(string(max_stock) + " max_Stock")
 						var stock = clamp(_cargo, ids[q].image_index, max_stock)
-						show_debug_message(string(ids[q]) + " produkt " + string(ids[q].image_index))
+						//show_debug_message(string(ids[q]) + " produkt " + string(ids[q].image_index))
 						ids[q].image_index += stock
-						show_debug_message(string(stock) + " stock")
+						//show_debug_message(string(stock) + " stock")
 						_cargo -= stock
 					}
 				}

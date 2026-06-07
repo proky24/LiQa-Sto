@@ -157,6 +157,8 @@ function load_game() {
 		
 		file_text_close(file)
 	}
+		
+	
 }
 
 function save_room() {
@@ -176,3 +178,18 @@ function save_room() {
 	
 	file_text_close(fileR)
 }	
+	
+function save_audio() {
+	var fileA = file_text_open_write("savedAudio.txt")
+	
+	var audio_vol = [0, 0]
+	
+	audio_vol[0] = global.music_volume
+	audio_vol[1] = global.sound_volume
+	
+	var _string = json_stringify(audio_vol)
+	
+	file_text_write_string(fileA, _string)
+	
+	file_text_close(fileA)
+}

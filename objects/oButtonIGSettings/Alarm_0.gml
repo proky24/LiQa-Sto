@@ -21,7 +21,5 @@ with (oButtonParent) {
 }
 
 
-instance_create_depth(_x, _y, -99999, oButtonApply)
+instance_create_depth(_x + 32, _y, -99999, oButtonApply)
 
-_x += _x / 4.5
-instance_create_depth(_x, _y, -99999, oButtonCancel)

@@ -28,7 +28,7 @@ if (audio_is_playing(song_inst)) {
 		fade_in_inst_vol = 1
 	}
 	
-	audio_sound_gain(song_inst, global.music_volume/10, 0)
+	audio_sound_gain(song_inst, global.music_volume/50, 0)
 }
 
 //fade music out

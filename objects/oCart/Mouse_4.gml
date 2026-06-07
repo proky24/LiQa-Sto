@@ -36,3 +36,6 @@ if (oComputer.previous_money != oComputer.money || oContract.image_index == 1) {
 		tran.security_sub = oContract.security_sub
 	}
 }
+
+oMusicManager.alarm[3] = 1
+oMusicManager.alarm[5] = 1

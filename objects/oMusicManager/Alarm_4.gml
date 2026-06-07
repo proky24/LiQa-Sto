@@ -1,0 +1,1 @@
+audio_play_sound(sfx_page_flip, 8, false)

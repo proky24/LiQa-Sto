@@ -5,3 +5,5 @@ tran.target_room = _room
 tran.money = oComputer.money
 tran.fast_delivery = false
 tran.security_sub = oContract.security_sub
+
+oMusicManager.alarm[3] = 1

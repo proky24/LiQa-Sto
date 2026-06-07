@@ -58,7 +58,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"LiQaSto",
   "resources":[
@@ -188,7 +188,10 @@
     {"id":{"name":"Saving","path":"scripts/Saving/Saving.yy",},},
     {"id":{"name":"ShopManaging","path":"scripts/ShopManaging/ShopManaging.yy",},},
     {"id":{"name":"TextFunctions","path":"scripts/TextFunctions/TextFunctions.yy",},},
+    {"id":{"name":"sfx_button_click","path":"sounds/sfx_button_click/sfx_button_click.yy",},},
     {"id":{"name":"sfx_cash_register","path":"sounds/sfx_cash_register/sfx_cash_register.yy",},},
+    {"id":{"name":"sfx_coin_drop","path":"sounds/sfx_coin_drop/sfx_coin_drop.yy",},},
+    {"id":{"name":"sfx_page_flip","path":"sounds/sfx_page_flip/sfx_page_flip.yy",},},
     {"id":{"name":"sn_computer","path":"sounds/sn_computer/sn_computer.yy",},},
     {"id":{"name":"sn_level","path":"sounds/sn_level/sn_level.yy",},},
     {"id":{"name":"sn_menu","path":"sounds/sn_menu/sn_menu.yy",},},

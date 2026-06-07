@@ -1,0 +1,1 @@
+audio_play_sound(sfx_button_click, 8, false)

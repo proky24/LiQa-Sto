@@ -1,0 +1,1 @@
+audio_play_sound(sfx_coin_drop, 8, false)

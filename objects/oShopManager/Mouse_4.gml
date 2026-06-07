@@ -28,4 +28,5 @@ if (!opened && recap) {
 	//show_debug_message("spawn " + string(rnd / 60) +"s")
 	alarm[0] = rnd
 	oMusicManager.alarm[0] = 1
+	oMusicManager.alarm[3] = 1
 }

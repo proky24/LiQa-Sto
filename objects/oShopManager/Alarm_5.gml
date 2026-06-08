@@ -5,14 +5,8 @@ switch (level) {
 	
 	case 1:
 		products = [oShelf, oBeer_1, oBeer, oCabinetDlvSkvost, oCabinetSpanikovice, oCabinetKralovskyMok]
-		for (var p = 0; p < array_length(products); p++) {
-			with (products[p]) {
-				oShopManager.duplicate_count ++
-				if (oShopManager.duplicate_count > 1) {
-					struct = {_name: name, _id: id}
-					array_push(oShopManager.duplicate_products, struct)
-				}
-			}
+		with (oBeer_1) {
+			array_push(oShopManager.duplicate_products_1, id)
 		}
 	break;
 	

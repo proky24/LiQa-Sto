@@ -58,7 +58,8 @@ struct = {
 	content: array 
 }
 
-duplicate_products = []
+duplicate_products_1 = []
+duplicate_products_2 = []
 
 rnd = 0
 

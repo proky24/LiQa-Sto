@@ -44,6 +44,130 @@ if (rnd < 1) {
 	//pokud bude rnd 0 vymažeme product z pole waypoints
 }
 
+if (oShopManager.level == 1) {
+	var rnd_int = 0
+	for (var p = 0; p < 2; p++) {
+		switch (waypoints[p]) {
+			case oBeer:
+			
+				rnd_int = random(array_length(oShopManager.duplicate_products_Beer) - 1) 
+				if (oShopManager.duplicate_products_Beer[rnd_int].image_index != 0) {
+					waypoints[p] = oShopManager.duplicate_products_Beer[rnd_int]
+				} else {
+					
+					for (var q = 0; q < array_length(oShopManager.duplicate_products_Beer); q++) {
+						if (oShopManager.duplicate_products_Beer[q].image_index != 0) {
+							waypoints[p] = oShopManager.duplicate_products_Beer[rnd_int]
+							exit
+						}
+					}
+				}
+			break;
+			
+			case oBeer_1:
+				rnd_int = random(array_length(oShopManager.duplicate_products_Beer_1) - 1) 
+				if (oShopManager.duplicate_products_Beer_1[rnd_int].image_index != 0) {
+					waypoints[p] = oShopManager.duplicate_products_Beer_1[rnd_int]
+				} else {
+					
+					for (var q = 0; q < array_length(oShopManager.duplicate_products_Beer_1); q++) {
+						if (oShopManager.duplicate_products_Beer_1[q].image_index != 0) {
+							waypoints[p] = oShopManager.duplicate_products_Beer_1[rnd_int]
+							exit
+						}
+					}
+				}
+			break;
+		}
+	}
+}
+	
+if (oShopManager.level == 2) {
+	var rnd_int = 0
+	for (var p = 0; p < 2; p++) {
+		switch (waypoints[p]) {
+			case oBeer:
+			
+				rnd_int = random(array_length(oShopManager.duplicate_products_Beer) - 1) 
+				if (oShopManager.duplicate_products_Beer[rnd_int].image_index != 0) {
+					waypoints[p] = oShopManager.duplicate_products_Beer[rnd_int]
+				} else {
+					
+					for (var q = 0; q < array_length(oShopManager.duplicate_products_Beer); q++) {
+						if (oShopManager.duplicate_products_Beer[q].image_index != 0) {
+							waypoints[p] = oShopManager.duplicate_products_Beer[rnd_int]
+							exit
+						}
+					}
+				}
+			break;
+			
+			case oBeer_1:
+				rnd_int = random(array_length(oShopManager.duplicate_products_Beer_1) - 1) 
+				if (oShopManager.duplicate_products_Beer_1[rnd_int].image_index != 0) {
+					waypoints[p] = oShopManager.duplicate_products_Beer_1[rnd_int]
+				} else {
+					
+					for (var q = 0; q < array_length(oShopManager.duplicate_products_Beer_1); q++) {
+						if (oShopManager.duplicate_products_Beer_1[q].image_index != 0) {
+							waypoints[p] = oShopManager.duplicate_products_Beer_1[rnd_int]
+							exit
+						}
+					}
+				}
+			break;
+			
+			case oShelf:
+				rnd_int = random(array_length(oShopManager.duplicate_products_Shelf) - 1) 
+				if (oShopManager.duplicate_products_Shelf[rnd_int].image_index != 0) {
+					waypoints[p] = oShopManager.duplicate_products_Shelf[rnd_int]
+				} else {
+					
+					for (var q = 0; q < array_length(oShopManager.duplicate_products_Shelf); q++) {
+						if (oShopManager.duplicate_products_Shelf[q].image_index != 0) {
+							waypoints[p] = oShopManager.duplicate_products_Shelf[rnd_int]
+							exit
+						}
+					}
+				}
+			break;
+			
+			case oDlvSkvost:
+				rnd_int = random(array_length(oShopManager.duplicate_products_Dlv) - 1) 
+				if (oShopManager.duplicate_products_Dlv[rnd_int].image_index != 0) {
+					waypoints[p] = oShopManager.duplicate_products_Dlv[rnd_int]
+				} else {
+					
+					for (var q = 0; q < array_length(oShopManager.duplicate_products_Dlv); q++) {
+						if (oShopManager.duplicate_products_Dlv[q].image_index != 0) {
+							waypoints[p] = oShopManager.duplicate_products_Dlv[rnd_int]
+							exit
+						}
+					}
+				}
+			break;
+			
+			case oKralovskyMok:
+				rnd_int = random(array_length(oShopManager.duplicate_products_Kralovsky) - 1) 
+				if (oShopManager.duplicate_products_Kralovsky[rnd_int].image_index != 0) {
+					waypoints[p] = oShopManager.duplicate_products_Kralovsky[rnd_int]
+				} else {
+					
+					for (var q = 0; q < array_length(oShopManager.duplicate_products_Kralovsky); q++) {
+						if (oShopManager.duplicate_products_Kralovsky[q].image_index != 0) {
+							waypoints[p] = oShopManager.duplicate_products_Kralovsky[rnd_int]
+							exit
+						}
+					}
+				}
+			break;
+		}
+	}
+}
+	
+	
+			
+			
 
 waypoints_len = array_length(waypoints)
 

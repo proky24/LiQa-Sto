@@ -20,7 +20,7 @@ level_speed = 5
 count = 0
 duplicate_count = 0
 
-money = 10000
+money = 0
 money_gained = 0
 
 fast_delivery = false

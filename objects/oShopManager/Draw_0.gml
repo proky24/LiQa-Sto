@@ -46,3 +46,16 @@ _y += 4
 if (rep_change) {
 	draw_sprite(sArrowRepUp, subimg, _x, _y)
 } 
+
+if (day <= 4) {
+	var position_tutorial = 36
+	draw_sprite(sUI, 0, position_tutorial, positiony)
+	draw_sprite_ext(sUI, 0, position_tutorial, positiony, 1.2, 1.2, 0, c_white, 1)
+	
+	draw_text(position_tutorial + 10, positiony + 15, "WASD - Pohyb")
+	draw_text(position_tutorial + 10, positiony + 30, "WS - Vyber dialogu")
+	draw_text(position_tutorial + 10, positiony + 45, "Mezernik - Aktivace")
+	draw_text(position_tutorial + 10, positiony + 60, "dialogu,")
+	draw_text(position_tutorial + 10, positiony + 75, "naskladneni produktu,")
+	draw_text(position_tutorial + 10, positiony + 90, "spusteni pocitace")
+}
